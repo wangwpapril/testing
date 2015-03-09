@@ -10,7 +10,7 @@
         android:layout_height="fill_parent"
         android:contentDescription="@string/SplashImageDesc"
         android:scaleType="fitXY"
-        android:src="@drawable/welcome_960x540" >
+        android:src="@drawable/default568h2x" >
     </ImageView>
 
         <RelativeLayout

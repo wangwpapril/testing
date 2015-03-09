@@ -2,7 +2,7 @@
 <resources>
 
     <string name="hello">Hello world,Test!</string>
-    <string name="app_name">eNews</string>
+    <string name="app_name">Travel Smart</string>
     <string name="helloButton">Confirm</string>
     <string name="confirm_button">Confirm</string>
     <string name="cancel_button">Cancel</string>

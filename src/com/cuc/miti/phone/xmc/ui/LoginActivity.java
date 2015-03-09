@@ -1,5 +1,8 @@
 package com.cuc.miti.phone.xmc.ui;
 
+import org.apache.commons.lang3.StringUtils;
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -22,11 +25,16 @@ import android.widget.Toast;
 
 import com.cuc.miti.phone.xmc.R;
 import com.cuc.miti.phone.xmc.IngleApplication;
+import com.cuc.miti.phone.xmc.domain.LocationDomain;
+import com.cuc.miti.phone.xmc.domain.PositionInfo;
+import com.cuc.miti.phone.xmc.domain.PostDomain;
+import com.cuc.miti.phone.xmc.domain.XmcException;
 import com.cuc.miti.phone.xmc.domain.Enums.InterfaceType;
 import com.cuc.miti.phone.xmc.domain.Enums.NetStatus;
 import com.cuc.miti.phone.xmc.domain.Enums.PreferenceKeys;
 import com.cuc.miti.phone.xmc.domain.Enums.PreferenceType;
 import com.cuc.miti.phone.xmc.http.Configuration;
+import com.cuc.miti.phone.xmc.http.HttpClient;
 import com.cuc.miti.phone.xmc.logic.LocationService;
 import com.cuc.miti.phone.xmc.logic.UserService;
 import com.cuc.miti.phone.xmc.services.AppStatusService;
@@ -36,6 +44,7 @@ import com.cuc.miti.phone.xmc.utils.SharedPreferencesHelper;
 import com.cuc.miti.phone.xmc.utils.StandardizationDataHelper;
 import com.cuc.miti.phone.xmc.utils.ToastHelper;
 import com.cuc.miti.phone.xmc.xmpp.NotificationService;
+import com.google.mitijson.Gson;
 
 public class LoginActivity extends BaseActivity implements OnClickListener {
 	private SharedPreferencesHelper sharedPreferencesHelper;
@@ -49,9 +58,9 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	Boolean onlineState = true;
 
 	Drawable draw = null;
-	private EditText etServer; // ����ķ�������ַ
-	private EditText etDeviceid; // �鿴�豸��ʶ
-	private EditText etVersionid; // �鿴��ǰϵͳ�汾��
+	private EditText etServer; // 锟斤拷锟斤拷姆锟斤拷锟斤拷锟斤拷锟街�
+	private EditText etDeviceid; // 锟介看锟借备锟斤拷识
+	private EditText etVersionid; // 锟介看锟斤拷前系统锟芥本锟斤拷
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +74,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	}
 
 	/**
-	 * ��ʼ���ؼ�
+	 * 锟斤拷始锟斤拷锟截硷拷
 	 */
 	private void setUpViews() {
 
@@ -105,7 +114,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 
 	public void onClick(View v) {
 		switch (v.getId()) {
-		// ��¼
+		// 锟斤拷录
 		case R.id.imBtnSignIn_Login:
 			try {
 				login();
@@ -124,18 +133,18 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	}
 
 	/**
-	 * ����״̬ת��
+	 * 锟斤拷锟斤拷状态转锟斤拷
 	 * 
 	 * @param os
-	 *            ����״̬
+	 *            锟斤拷锟斤拷状态
 	 */
 	private void OnlineStateSwitch(Boolean os) {
-		// ����תΪ������
+		// 锟斤拷锟斤拷转为锟斤拷锟斤拷锟斤拷
 		if (os == true) {
 			onlineState = false;
 
 		}
-		// ������תΪ����
+		// 锟斤拷锟斤拷锟斤拷转为锟斤拷锟斤拷
 		else if (os == false) {
 			onlineState = true;
 
@@ -143,24 +152,24 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	}
 
 	/**
-	 * ��¼
+	 * 锟斤拷录
 	 */
 	private void login() throws Exception {
 
 		try {
-			// �û��������Ϊ��ʱ��ʾ
+			// 锟矫伙拷锟斤拷锟斤拷锟斤拷锟轿拷锟绞憋拷锟绞�
 			if ("".equals(editTextUserName.getText().toString().trim())
 					|| "".equals(editTextPassword.getText().toString().trim())) {
 				// toast = Toast.makeText(LoginActivity.this,
-				// "�û�������벻��Ϊ��",Toast.LENGTH_SHORT);
+				// "锟矫伙拷锟斤拷锟斤拷锟斤拷氩伙拷锟轿拷锟�,Toast.LENGTH_SHORT);
 				// toast.show();
 
 				// Modify by SongQing.20120807
-				// Toast��ΪAlertDialog�Դﵽ�û��޸�����:��¼ҳ�����ʾ��Ҫ�����Ի���ȴ��û�ȷ��
+				// Toast锟斤拷为AlertDialog锟皆达到锟矫伙拷锟睫革拷锟斤拷锟斤拷:锟斤拷录页锟斤拷锟斤拷锟绞撅拷锟揭拷锟斤拷锟斤拷曰锟斤拷锟饺达拷锟矫伙拷确锟斤拷
 				showAlertDialog(getResources().getString(
 						R.string.loginAlertDialogTitle_Login), getResources()
 						.getString(R.string.loginAlertDialogMsg_Login));
-			} else {// �û�������붼��Ϊ��ʱ
+			} else {// 锟矫伙拷锟斤拷锟斤拷锟斤拷攵硷拷锟轿拷锟绞�
 				NetStatus netStatus = IngleApplication
 						.getNetStatus();
 				if (netStatus != NetStatus.Disable) {
@@ -169,11 +178,46 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 					onlineState = false;
 				}
 
-				if (onlineState == true) {// �����¼
-					userServices.userLoginOnline(editTextUserName.getText()
+				if (onlineState == true) {// 锟斤拷锟斤拷锟铰�
+/*					userServices.userLoginOnline(editTextUserName.getText()
 							.toString().trim(), editTextPassword.getText()
 							.toString().trim());
-				} else {// �������¼
+///////////					
+					public static String[] Location(String userName, String sessionId,
+							PositionInfo lct, String location, String memo, String source)
+							throws XmcException {*/
+						String[] returnValueString = {"",""};
+						
+						try {
+//							if(lct!=null){
+//							PostDomain postDomain = new PostDomain(editTextUserName.getText().toString().trim(),
+	//								editTextPassword.getText().toString().trim());
+							PostDomain postDomain = new PostDomain("wwang@peakcontact.com","12345678");
+
+							Gson gson = new Gson();
+							String parasString = gson.toJson(postDomain);
+
+							HttpClient httpClient = new HttpClient();
+						
+							String JSONResult = httpClient.post(parasString, "https://api.intrepid247.com/v1/users/login", 6000);	
+							if (StringUtils.isNotBlank(JSONResult)) {
+
+								JSONObject jb = new JSONObject(JSONResult);
+								returnValueString[0]=(String) jb.get("id");
+								returnValueString[1]=(String) jb.get("username");
+
+							}
+//						}
+						} catch (Exception e) {
+//							exceptionTypeJudge(e);
+						}
+
+
+					 ////////////					
+					
+					
+					
+				} else {// 锟斤拷锟斤拷锟斤拷锟铰�
 					userServices.userLoginOffline(editTextUserName.getText()
 							.toString().trim(), editTextPassword.getText()
 							.toString().trim());
@@ -183,7 +227,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 			e.printStackTrace();
 			/*
 			 * Toast toast = Toast.makeText(LoginActivity.this,
-			 * "ϵͳ�쳣",Toast.LENGTH_SHORT); toast.show();
+			 * "系统锟届常",Toast.LENGTH_SHORT); toast.show();
 			 */
 			ToastHelper.showToast(getResources().getString(
 					R.string.loginFailure_Login), Toast.LENGTH_SHORT);
@@ -204,13 +248,13 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 			showSystemConfigDialog();
 
 			/*
-			 * ����ķ��������豸���� case R.id.menu_deviceid: deviceInfoHelper=new
+			 * 锟斤拷锟斤拷姆锟斤拷锟斤拷锟斤拷锟斤拷璞革拷锟斤拷锟�case R.id.menu_deviceid: deviceInfoHelper=new
 			 * DeviceInfoHelper(); AlertDialog.Builder builderDeviceID = new
 			 * AlertDialog.Builder(this); etDeviceid = new
 			 * EditText(LoginActivity.this);
 			 * etDeviceid.setText(deviceInfoHelper.getDeviceId());
-			 * //etDeviceid.setEnabled(false); builderDeviceID.setTitle("�豸ID")
-			 * .setView(etDeviceid).setNegativeButton("�ر�", new
+			 * //etDeviceid.setEnabled(false); builderDeviceID.setTitle("锟借备ID")
+			 * .setView(etDeviceid).setNegativeButton("锟截憋拷", new
 			 * DialogInterface.OnClickListener() {
 			 * 
 			 * public void onClick(DialogInterface dialog, int which) {
@@ -231,8 +275,8 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 			 * .setText(sharedPreferencesHelper.getPreferenceValue(PreferenceKeys
 			 * .Sys_LoginServer.toString())); }
 			 * 
-			 * builder.setTitle("���÷�������ַ") .setView(etServer)
-			 * .setPositiveButton("ȷ��", new DialogInterface.OnClickListener() {
+			 * builder.setTitle("锟斤拷锟矫凤拷锟斤拷锟斤拷锟斤拷址") .setView(etServer)
+			 * .setPositiveButton("确锟斤拷", new DialogInterface.OnClickListener() {
 			 * 
 			 * public void onClick(DialogInterface dialog,int which) { if
 			 * (etServer.getText().toString().trim().length() > 0) {
@@ -251,7 +295,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 			 * }
 			 * 
 			 * }else {
-			 * Toast.makeText(LoginActivity.this,"�����IP��ַ���Ϸ���",Toast.LENGTH_SHORT
+			 * Toast.makeText(LoginActivity.this,"锟斤拷锟斤拷锟絀P锟斤拷址锟斤拷锟较凤拷锟斤拷",Toast.LENGTH_SHORT
 			 * ).show(); }
 			 * 
 			 * 
@@ -270,11 +314,11 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 			 * .getPreferenceValue(PreferenceKeys.Sys_LoginServer
 			 * .toString()),Toast.LENGTH_SHORT).show();
 			 * 
-			 * //TODO ��ʽ�������޸� Intent intent = new
+			 * //TODO 锟斤拷式锟斤拷锟斤拷锟斤拷锟睫革拷 Intent intent = new
 			 * Intent(LoginActivity.this,SplashScreenActivity.class);
 			 * startActivity(intent); LoginActivity.this.finish(); }
 			 * 
-			 * } }) .setNegativeButton("ȡ��", new
+			 * } }) .setNegativeButton("取锟斤拷", new
 			 * DialogInterface.OnClickListener() {
 			 * 
 			 * public void onClick(DialogInterface dialog, int which) {
@@ -314,7 +358,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		// KeyEvent.KEYCODE_BACK��?�ز���.
+		// KeyEvent.KEYCODE_BACK锟斤拷?锟截诧拷锟斤拷.
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
 			IngleApplication.getInstance().exit();
 		}
@@ -322,12 +366,12 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	}
 
 	/**
-	 * ������ʾ�Ի���
+	 * 锟斤拷锟斤拷锟斤拷示锟皆伙拷锟斤拷
 	 * 
 	 * @param strTitle
-	 *            �Ի������
+	 *            锟皆伙拷锟斤拷锟斤拷锟�
 	 * @param strMessage
-	 *            ��ʾ����
+	 *            锟斤拷示锟斤拷锟斤拷
 	 */
 	private void showAlertDialog(String strTitle, String strMessage) {
 		AlertDialog.Builder builder = new Builder(LoginActivity.this);
@@ -342,10 +386,10 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 
 		AlertDialog alertDialog = builder.create();
 
-		// ��������Ի����ܱ��û���[���ؼ�]��ȡ���,�����Է�������û�����KeyEvent.KEYCODE_SEARCH,�Ի����ǻ�Dismiss��
+		// 锟斤拷锟斤拷锟斤拷锟斤拷曰锟斤拷锟斤拷鼙锟斤拷没锟斤拷锟絒锟斤拷锟截硷拷]锟斤拷取锟斤拷锟�锟斤拷锟斤拷锟皆凤拷锟斤拷锟斤拷锟斤拷没锟斤拷锟斤拷锟終eyEvent.KEYCODE_SEARCH,锟皆伙拷锟斤拷锟角伙拷Dismiss锟斤拷
 		alertDialog.setCancelable(false);
-		// ��������alertDialog.setCancelable(false);
-		// ��������û�����KeyEvent.KEYCODE_SEARCH,�Ի����ǻ�Dismiss��,�����setOnKeyListener���þ��������û�����KeyEvent.KEYCODE_SEARCH
+		// 锟斤拷锟斤拷锟斤拷锟斤拷alertDialog.setCancelable(false);
+		// 锟斤拷锟斤拷锟斤拷锟斤拷没锟斤拷锟斤拷锟終eyEvent.KEYCODE_SEARCH,锟皆伙拷锟斤拷锟角伙拷Dismiss锟斤拷,锟斤拷锟斤拷锟絪etOnKeyListener锟斤拷锟矫撅拷锟斤拷锟斤拷锟斤拷锟矫伙拷锟斤拷锟斤拷KeyEvent.KEYCODE_SEARCH
 		alertDialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
 
 			public boolean onKey(DialogInterface dialog, int keyCode,
@@ -353,7 +397,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 				if (keyCode == KeyEvent.KEYCODE_SEARCH) {
 					return true;
 				} else {
-					return false; // Ĭ�Ϸ��� false
+					return false; // 默锟较凤拷锟斤拷 false
 				}
 			}
 		});
@@ -362,7 +406,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	}
 
 	/**
-	 * ��ʾϵͳ���öԻ���
+	 * 锟斤拷示系统锟斤拷锟矫对伙拷锟斤拷
 	 */
 	private void showSystemConfigDialog() {
 		sharedPreferencesHelper = new SharedPreferencesHelper(
@@ -382,7 +426,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 						: "";
 			}
 		} });
-		// etDeviceid.setKeyListener(null); //���ַ����ᵼ��EditText�е������޷�ȫѡ����
+		// etDeviceid.setKeyListener(null); //锟斤拷锟街凤拷锟斤拷锟结导锟斤拷EditText锟叫碉拷锟斤拷锟斤拷锟睫凤拷全选锟斤拷锟斤拷
 
 		etVersionid = (EditText) laView
 				.findViewById(R.id.editTextVersion_Login);
@@ -447,7 +491,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 																	.toString()),
 													Toast.LENGTH_SHORT);
 
-									// TODO ��ʽ�������޸�
+									// TODO 锟斤拷式锟斤拷锟斤拷锟斤拷锟睫革拷
 									Intent intent = new Intent(
 											LoginActivity.this,
 											SplashScreenActivity.class);
