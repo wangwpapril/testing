@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_editM"
+        style="@style/background_color_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/imageBtnBack_editM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/phone_common_goback"
+            android:contentDescription="@string/defaultContentDesc"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textViewPageTitle_editM"
+            style="@style/banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iViewTitle_editM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/textViewPageTitle_editM"
+            android:background="@drawable/phone_newbuild_headline_pen"
+            android:contentDescription="@string/defaultContentDesc"
+            android:padding="0dip" />
+
+        <ImageButton
+            android:id="@+id/imageBtnSend_editM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/phone_common_standtosend"
+            android:contentDescription="@string/defaultContentDesc" />
+
+        <Button
+            android:id="@+id/btnRebuild_editM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:contentDescription="@string/defaultContentDesc"
+            android:text="@string/manuscript_operation_rebuild"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitle_editM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutBanner_editM"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <TextView
+            android:id="@+id/textViewTitle_editM"
+            style="@style/manu_title_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/manuTitle_textview" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/editTextTitle_editM"
+            style="@style/manu_text_content"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:maxLines="2"
+            android:padding="5dip" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|bottom|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewCreateTime_editM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="时间"
+                android:textColor="#005165"
+                android:visibility="gone" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewSplitTitle_editM"
+        style="@style/background_color_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/llTitle_editM"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/llContent_editM"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/viewSplitTitle_editM"
+        android:layout_marginBottom="5dip"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editTextContent_editM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top"
+            android:minLines="10"
+            android:paddingTop="10dip"
+            android:scrollbars="vertical"
+            android:textSize="18sp" >
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/relativeLayoutOperation_editM"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/imageBtnAccessorie_editM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/phone_newbuild_addfolder"
+                android:contentDescription="附件" />
+
+            <ImageButton
+                android:id="@+id/iBtnGetLocationAdd_editM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:background="@drawable/get_location_960x540"
+                android:contentDescription="@string/defaultContentDesc" />
+
+            <ImageButton
+                android:id="@+id/imageBtnVoice_editM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:background="@drawable/phone_common_voiceinput"
+                android:contentDescription="语音输入" />
+
+            <ImageButton
+                android:id="@+id/imageBtnSave_editM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:background="@drawable/phone_common_localstore"
+                android:contentDescription="保存" />
+
+            <Button
+                android:id="@+id/btnManuTextCounter_editM"
+                style="@style/text_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:background="@drawable/manuscript_text_count" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewSplitOperation_editM"
+            style="@style/background_color_blue"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip" >
+        </View>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewAccerioes_editM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llContent_editM"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="20dip"
+        android:text="长按附件可以打开附件标题和说明的同步功能" 
+        android:textColor="#000000"
+        android:textSize="13dp"/>
+
+    <GridView
+        android:id="@+id/gridViewAccerioes_editM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llContent_editM"
+        android:layout_marginBottom="5dip"
+        android:clipChildren="true"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:isScrollContainer="true"
+        android:numColumns="3"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTempletSwitcher_editM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iViewTempletSwitcher_editM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/defaultContentDesc"
+            android:src="@drawable/switcher_to_left" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/common_login_backgroud_960x540"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	 
+    <ImageView 
+    	android:id="@+id/imViewLoginTable_Login" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_centerInParent="true" 
+    	android:background="@drawable/login_table_960x540"
+    	android:padding="0dip">	
+    </ImageView>
+   
+   
+    <TextView
+    	android:id="@+id/txViewUserName_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dip"
+        android:paddingTop="10dip"
+        android:text="@string/userName_Login"
+        android:layout_alignLeft="@id/imViewLoginTable_Login"
+        android:layout_alignTop="@id/imViewLoginTable_Login"
+        style="@style/login_text_tag"/>
+   
+    <TextView
+    	android:id="@+id/txViewPassword_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dip"
+        android:paddingBottom="9dip"
+        android:text="@string/password_Login"
+        android:layout_alignLeft="@id/txViewUserName_Login"
+        android:layout_alignBottom="@id/imViewLoginTable_Login"
+        style="@style/login_text_tag"/>
+  
+    
+   <EditText
+    	android:id="@+id/editTextUserName_Login"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:background="@null"
+        android:lines="1"
+        android:layout_toRightOf="@id/txViewUserName_Login"
+        android:layout_alignTop="@id/txViewUserName_Login"  
+        android:layout_marginLeft="12dip"
+        style="@style/login_text_content"
+        />
+    <EditText
+    	android:id="@+id/editTextPassword_Login"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:padding="9dip"
+        android:lines="1"
+        android:background="@null"
+        android:layout_alignLeft="@id/editTextUserName_Login"
+      	android:layout_alignBottom="@id/imViewLoginTable_Login"
+        style="@style/login_text_content"/>  
+   
+	
+	<TextView
+		android:id="@+id/txViewTitle_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_Login"
+        android:layout_alignRight="@id/imViewLoginTable_Login"
+        android:layout_above="@id/imViewLoginTable_Login"
+        android:layout_marginBottom="32dip"
+        android:layout_marginRight="3dip"
+        style="@style/login_title"/>    
+	
+	<ImageView
+		android:id="@+id/imViewLogo_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_logo_960x540"
+        android:layout_alignLeft="@id/imViewLoginTable_Login"
+        android:layout_above="@id/txViewTitle_Login"
+        android:layout_marginBottom="10dip"/>
+        
+	<ImageButton
+		android:id="@+id/imBtnSignIn_Login"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/selector_login_button_960x540_true"
+		android:layout_alignRight="@id/imViewLoginTable_Login"
+		android:layout_below="@id/imViewLoginTable_Login"
+		android:layout_marginTop="40dip">
+	</ImageButton>
+
+	<TextView
+	    android:id="@+id/textViewConfig_Login"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/imBtnSignIn_Login"
+	    android:layout_alignLeft="@+id/imViewLoginTable_Login"
+	    android:text="@string/setting"
+	    style="@style/login_text_config"/>
+   
+</RelativeLayout>

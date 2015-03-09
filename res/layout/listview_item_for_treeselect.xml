@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_vertical">
+	<TextView
+		android:id="@+id/textViewPadding_lvITFTS"
+	    android:layout_width="2dip"
+	    android:layout_height="40dip"
+	    android:gravity="center_vertical|left" 
+	    style="@style/template_text_treeselectnode"
+	    android:layout_alignParentLeft="true" />
+	
+	<ImageView 
+	    android:id="@+id/imageViewExEc_lvITFTS"
+	    android:paddingLeft="2dip"
+	    android:paddingRight="2dip"		
+		android:layout_centerVertical="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical" 
+	    android:layout_alignParentRight="true"
+	    android:contentDescription="@string/defaultContentDesc" />	
+	    
+	<CheckBox 
+		android:id="@+id/checkBoxSelectItem_lvITFTS"
+	    android:layout_width="40dip"
+	    android:layout_height="40dip"
+	    android:gravity="center_vertical" 
+	    android:textColor="#ff000000"
+	    android:focusable="false" 
+	    android:clickable="true"
+	    android:focusableInTouchMode="false" 
+	    android:layout_toRightOf="@id/textViewPadding_lvITFTS"
+	    android:contentDescription="@string/defaultContentDesc"
+	    android:visibility="gone" />
+	
+	<ImageView
+		android:id="@+id/imageViewIcon_lvITFTS"
+		android:layout_centerVertical="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical" 
+	    android:layout_toRightOf="@id/checkBoxSelectItem_lvITFTS"
+	    android:contentDescription="@string/defaultContentDesc" />
+		
+	<TextView 
+	    android:id="@+id/textViewText_lvITFTS"
+	    android:paddingLeft="2dip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dip"
+	    android:gravity="center_vertical|left" 
+	    style="@style/template_text_treeselectnode"
+	    android:layout_toLeftOf="@id/imageViewExEc_lvITFTS"
+	    android:layout_toRightOf="@id/imageViewIcon_lvITFTS">
+	</TextView>	
+</RelativeLayout>

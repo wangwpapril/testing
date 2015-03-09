@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_Message"
+        style="@style/background_color_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip" >
+
+        <ImageButton
+            android:id="@+id/iBtnBackSC_MF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/phone_common_goback"
+            android:contentDescription="@string/defaultContentDesc" />
+
+        <TextView
+            android:id="@+id/textViewTitleSC_MF"
+            style="@style/banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" 
+            android:text="@string/chooseFriend"/>
+
+        <ImageButton
+            android:id="@+id/iBtnSearchToAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/textViewTitleSC_MF"
+            android:background="@drawable/search_user"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSearch_MF"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="6dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginLeft="20dip"
+        android:background="#FFFFFF" >    
+        <ImageButton
+            android:id="@+id/iBtnsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" 
+            android:layout_marginRight="10dip"   
+            android:layout_centerVertical="true"      
+            android:background="@drawable/search">
+        </ImageButton>
+        <EditText
+            android:id="@+id/searchContent"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/iBtnsearch"
+            android:layout_marginLeft="5dip" 
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="15dip"
+            android:layout_centerVertical="true" 
+            android:background="@null"
+            android:hint="@string/search_hint">
+        </EditText>
+		<ImageView
+            android:id="@+id/searchLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:layout_below="@+id/searchContent"
+            android:layout_alignLeft="@+id/searchContent"
+            android:layout_alignRight="@+id/searchContent" >
+        </ImageView>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitle_MF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutResultHeader_MF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewresult_MF"
+                style="@style/template_manage_text_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/defaultContentDesc"
+                android:gravity="center"
+                android:text="@string/resultUsers" />
+
+            <ListView
+                android:id="@+id/lvResult_MF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:divider="@android:color/white"
+                android:dividerHeight="2dip"
+                android:choiceMode="singleChoice"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true" />
+
+            <TextView
+                android:id="@+id/textViewresultNull_MF"
+                style="@style/template_manage_text_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/defaultContentDesc"
+                android:gravity="center"
+                android:text="@string/resultUsersNull" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOnlineHeader_MF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewonline_MF"
+                style="@style/template_manage_text_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/defaultContentDesc"
+                android:gravity="center"
+                android:text="@string/onlineUsers" />
+
+            <ListView
+                android:id="@+id/lvOnline_MF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:divider="@android:color/white"
+                android:dividerHeight="2dip"
+                android:choiceMode="singleChoice"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOfflineHeader_MF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewoffline_MF"
+                style="@style/template_manage_text_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/defaultContentDesc"
+                android:gravity="center"
+                android:text="@string/offlineUsers" />
+
+            <ListView
+                android:id="@+id/lvOffline_MF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:divider="@android:color/white"
+                android:dividerHeight="2dip"
+                android:choiceMode="singleChoice"
+                android:fadingEdge="none"
+                android:headerDividersEnabled="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

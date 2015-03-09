@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">你好，新华社！</string>
+    <string name="app_name">eNews采集</string>
+    <string name="helloButton">确认</string>
+    <string name="confirm_button">确定</string>
+    <string name="cancel_button">取消</string>
+    <string name="agree_button">同意</string>
+    <string name="disagree_button">拒绝</string>
+
+    <!-- test -->
+    <string name="song_button">宋老师的测试按钮</string>
+    <string name="wen_button">温老师的测试按钮</string>
+    <string name="shiqing_button">石青同学的测试按钮</string>
+    <string name="guanwei_button">关薇的测试按钮</string>
+    <string name="lln_button">刘丽娜的测试按钮</string>
+    <string name="cao_button">曹娟的测试按钮</string>
+
+    <!-- Splash -->
+    <string name="network_wifi_connected">Wi-Fi 连接</string>
+    <string name="network_mobile_connected">移动网络连接</string>
+    <string name="network_disconnected">网络不可用</string>
+    <!-- <string name="network_connected">网络可用</string> -->
+    <string name="SplashImageDesc">SplashPic</string>
+    <string name="basedata_uploading">基础数据更新:</string>
+    <string name="default_pro">0%</string>
+    <string name="DBCreateError">数据库创建错误</string>
+    <string name="InterfaceAccessError">接口访问错误</string>
+    <string name="BaseDataUpdateFinished">基础数据更新完毕</string>
+    <string name="updateSysVersionDialogTitle">软件版本更新</string>
+    <string name="updateSysVersionDialogPositiveButton">升级</string>
+    <string name="updateSysVersionDialogNegativeButton">取消</string>
+    <string name="updateSysVersionDialogAbsoluteMsg">版本过低,必须升级!</string>
+    <string name="updateSysVersionDialogOpotionMsg">有新版本,请升级!</string>
+    <string name="noNewVersion">无新版本,不需要升级!</string>
+    <string name="synTempFinish">稿签模板同步已完成</string>
+    <string name="synTempError">稿签模板同步无法完成</string>
+    <string name="cleanDataFinish">清除数据已完成</string>
+    <string name="cleanDataError">清除数据无法完成</string>
+    <string name="requestNetTimeout">网络请求超时,请检查网络连接!</string>
+    <string name="requestNetError">网络访问错误!</string>
+    <string name="SysVersionTooLow">当前版本不符合发稿要求，请升级后发稿</string>
+    <string name="SysVersionLatest">最新版本:</string>
+    <string name="SysVersionUpgradeNow">,请尽快升级!</string>
+    <string name="network_disconnectedToSend">当前网络不可用，无法发送！\n</string>
+    <string name="noMoreUpdate">无更新</string>
+    <string name="updating">更新中</string>
+    <string name="updateFinished">更新结束</string>
+    <string name="logining">登录中</string>
+
+    <!-- Main -->
+    <string name="defaultContentDesc"></string>
+    <string name="textViewNewManuscript_Main">新建稿件</string>
+    <string name="textViewEditinglist_Main">在编稿件</string>
+    <string name="textViewStandtomanuscript_Main">待发稿件</string>
+    <string name="textViewSendinglist_Main">已发列表</string>
+    <string name="textViewDeletelist_Main">淘汰视图</string>
+    <string name="textViewSystemconfig_Main">设     置</string>
+    <string name="textViewMessage_Main">消     息</string>
+    <string name="textViewMore_Main">更    多</string>
+    <string name="exitSysDialogMsg_Main">确定要退出系统吗?</string>
+    <string name="exitSysDialogTitle_Main">提示</string>
+    <string name="checkTemplate_Main">以下内容为空，请进入稿签管理填写完整!\n</string>
+    <!-- Login -->
+    <string name="loginBtnText">登录</string>
+    <string name="userNameTViewText">账号：</string>
+    <string name="passwordTViewText">密码：</string>
+    <string name="setting">设置 </string>
+    <string name="userNameETextHint">请输入账号</string>
+    <string name="passwordETextHint">请输入密码</string>
+    <string name="menu_serverSet">设置服务器</string>
+    <string name="SetCurrentServer_Login">设置服务器地址:</string>
+    <string name="menu_deviceid">设备标识号</string>
+    <string name="menu_versionid">系统版本</string>
+    <string name="menu_optionSet">选项设置</string>
+    <string name="loginAlertDialogTitle_Login">登录提示</string>
+    <string name="loginAlertDialogMsg_Login">用户名或者密码不能为空 </string>
+    <string name="loginFailure_Login">系统异常</string>
+    <string name="menu_optionSetTitle">设置选项</string>
+    <string name="sessionTimeout">您的登录信息已过期，请重新登录！\n </string>
+    <string name="noRightToSend">对不起，您没有发稿权限！\n </string>
+    <string name="noRightToSendByAddress">对不起，您的发稿地址非法，请确认！\n </string>
+    <string name="failedToGetUser">获取用户信息失败! </string>
+    <string name="loginAlert">登录提示 </string>
+    <string name="usernameOrPassError">用户名密码错误 </string>
+    <string name="offlineLoginSucceed">离线登录成功 </string>
+    <string name="firstLoginMustHasNet">第一次登录请连接网络 </string>
+    <string name="noPermission">无权限</string>
+
+    <!-- 首页 -->
+    <string name="textViewWordFlash_Main">文字快讯</string>
+    <string name="textViewPictureFaster_Main">图片快讯</string>
+    <string name="textViewVoiceFaster_Main">音频快讯</string>
+    <string name="textViewVideoFaster_Main">视频快讯</string>
+
+    <!-- AttachmentUpload -->
+    <string name="filepath_textview">文件路径</string>
+    <string name="choose_button">选择文件</string>
+    <string name="upload_button">上传文件</string>
+    <string name="reslt_textview">返回结果</string>
+    <string name="login_button">登录</string>
+    <string name="getuserinfo_button">获取用户信息</string>
+    <string name="pause_button">暂停</string>
+    <string name="sessionid_textview">SessionId</string>
+    <string name="xml_update_button">XML基础数据更新</string>
+    <string name="download_button">下载文件</string>
+
+    <!-- Menu -->
+    <string name="menu_logout">退出</string>
+
+    <!-- Message -->
+    <string name="textViewTitle_MCA">消息中心</string>
+    <string name="systemMsg_MCA">系统消息</string>
+    <string name="recommendMsg_MCA">建采消息</string>
+    <string name="instantMsg_MCA">即时消息</string>
+    <string name="XMPPMsg_MCA">鸡毛信</string>
+    <string name="sentMsg_MCA">已发消息</string>
+    <string name="messageFrom_MCA">来自于</string>
+    <string name="messageTo_MCA">发送给</string>
+    <string name="btnReplyTitle_MCA">回复</string>
+    <string name="btnDelTitle_MCA">删除</string>
+    <string name="btnReplyAgainTitle_MCA">重新回复</string>
+    <string name="btnRefreshTitle_MCA">刷新</string>
+    <string name="msgUpdateFinished_MCA">消息更新完毕！</string>
+    <string name="msgUpdateFailed_MCA">消息更新失败！</string>
+    <string name="details_nonews">无最新信息！</string>
+    <string name="btnDelOrNotTitle_MCA">删除？</string>
+    <string name="inputReplyContent_MCA">请输入回复内容！</string>
+    <string name="replySucceed_MCA"> 回复成功!</string>
+    <string name="replyFailed_MCA"> 回复失败!</string>
+    <string name="replyFailedAsNetProblem_MCA">当前网络不可用，回复失败!</string>
+    <string name="delFriend">删除好友:</string>
+
+    <!-- More -->
+    <string name="textViewTitle_More">更多</string>
+
+    <!-- Cao_Login -->
+    <string name="title_Login">eNews 博  众  采  集</string>
+    <string name="client_Login"></string>
+    <string name="userName_Login">账  号：</string>
+    <string name="password_Login">密  码：</string>
+
+    <!-- Accessory Delete Confirm Dialog -->
+    <string name="accessory_delete_alert_title">提示</string>
+    <string name="accessory_delete_alert_content">请确认是否要删除该条数据!</string>
+
+    <!-- 稿件、快讯公有的属性 -->
+    <string name="manuTitle_textview">标题：</string>
+    <string name="manuTitle_hint">请输入稿件标题</string>
+    <string name="manuContent_textview">正文：</string>
+    <string name="manuContent_hint">请输入稿件正文</string>
+    <string name="manuTitleNotNull">快讯标题不能为空!</string>
+    <string name="validateFinished">稿件验证完毕，已进入发送队列!</string>
+    <string name="manu_autosaved">稿件自动保存</string>
+    <string name="manu_standtosend">稿件进入待发队列等待发送</string>
+    <string name="manu_successtosend">稿件发送成功</string>
+    <string name="manu_failtosend">稿件发送失败！</string>
+    <string name="manuAlreadySaved">稿件已保存</string>
+    <string name="manuNotSaved">稿件未保存</string>
+    <string name="manuSuccessToSave">稿件保存成功</string>
+    <string name="manuSavedError">稿件保存失败</string>
+    <string name="canNotGetLocation">无法获取位置信息!</string>
+    <string name="filePathError">此文件路径有错,请确认！</string>
+    <string name="manuMustHaveAcc">此类快讯必须有附件!</string>
+    <string name="stillBuilding">建设中...</string>
+    <string name="saveAsSuccess">另存成功</string>
+    <string name="saveAsTemplateName">另存模板名称</string>
+    <string name="templateNameNotNull">模板名不能为空!</string>
+    <string name="templateNameExist">模板名已存在,请重新输入!</string>
+    <string name="templateAddSucceed">模板添加成功！</string>
+    <string name="failedToSendValidateAgain">发送失败，请进入稿件编辑校验稿件信息</string>
+    <string name="succeedToSendManu">个稿件发送成功</string>
+    <string name="failedToSendManusValidateAgain">个稿件发送失败, 请进入稿件编辑校验具体信息</string>
+    <string name="addressError"> 输入的地址不合法！</string>
+
+    <!-- Faster Word Manuscript -->
+    <string name="title_EWordFM">文字快讯</string>
+    <string name="manuContent_delete_alert_title">提示</string>
+    <string name="manuContent_delete_alert_content">请确认是否要清除所有稿件内容</string>
+
+    <!-- Faster Pic Manuscript -->
+    <string name="title_EPicFM">图片快讯</string>
+
+    <!-- Faster Voice Manuscript -->
+    <string name="title_EVoiceFM">音频快讯</string>
+
+    <!-- Faster Video Manuscript -->
+    <string name="title_EVideoFM">视频快讯</string>
+
+    <!-- 稿件操作 -->
+    <string name="manuscript_operation_edit">编辑</string>
+    <string name="manuscript_operation_recover">恢复</string>
+    <string name="manuscript_operation_elimination">淘汰</string>
+    <string name="manuscript_operation_send">发送</string>
+    <string name="manuscript_operation_delete">删除</string>
+    <string name="manuscript_operation_view">查看</string>
+    <string name="manuscript_operation_rebuild">重建</string>
+    <string name="manuscript_operation_restart">重新开始</string>
+    <string name="manuscript_operation_start">开始</string>
+    <string name="manuscript_operation_pause">暂停</string>
+    <string name="manuscript_operation_cancel">取消发送</string>
+    <string name="editButton_true_manuscriptList">编辑</string>
+    <string name="editButton_false_manuscriptList">取消</string>
+    <string name="editButton_pre">上一页</string>
+    <string name="editButton_next">下一页</string>
+    <string name="newButton_manuscriptList">新建消息</string>
+    <string name="contextmenu_operation_tip">请选择操作</string>
+    <string name="manuscripi_operation_more">查看更多</string>
+    <string name="manuscripi_operation_more_waiting">加载中</string>
+    <string name="manuscripi_operation_send_waiting">正在验证，请稍后...</string>
+    <string name="manuscripi_operation_nodata">暂无数据</string>
+    <string name="value_manu_notitle_default">(无标题)</string>
+    <string name="manuscript_acc_size">文件大小:</string>
+    <string name="manuscript_acc_time">剩余时间:</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="second">秒</string>
+
+    <!-- EmployeeSendToAddress -->
+    <string name="title_ESTA">用户自定义发稿地址</string>
+    <string name="inputSearchKeyword_ESTA">请输入搜索条件...</string>
+    <!-- 定位服务 -->
+    <string name="titleA_LCT">定位服务</string>
+    <string name="titleLocation_LCT">正在获取当前位置</string>
+    <string name="noFindLocation_LCT">当前位置获取失败</string>
+    <string name="findLocation_LCT">当前位置获取成功</string>
+    <string name="titleContent_LCT">内容:</string>
+    <string name="sendButton_LCT">发送</string>
+    <string name="sending_LCT">发送中</string>
+    <!-- 稿签管理 -->
+    <string name="titleA_MTA">稿签管理</string>
+    <string name="subTitleA_MTA">系统稿签模板</string>
+    <string name="subTitleB_MTA">自定义稿签模板</string>
+    <string name="set_as_default_MTA">默认稿签</string>
+    <string name="set_as_default_confirm_title_MTA">确认设置为默认稿签</string>
+    <string name="delete_MTA">删除</string>
+    <string name="delete_confirm_title_MTA">是否确认删除</string>
+    <string name="save_confirm_title_MTA">是否保存修改内容</string>
+    <string name="title_ETA">稿签</string>
+    <string name="tab_content_attribute_ETA">稿件属性</string>
+    <string name="tab_send_attribute_ETA">发稿属性</string>
+    <string name="operation_saveas_ETA">另存</string>
+    <string name="operation_adopttemplate_ETA">套用</string>
+    <string name="operation_new_MTA">新建模板</string>
+    <string name="templateName_textview_ETA">模板名称：</string>
+    <string name="templateName_hint_ETA">请输入模板名称(不重复)</string>
+    <string name="templateAuthor_textview_ETA">作者：</string>
+    <string name="templateAuthor_hint_ETA">请输入作者名</string>
+    <string name="templateDepartment_textview_ETA">稿源：</string>
+    <string name="templateDepartment_hint_ETA">请输入稿源</string>
+    <string name="templateInternalInternational_textview_ETA">供稿类别：</string>
+    <string name="templateInternalInternational_hint_ETA">请选择供稿类别信息</string>
+    <string name="templateNewsCategory_textview_ETA">分类：</string>
+    <string name="templateNewsCategory_hint_ETA">请选择分类信息</string>
+    <string name="templateGeographyCategory_textview_ETA">地区：</string>
+    <string name="templateGeographyCategory_hint_ETA">请选择地区信息</string>
+    <string name="templateSendArea_textview_ETA">发稿地点：</string>
+    <string name="templateSendArea_hint_ETA">请选择发稿地点信息</string>
+    <string name="templateHappenPlace_textview_ETA">事发地点：</string>
+    <string name="templateHappenPlace_hint_ETA">请选择报道地点信息</string>
+    <string name="templateReportPlace_textview_ETA">报道地点：</string>
+    <string name="templateReportPlace_hint_ETA">请选择报道地点信息</string>
+    <string name="templateKeywords_textview_ETA">关键字：</string>
+    <string name="templateKeywords_hint_ETA">请选择关键字</string>
+    <string name="templateReviewStatus_textview_ETA">送审情况：</string>
+    <string name="templateReviewStatus_hint_ETA">请输入送审情况</string>
+    <string name="templateDefaultTitle_textview_ETA">默认标题：</string>
+    <string name="templateDefaultTitle_hint_ETA">请输入默认标题</string>
+    <string name="templateDefaultContent_textview_ETA">默认正文：</string>
+    <string name="templateDefaultContent_hint_ETA">请输入默认正文</string>
+    <string name="templateLanguage_textview_ETA">文种：</string>
+    <string name="templateLanguage_hint_ETA">请选择文种</string>
+    <string name="templatePriority_textview_ETA">优先级：</string>
+    <string name="templatePriority_hint_ETA">请选择优先级</string>
+    <string name="templateManuscriptsType_textview_ETA">稿件类型：</string>
+    <string name="templateManuscripts_hint_ETA">请选择稿件类型</string>
+    <string name="templateSendToAddress_textview_ETA">发稿地址：</string>
+    <string name="templateSendToAddress_hint_ETA">请选择发稿地址</string>
+
+    <!-- 新增和编辑普通稿件 -->
+    <string name="TackPicture">拍照</string>
+    <string name="RecordVideo">录像</string>
+    <string name="RecordVoice">录音</string>
+    <string name="MediaStore">媒体库</string>
+    <string name="Picture">图片</string>
+    <string name="Video">视频</string>
+    <string name="Voice">音频</string>
+    <string name="ComplexFile">文件系统</string>
+    <string name="titleA_editM">新建稿件</string>
+    <string name="titleE_editM">编辑稿件</string>
+    <string name="titleV_editM">查看稿件</string>
+
+    <!-- 稿件校验 -->
+    <string name="validate_titleNull">标题为空，请重填\n</string>
+    <string name="validate_authorNull">作者为空，请重填\n</string>
+    <string name="validate_keyWordNull">关键词为空，请重填\n</string>
+    <string name="validate_languageNull">语种为空，请重填\n</string>
+    <string name="validate_priorityNull">优先级为空，请重填\n</string>
+    <string name="validate_provtypeNull">供稿类别为空，请重填\n</string>
+    <string name="validate_doctypeNull">分类为空，请重填\n</string>
+    <string name="validate_comefromDeptNull">稿源为空，请重填\n</string>
+    <string name="validate_regionNull">地区为空，请重填\n</string>
+    <string name="validate_addressNull">发稿地址为空，请重填\n</string>
+    <string name="validate_reviewstatusNull">送审情况为空，请重填\n</string>
+
+    <!-- standto_manuscriptlist -->
+    <string name="title_StandTMA">待发稿件</string>
+    <string name="currentPageIsFirst">当前已是首页</string>
+    <string name="currentPageIsLast">当前已是尾页</string>
+
+    <!-- editing_manuscript list -->
+    <string name="title_EditMA">在编稿件</string>
+
+    <!-- elimination_manuscript list -->
+    <string name="title_EliMA">淘汰视图</string>
+
+    <!-- send_manuscript list -->
+    <string name="title_SendTMA">已发列表</string>
+    <string name="noManuOperator">无稿件,请进行其他操作</string>
+
+    <!-- 附件管理 -->
+    <string name="title_MComplexA">其他附件详情</string>
+    <string name="title_MVoiceA">音频附件详情</string>
+    <string name="title_MVideoA">视频附件详情</string>
+    <string name="title_MPicA">图片附件详情</string>
+    <string name="explained_MA">此部分为图片分说明，将拼接在稿件正文前面</string>
+    <!-- 枚举类型 -->
+    <string name="author_enum">作者</string>
+    <string name="department_enum">稿源</string>
+    <string name="internalInternational_enum">供稿类别</string>
+    <string name="newsCategory_enum">稿件分类</string>
+    <string name="geographyCategory_enum">地区</string>
+    <string name="sendArea_enum">发稿地点</string>
+    <string name="happenPlace_enum">事发地点</string>
+    <string name="reportPlace_enum">报道地点</string>
+    <string name="keywords_enum">关键字</string>
+    <string name="language_enum">文种</string>
+    <string name="priority_enum">优先级</string>
+    <string name="manuscriptsType_enum">稿件类型</string>
+    <string name="releAddress_enum">发稿地址</string>
+    <string name="customReleAddress_enum">配置用户发稿地址</string>
+    <string name="worldLocationCategory_enum">单级地点</string>
+    <string name="online_enum">联机</string>
+    <string name="offline_enum">离线</string>
+    <string name="none_enum">初始</string>
+    <string name="network_unavailable_enum">不可用</string>
+    <string name="network_wifiAvailable_enum">WIFI可用</string>
+    <string name="network_mobileNetAvailable_enum">手机网络可用</string>
+
+    <!-- UserPreference -->
+    <string name="prefs_noTemplateToSelect">无稿签可选择</string>
+    <string name="UPScreenTitle">设置</string>
+    <string name="DefaultTemplate">默认模板</string>
+    <string name="TemplateChoose">模板选择</string>
+    <string name="CurrentUser">当前用户</string>
+    <string name="CurrentServer">当前连接服务器</string>
+    <string name="AutoSaveInterval">自动保存时间</string>
+    <string name="AutoSendLocationInterval">自动发送定位时间</string>
+    <string name="AutoSaveIntervalSet">设置自动保存时间</string>
+    <string name="AutoSendLocationSet">设置定位服务自动发送时间</string>
+    <string name="DefaultAutoSaveInterval">15</string>
+    <string name="DefaultAutoSendLocationInterval">15</string>
+    <string name="TransmissionFilePackSize">传输文件分块大小</string>
+    <string name="PackSizeChoose">文件分块大小选择</string>
+    <string name="DefaultPackSize">0</string>
+    <string name="SavePassword">保存用户密码</string>
+    <string name="SavePasswordSet">是否保存用户密码</string>
+    <string name="DefaultSavePassword">1</string>
+    <string name="NewsSendPolicy">稿件发送模式策略</string>
+    <string name="NewsSendPolicyChoose">稿件发送模式选择</string>
+    <string name="DefaultNewsSendPolicy">1</string>
+    <string name="DeletePolicy">稿件淘汰策略</string>
+    <string name="DeletePolicyChoose">稿件淘汰策略选择</string>
+    <string name="DefaultDeletePolicy">0</string>
+    <string name="FailurePolicy">稿件发送失败策略</string>
+    <string name="FailurePolicyChoose">稿件发送失败策略选择</string>
+    <string name="DefaultFailurePolicy">0</string>
+    <string name="SendNum">稿件同时上传数量</string>
+    <string name="SendNumSet">稿件同时上传数量选择</string>
+    <string name="DefaultSendNum">1</string>
+    <string name="EncryptPolicy">稿件加密策略</string>
+    <string name="EncryptPolicyChoose">稿件加密策略选择</string>
+    <string name="DefaultEncryptPolicy">0</string>
+    <string name="SendByWifi">稿件上传网络选择</string>
+    <string name="SendByWifiChoose">仅Wi-Fi</string>
+    <string name="SendByAnyChoose">任何网络</string>
+    <string name="DefaultSendByWifi">0</string>
+    <string name="DefaultVersion">当前系统版本</string>
+    <string name="DefaultCurrentUser">当前用户</string>
+    <string name="DefaultCurrentDeviceID">当前设备ID</string>
+    <string name="CurrentNetStatus">当前网络状态</string>
+    <string name="CurrentLoginType">当前登录方式</string>
+    <string name="UpdateBaseData">更新基础数据</string>
+    <string name="SynManuTemp">稿签模板同步</string>
+    <string name="UpdateSysVersion">系统版本升级</string>
+    <string name="CleanData">清除数据</string>
+    <string name="DefaultCurrentServer">当前服务器</string>
+    <string name="DefaultLoginServer">登录服务器</string>
+    <string name="DefaultLoginServer_dialog_title">登录服务器地址</string>
+    <string name="TransmissionTheardCount">最大支持同时上传文件数</string>
+    <string name="AutoSaveDuration">稿件自动保存时间</string>
+    <string name="AutoTransmission">稿件发送策略</string>
+    <string name="Version">系统版本</string>
+    <string name="About">关于</string>
+
+    <!-- guanwei_function_list -->
+    <string name="editTemplateButtongw">进入编辑稿签页面</string>
+
+    <!-- Tablet OA列表项 -->
+    <string name="oa_listviewitem_department">部门：</string>
+    <string name="oa_listviewitem_writer">作者：</string>
+    <string name="oa_listviewitem_title">标题：</string>
+    <string name="oa_message">OA平台消息</string>
+    <string name="oa_details_nomorepage_end">没有更早消息</string>
+    <string name="oa_details_nonews">无最新OA信息</string>
+    <string name="oa_details_news_updated">OA信息获取成功</string>
+
+    <!-- 语音输入 -->
+    <string name="soundInput">语音输入</string>
+    <string name="app_id">502b00b6</string>
+    <string name="preference_key_iat_rate">iat_rate</string>
+    <string name="preference_default_iat_rate">rate16k</string>
+    <string name="preference_key_iat_engine">iat_engine</string>
+    <string name="preference_default_iat_engine">sms</string>
+
+    <!-- 下拉更新列表 -->
+    <string name="pulldown_footer_more">点击获取更多</string>
+    <string name="pulldown_header_up_refresh">松开刷新</string>
+    <string name="pulldown_header_down_refresh">下拉刷新</string>
+    <string name="pulldown_header_refreshing">正在刷新...</string>
+    <string name="pulldown_update">最近更新：</string>
+    <string name="pulldown_load_more">加载更多中...</string>
+    <string name="xinhua_loading">正在加载...</string>
+
+    <!-- 好友搜素列表 -->
+    <string name="search_label">搜索</string>
+    <string name="search_hint">如果没有，点击搜索添加吧</string>
+    <string name="onlineUsers">在线用户</string>
+    <string name="offlineUsers">离线用户</string>
+    <string name="resultUsers">搜索结果</string>
+    <string name="resultUsersNull">没有符合要求的好友</string>
+    <string name="button_msgSend">发送</string>
+    <string name="msg_serverconnectionfailed">消息服务器还未连接成功，请稍后重试！</string>
+    <string name="chooseFriend">选择好友</string>
+    <string name="addFriend">添加好友</string>
+
+    <!-- 分享 -->
+    <string name="share_title">若要使用Enews,您必须先打开Enews软件。立即打开Enews软件？</string>
+    <string name="yes">确认</string>
+    <string name="no">取消</string>
+    <string name="alert">提示</string>
+
+    <!-- 一键同步 -->
+    <string name="choose">请选择</string>
+    <string name="oneKeySynchro">一键同步所有标题和说明</string>
+    <string name="chooseNeedSynchro">选择需要同步的附件</string>
+    <string name="cancel">取消</string>
+
+    <!-- 消息 -->
+    <string name="msgFrom">消息来自于</string>
+    <string name="title_UploadPicFM">即拍即传</string>
+    <!-- ftp相关 -->
+    <string name="swiftp_name">FTP Server (Demo)</string>
+    <string name="running_label">运行状态</string>
+    <string name="running_summary_stopped">启动FTP服务器</string>
+    <string name="running_summary_started">FTP服务器运行在 %s</string>
+    <string name="running_summary_failed">Failed to start the FTP server, no wifi?</string>
+    <string name="market_version_label">Market version</string>
+    <string name="market_version_summary">This is the FTP Server Demo version.
+        Support development by getting the FTP Server from the android market.
+		Click here to go to the market.</string>
+    <string name="settings_label">账号设置</string>
+    <string name="username_label">用户名</string>
+    <string name="username_default">ftp</string>
+    <string name="password_label">密码</string>
+    <string name="password_default">ftp</string>
+    <string name="show_password_label">显示密码</string>
+    <string name="show_password_default">false</string>
+    <string name="advancedsettings_label">Advanced Settings...</string>
+    <string name="portnumber_label">端口号</string>
+    <string name="portnumber_default">2121</string>
+    <string name="chroot_label">FTP根目录</string>
+    <string name="chroot_default">/</string>
+    <string name="acceptwifi_label">Accept connection from wifi</string>
+    <string name="acceptwifi_default">true</string>
+    <string name="acceptproxy_label">Accept connection from net proxy</string>
+    <string name="acceptproxy_default">false</string>
+    <string name="wakelock_label">CPU全双工</string>
+    <string name="wakelock_default">true</string>
+    <string name="instantUpload_default">false</string>
+    <string name="extra_label">高级设置</string>
+    <string name="instantUpload_label">即拍即传</string>
+    <string name="instantUploadTemplateNull_label">请先补全即拍即传稿签模板</string>
+    <string name="UploadPicCompressRatio">上传图片压缩比</string>
+    <string name="CompressRatioChoose">上传图片压缩比选择</string>
+    <string name="DefaultCompressRatio">50</string>
+    <string name="FtpUserForPhoto">FTP用户名</string>
+    <string name="FtpUsernameIdentication">FTP用户名对应标识</string>
+    <string name="AddFtpUserForPhoto">添加FTP用户</string>
+    <string name="inputFtpCode">请输入标识</string>
+    <string name="inputFtpSign">请输入用户名</string>
+    <string name="tvaddftpindenti">标识名:</string>
+    <string name="addftpusername">发稿签名:</string>
+    <string name="tvaddftpindenti_list">标识名</string>
+    <string name="addftpusername_list">发稿签名</string>
+    <string name="FtpCodeSignExist">输入的标识、发稿签名重复，请重新输入</string>
+    <string name="FtpCodeSignInputAgain">请重新填写标识和发稿签名</string>
+
+    <!-- old strings -->
+    <string name="cant_get_url">无法解析url</string>
+    <string name="unknown">unknown</string>
+    <string name="ok">OK</string>
+    <string name="username_validation_error">The username must consist of 1 or more letters. No other characters are allowed.</string>
+    <string name="password_validation_error">The password must consist of 1 or more alphanumeric characters. No other characters are allowed.</string>
+    <string name="port_validation_error">端口号必须在1到65535.</string>
+    <string name="wifi_state_receiver_label">WifiStateReceiver</string>
+    <string name="notif_server_starting">FTP Server starting...</string>
+    <string name="notif_title">FTP Server is running</string>
+    <string name="notif_text">Server running at %s</string>
+    <string name="pst_connecting">connecting</string>
+    <string name="pst_connected">connected</string>
+    <string name="pst_failed">failed</string>
+    <string name="pst_unreachable">unreachable</string>
+    <string name="pst_disconnected">disconnected</string>
+    <string name="storage_warning">Warning: storage is not available. You may want to unmount it.</string>
+    <string name="widget_name">FTP Server Widget</string>
+
+</resources>

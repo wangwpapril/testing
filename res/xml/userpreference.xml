@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/UPScreenTitle" >
+
+    <ListPreference
+        android:dialogTitle="@string/TemplateChoose"
+        android:enabled="true"
+        android:key="User_DefaultTemplate"
+        android:summary="@string/DefaultTemplate"
+        android:title="@string/DefaultTemplate" />
+    <ListPreference
+        android:dialogTitle="@string/AutoSaveIntervalSet"
+        android:enabled="true"
+        android:entries="@array/autosaveinterval_options"
+        android:entryValues="@array/autosaveinterval_options_values"
+        android:key="User_AutoSaveInterval"
+        android:summary="@string/DefaultAutoSaveInterval"
+        android:title="@string/AutoSaveInterval" />
+    <ListPreference
+        android:dialogTitle="@string/AutoSendLocationSet"
+        android:enabled="true"
+        android:entries="@array/autosendlocationinterval_options"
+        android:entryValues="@array/autosendlocationinterval_options_values"
+        android:key="User_AutoSendLocationInterval"
+        android:summary="@string/DefaultAutoSendLocationInterval"
+        android:title="@string/AutoSendLocationInterval" />
+    <ListPreference
+        android:dialogTitle="@string/PackSizeChoose"
+        android:enabled="true"
+        android:entries="@array/filepacksize_options"
+        android:entryValues="@array/filepacksize_options_values"
+        android:key="User_FileBlockSize"
+        android:summary="@string/DefaultPackSize"
+        android:title="@string/TransmissionFilePackSize" />
+    <ListPreference
+        android:dialogTitle="@string/SavePasswordSet"
+        android:enabled="true"
+        android:entries="@array/savepassword_options"
+        android:entryValues="@array/savepassword_options_values"
+        android:key="User_SavePassword"
+        android:summary="@string/DefaultSavePassword"
+        android:title="@string/SavePassword" />
+    <ListPreference
+            android:dialogTitle="@string/CompressRatioChoose"
+            android:enabled="true"
+            android:entries="@array/CompressRatio_options"
+            android:entryValues="@array/CompressRatio_options_values"
+            android:key="User_UploadPicCompressRatio"
+            android:summary="@string/DefaultCompressRatio"
+            android:title="@string/UploadPicCompressRatio" />
+    
+    <!--
+               <ListPreference
+            android:title="@string/NewsSendPolicy" 
+            android:dialogTitle="@string/NewsSendPolicyChoose" 
+            android:key="User_ManuscriptSendPolicy"
+            android:enabled="true"
+            android:summary="@string/DefaultNewsSendPolicy"
+            android:entries="@array/newssendpolicy_options"
+			android:entryValues="@array/newssendpolicy_options_values"
+            />
+    -->
+    <!--
+            <ListPreference
+            android:title="@string/DeletePolicy" 
+            android:dialogTitle="@string/DeletePolicyChoose" 
+            android:key="deletepolicy_select"
+            android:enabled="true"
+            android:summary="@string/DefaultDeletePolicy"
+            android:entries="@array/deletepolicy_options"
+			android:entryValues="@array/deletepolicy_options_values"
+            /> 
+    -->
+    <!--
+            <ListPreference
+            android:title="@string/FailurePolicy" 
+            android:dialogTitle="@string/FailurePolicyChoose" 
+            android:key="User_FailurePolicy"
+            android:enabled="true"
+            android:summary="@string/DefaultFailurePolicy"
+            android:entries="@array/failurepolicy_options"
+			android:entryValues="@array/failurepolicy_options_values"
+            />
+    -->
+    <!--
+            <ListPreference
+            android:title="@string/SendNum" 
+            android:dialogTitle="@string/SendNumSet" 
+            android:key="sendnum_set"
+            android:enabled="true"
+            android:summary="@string/DefaultSendNum"
+            android:entries="@array/sendnum_options"
+			android:entryValues="@array/sendnum_options_values"
+            /> 
+            <ListPreference
+            android:title="@string/EncryptPolicy" 
+            android:dialogTitle="@string/EncryptPolicyChoose" 
+            android:key="encryptpolicy_select"
+            android:enabled="true"
+            android:summary="@string/DefaultEncryptPolicy"
+            android:entries="@array/encryptpolicy_options"
+			android:entryValues="@array/encryptpolicy_options_values"
+            />
+    -->
+    <!--
+            <ListPreference
+            android:title="@string/SendByWifi" 
+            android:dialogTitle="@string/SendByWifiChoose" 
+            android:key="User_SendByWifi"
+            android:enabled="true"
+            android:summary="@string/DefaultSendByWifi"
+            android:entries="@array/sendbywifi_options"
+			android:entryValues="@array/sendbywifi_options_values"
+            />
+    -->
+
+
+    <!--
+            <CheckBoxPreference
+            android:title="@string/SendByWifi" 
+            android:key="sendbywifi_set"
+            android:enabled="true"
+            android:defaultValue="true"
+            android:persistent="true"
+			/>
+    -->
+    <Preference
+        android:enabled="true"
+        android:key="Sys_SystemVersion"
+        android:title="@string/DefaultVersion" />
+    <Preference
+        android:enabled="true"
+        android:key="Sys_CurrentUser"
+        android:title="@string/DefaultCurrentUser" />
+    <Preference
+        android:enabled="true"
+        android:key="Sys_DeviceID"
+        android:title="@string/DefaultCurrentDeviceID" />
+    <Preference
+        android:enabled="true"
+        android:key="Sys_NetStatus"
+        android:title="@string/CurrentNetStatus" />
+    <Preference
+        android:enabled="true"
+        android:key="Sys_LoginType"
+        android:title="@string/CurrentLoginType" />
+    <Preference
+        android:enabled="true"
+        android:key="Sys_BaseData"
+        android:title="@string/UpdateBaseData" />
+    <Preference
+        android:enabled="true"
+        android:key="Sys_SynManuTemp"
+        android:title="@string/SynManuTemp" />
+    <Preference
+        android:enabled="true"
+        android:key="Sys_VersionUp"
+        android:title="@string/UpdateSysVersion" />
+    <Preference
+        android:enabled="true"
+        android:key="Sys_CleanData"
+        android:title="@string/CleanData" />
+    <Preference
+        android:enabled="true"
+        android:key="Sys_CurrentServer"
+        android:title="@string/DefaultCurrentServer" />
+
+    <EditTextPreference
+        android:dialogTitle="@string/DefaultLoginServer_dialog_title"
+        android:enabled="true"
+        android:key="Sys_LoginServer"
+        android:title="@string/DefaultLoginServer" />
+    <!--
+        <Preference
+        	android:title="@string/DefaultLoginServer" 
+            android:key="Sys_LoginServer"
+        	android:enabled="true"
+        />
+    -->
+
+</PreferenceScreen>

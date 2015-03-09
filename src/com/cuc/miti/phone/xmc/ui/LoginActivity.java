@@ -1,0 +1,468 @@
+package com.cuc.miti.phone.xmc.ui;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
+import android.text.method.PasswordTransformationMethod;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.cuc.miti.phone.xmc.R;
+import com.cuc.miti.phone.xmc.IngleApplication;
+import com.cuc.miti.phone.xmc.domain.Enums.InterfaceType;
+import com.cuc.miti.phone.xmc.domain.Enums.NetStatus;
+import com.cuc.miti.phone.xmc.domain.Enums.PreferenceKeys;
+import com.cuc.miti.phone.xmc.domain.Enums.PreferenceType;
+import com.cuc.miti.phone.xmc.http.Configuration;
+import com.cuc.miti.phone.xmc.logic.LocationService;
+import com.cuc.miti.phone.xmc.logic.UserService;
+import com.cuc.miti.phone.xmc.services.AppStatusService;
+import com.cuc.miti.phone.xmc.services.ReceiverService;
+import com.cuc.miti.phone.xmc.utils.DeviceInfoHelper;
+import com.cuc.miti.phone.xmc.utils.SharedPreferencesHelper;
+import com.cuc.miti.phone.xmc.utils.StandardizationDataHelper;
+import com.cuc.miti.phone.xmc.utils.ToastHelper;
+import com.cuc.miti.phone.xmc.xmpp.NotificationService;
+
+public class LoginActivity extends BaseActivity implements OnClickListener {
+	private SharedPreferencesHelper sharedPreferencesHelper;
+	private DeviceInfoHelper deviceInfoHelper;
+	ImageButton imBtnSignIn;
+	EditText editTextUserName, editTextPassword;
+	TextView txViewServer, txViewConfig;
+
+	UserService userServices = new UserService(LoginActivity.this);
+
+	Boolean onlineState = true;
+
+	Drawable draw = null;
+	private EditText etServer; // ����ķ�������ַ
+	private EditText etDeviceid; // �鿴�豸��ʶ
+	private EditText etVersionid; // �鿴��ǰϵͳ�汾��
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.login);
+
+		this.setUpViews();
+
+		IngleApplication.getInstance().addActivity(this);
+	}
+
+	/**
+	 * ��ʼ���ؼ�
+	 */
+	private void setUpViews() {
+
+		sharedPreferencesHelper = new SharedPreferencesHelper(
+				LoginActivity.this);
+
+		imBtnSignIn = (ImageButton) findViewById(R.id.imBtnSignIn_Login);
+		editTextUserName = (EditText) findViewById(R.id.editTextUserName_Login);
+		editTextPassword = (EditText) findViewById(R.id.editTextPassword_Login);
+		editTextUserName.setText(sharedPreferencesHelper
+				.getPreferenceValue(PreferenceKeys.Sys_CurrentUser.toString()));
+		if ("0"
+				.equals(sharedPreferencesHelper
+						.getPreferenceValue(PreferenceKeys.User_SavePassword
+								.toString()))) {
+			editTextPassword.setText("");
+		} else {
+			editTextPassword.setText(sharedPreferencesHelper
+					.getPreferenceValue(PreferenceKeys.Sys_CurrentPassword
+							.toString()));
+
+		}
+
+		imBtnSignIn.setOnClickListener(this);
+		editTextPassword.setTransformationMethod(PasswordTransformationMethod
+				.getInstance());
+
+		txViewConfig = (TextView) findViewById(R.id.textViewConfig_Login);
+		txViewConfig.setText(R.string.setting);
+		if (Integer.parseInt(DeviceInfoHelper.getDeviceVersionSDK()) >= 14) {
+			txViewConfig.setOnClickListener(this);
+		} else {
+			txViewConfig.setVisibility(View.GONE);
+		}
+
+	}
+
+	public void onClick(View v) {
+		switch (v.getId()) {
+		// ��¼
+		case R.id.imBtnSignIn_Login:
+			try {
+				login();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			break;
+		case R.id.textViewConfig_Login:
+			showSystemConfigDialog();
+			break;
+		default:
+			break;
+		}
+
+	}
+
+	/**
+	 * ����״̬ת��
+	 * 
+	 * @param os
+	 *            ����״̬
+	 */
+	private void OnlineStateSwitch(Boolean os) {
+		// ����תΪ������
+		if (os == true) {
+			onlineState = false;
+
+		}
+		// ������תΪ����
+		else if (os == false) {
+			onlineState = true;
+
+		}
+	}
+
+	/**
+	 * ��¼
+	 */
+	private void login() throws Exception {
+
+		try {
+			// �û��������Ϊ��ʱ��ʾ
+			if ("".equals(editTextUserName.getText().toString().trim())
+					|| "".equals(editTextPassword.getText().toString().trim())) {
+				// toast = Toast.makeText(LoginActivity.this,
+				// "�û�������벻��Ϊ��",Toast.LENGTH_SHORT);
+				// toast.show();
+
+				// Modify by SongQing.20120807
+				// Toast��ΪAlertDialog�Դﵽ�û��޸�����:��¼ҳ�����ʾ��Ҫ�����Ի���ȴ��û�ȷ��
+				showAlertDialog(getResources().getString(
+						R.string.loginAlertDialogTitle_Login), getResources()
+						.getString(R.string.loginAlertDialogMsg_Login));
+			} else {// �û�������붼��Ϊ��ʱ
+				NetStatus netStatus = IngleApplication
+						.getNetStatus();
+				if (netStatus != NetStatus.Disable) {
+					onlineState = true;
+				} else {
+					onlineState = false;
+				}
+
+				if (onlineState == true) {// �����¼
+					userServices.userLoginOnline(editTextUserName.getText()
+							.toString().trim(), editTextPassword.getText()
+							.toString().trim());
+				} else {// �������¼
+					userServices.userLoginOffline(editTextUserName.getText()
+							.toString().trim(), editTextPassword.getText()
+							.toString().trim());
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			/*
+			 * Toast toast = Toast.makeText(LoginActivity.this,
+			 * "ϵͳ�쳣",Toast.LENGTH_SHORT); toast.show();
+			 */
+			ToastHelper.showToast(getResources().getString(
+					R.string.loginFailure_Login), Toast.LENGTH_SHORT);
+		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		this.getMenuInflater().inflate(R.menu.login_options_menu, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+
+		switch (item.getItemId()) {
+		case R.id.menu_optionSet:
+			showSystemConfigDialog();
+
+			/*
+			 * ����ķ��������豸���� case R.id.menu_deviceid: deviceInfoHelper=new
+			 * DeviceInfoHelper(); AlertDialog.Builder builderDeviceID = new
+			 * AlertDialog.Builder(this); etDeviceid = new
+			 * EditText(LoginActivity.this);
+			 * etDeviceid.setText(deviceInfoHelper.getDeviceId());
+			 * //etDeviceid.setEnabled(false); builderDeviceID.setTitle("�豸ID")
+			 * .setView(etDeviceid).setNegativeButton("�ر�", new
+			 * DialogInterface.OnClickListener() {
+			 * 
+			 * public void onClick(DialogInterface dialog, int which) {
+			 * dialog.dismiss();
+			 * 
+			 * } }).create().show(); break; case R.id.menu_serverSet:
+			 * 
+			 * sharedPreferencesHelper = new SharedPreferencesHelper(
+			 * LoginActivity.this);
+			 * 
+			 * AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			 * etServer = new EditText(LoginActivity.this); String loginURL =
+			 * sharedPreferencesHelper
+			 * .getPreferenceValue(PreferenceKeys.Sys_LoginServer.toString());
+			 * if(loginURL == null || loginURL.equals("")){
+			 * etServer.setText(Configuration.getDefaultServer()); }else{
+			 * etServer
+			 * .setText(sharedPreferencesHelper.getPreferenceValue(PreferenceKeys
+			 * .Sys_LoginServer.toString())); }
+			 * 
+			 * builder.setTitle("���÷�������ַ") .setView(etServer)
+			 * .setPositiveButton("ȷ��", new DialogInterface.OnClickListener() {
+			 * 
+			 * public void onClick(DialogInterface dialog,int which) { if
+			 * (etServer.getText().toString().trim().length() > 0) {
+			 * 
+			 * Patternp=Pattern.compile(
+			 * "(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)){3}"
+			 * ); String ipStr=etServer.getText().toString().trim(); Matcher
+			 * m=p.matcher(ipStr); String ipRight=""; if(m.find()) {
+			 * if(!ipStr.endsWith("/")){
+			 * ipRight=ipStr.substring(0,m.start()).toLowerCase
+			 * ()+m.group()+ipStr.substring(m.end(),ipStr.length())+"/"; }else {
+			 * ipRight
+			 * =ipStr.substring(0,m.start()).toLowerCase()+m.group()+ipStr
+			 * .substring(m.end(),ipStr.length());
+			 * 
+			 * }
+			 * 
+			 * }else {
+			 * Toast.makeText(LoginActivity.this,"�����IP��ַ���Ϸ���",Toast.LENGTH_SHORT
+			 * ).show(); }
+			 * 
+			 * 
+			 * sharedPreferencesHelper.SaveCommonPreferenceSettings(PreferenceKeys
+			 * .Sys_LoginServer.toString(),PreferenceType.String,ipRight);
+			 * 
+			 * 
+			 * //sharedPreferencesHelper.SaveCommonPreferenceSettings(PreferenceKeys
+			 * .Sys_LoginServer.toString(),PreferenceType.String,ipStr);
+			 * 
+			 * 
+			 * Configuration.setInitialUrl(ipRight +
+			 * StandardizationDataHelper.getServerInterface(ipRight,
+			 * InterfaceType.initialUrl)); Toast.makeText(LoginActivity.this,
+			 * sharedPreferencesHelper
+			 * .getPreferenceValue(PreferenceKeys.Sys_LoginServer
+			 * .toString()),Toast.LENGTH_SHORT).show();
+			 * 
+			 * //TODO ��ʽ�������޸� Intent intent = new
+			 * Intent(LoginActivity.this,SplashScreenActivity.class);
+			 * startActivity(intent); LoginActivity.this.finish(); }
+			 * 
+			 * } }) .setNegativeButton("ȡ��", new
+			 * DialogInterface.OnClickListener() {
+			 * 
+			 * public void onClick(DialogInterface dialog, int which) {
+			 * dialog.dismiss();
+			 * 
+			 * } }).create().show();
+			 */
+
+			break;
+		case R.id.menu_logout:
+
+			IngleApplication.isStop = true;
+
+			Intent appStatusIntent = new Intent(IngleApplication.getInstance(), AppStatusService.class);
+
+			stopService(appStatusIntent);
+			
+			Intent notificationIntent = new Intent(IngleApplication.getInstance(), NotificationService.class);
+			stopService(notificationIntent);
+			
+			Intent receiverServiceIntent = new Intent(IngleApplication.getInstance(), ReceiverService.class);
+			stopService(receiverServiceIntent);
+
+			for (Activity activity : IngleApplication
+					.getInstance().getActivities()) {
+				activity.finish();
+			}
+
+			System.exit(0);
+			break;
+
+		default:
+			break;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		// KeyEvent.KEYCODE_BACK��?�ز���.
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			IngleApplication.getInstance().exit();
+		}
+		return false;
+	}
+
+	/**
+	 * ������ʾ�Ի���
+	 * 
+	 * @param strTitle
+	 *            �Ի������
+	 * @param strMessage
+	 *            ��ʾ����
+	 */
+	private void showAlertDialog(String strTitle, String strMessage) {
+		AlertDialog.Builder builder = new Builder(LoginActivity.this);
+		builder.setMessage(strMessage);
+		builder.setTitle(strTitle);
+		builder.setPositiveButton(R.string.confirm_button,
+				new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int which) {
+						dialog.dismiss();
+					}
+				});
+
+		AlertDialog alertDialog = builder.create();
+
+		// ��������Ի����ܱ��û���[���ؼ�]��ȡ���,�����Է�������û�����KeyEvent.KEYCODE_SEARCH,�Ի����ǻ�Dismiss��
+		alertDialog.setCancelable(false);
+		// ��������alertDialog.setCancelable(false);
+		// ��������û�����KeyEvent.KEYCODE_SEARCH,�Ի����ǻ�Dismiss��,�����setOnKeyListener���þ��������û�����KeyEvent.KEYCODE_SEARCH
+		alertDialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
+
+			public boolean onKey(DialogInterface dialog, int keyCode,
+					KeyEvent event) {
+				if (keyCode == KeyEvent.KEYCODE_SEARCH) {
+					return true;
+				} else {
+					return false; // Ĭ�Ϸ��� false
+				}
+			}
+		});
+
+		alertDialog.show();
+	}
+
+	/**
+	 * ��ʾϵͳ���öԻ���
+	 */
+	private void showSystemConfigDialog() {
+		sharedPreferencesHelper = new SharedPreferencesHelper(
+				LoginActivity.this);
+		deviceInfoHelper = new DeviceInfoHelper();
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+		View laView = this.getLayoutInflater().inflate(
+				R.layout.login_setcurrentserver_dialog, null);
+
+		etDeviceid = (EditText) laView.findViewById(R.id.editTextDevice_Login);
+		etDeviceid.setText(deviceInfoHelper.translateDeviceId());
+		etDeviceid.setFilters(new InputFilter[] { new InputFilter() {
+			public CharSequence filter(CharSequence source, int start, int end,
+					Spanned dest, int dstart, int dend) {
+				return source.length() < 1 ? dest.subSequence(dstart, dend)
+						: "";
+			}
+		} });
+		// etDeviceid.setKeyListener(null); //���ַ����ᵼ��EditText�е������޷�ȫѡ����
+
+		etVersionid = (EditText) laView
+				.findViewById(R.id.editTextVersion_Login);
+		etVersionid.setText(DeviceInfoHelper
+				.getAppVersionName(LoginActivity.this)[1]);
+		// etVersionid.setKeyListener(null);
+		etVersionid.setFilters(new InputFilter[] { new InputFilter() {
+			public CharSequence filter(CharSequence source, int start, int end,
+					Spanned dest, int dstart, int dend) {
+				return source.length() < 1 ? dest.subSequence(dstart, dend)
+						: "";
+			}
+		} });
+
+		etServer = (EditText) laView
+				.findViewById(R.id.editTextSetCurrentServer_Login);
+		String loginURL = sharedPreferencesHelper
+				.getPreferenceValue(PreferenceKeys.Sys_LoginServer.toString());
+		if (loginURL == null || loginURL.equals("")) {
+			etServer.setText(Configuration.getDefaultServer());
+		} else {
+			etServer.setText(sharedPreferencesHelper
+					.getPreferenceValue(PreferenceKeys.Sys_LoginServer
+							.toString()));
+		}
+
+		builder.setTitle(R.string.menu_optionSetTitle).setView(laView)
+				.setPositiveButton(R.string.confirm_button,
+						new DialogInterface.OnClickListener() {
+
+							public void onClick(DialogInterface dialog,
+									int which) {
+								if (etServer.getText().toString().trim()
+										.length() > 0) {
+									String ipStr = etServer.getText()
+											.toString().trim();
+									String ipRight = deviceInfoHelper
+											.validateServerAddressForLogin(
+													ipStr, LoginActivity.this);
+
+									sharedPreferencesHelper
+											.SaveCommonPreferenceSettings(
+													PreferenceKeys.Sys_LoginServer
+															.toString(),
+													PreferenceType.String,
+													ipRight);
+
+									// sharedPreferencesHelper.SaveCommonPreferenceSettings(PreferenceKeys.Sys_LoginServer.toString(),PreferenceType.String,ipStr);
+
+									Configuration
+											.setInitialUrl(ipRight
+													+ StandardizationDataHelper
+															.getServerInterface(
+																	ipRight,
+																	InterfaceType.initialUrl));
+									// Toast.makeText(LoginActivity.this,
+									// sharedPreferencesHelper.getPreferenceValue(PreferenceKeys.Sys_LoginServer.toString()),Toast.LENGTH_SHORT).show();
+									ToastHelper
+											.showToast(
+													sharedPreferencesHelper
+															.getPreferenceValue(PreferenceKeys.Sys_LoginServer
+																	.toString()),
+													Toast.LENGTH_SHORT);
+
+									// TODO ��ʽ�������޸�
+									Intent intent = new Intent(
+											LoginActivity.this,
+											SplashScreenActivity.class);
+									startActivity(intent);
+									LoginActivity.this.finish();
+								}
+
+							}
+						}).setNegativeButton(R.string.cancel_button,
+						new DialogInterface.OnClickListener() {
+							public void onClick(DialogInterface dialog,
+									int which) {
+								dialog.dismiss();
+							}
+						}).create().show();
+	}
+
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#808080">
+    	<LinearLayout
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="150dip"
+    	    android:id="@+id/linearLayout1"
+			android:orientation="horizontal"
+			android:gravity="center_vertical">"
+    	    	<ImageButton 
+    	    	    android:id="@+id/newManuscript"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:src="@drawable/newmanuscript_button"
+    	    	    android:contentDescription="新建稿件"
+    	    	    android:layout_marginLeft="40dip"
+    	    	    android:padding="0dip"
+    	    	    ></ImageButton>"
+    	</LinearLayout>
+    	<LinearLayout        
+    	    android:id="@+id/linearLayout2"        
+    	    android:layout_width="fill_parent"        
+    	    android:layout_height="15.0dip"        
+    	    android:background="@null" >        
+    	    <TextView            
+    	        android:id="@+id/tvManuMan"            
+    	        android:layout_width="fill_parent"            
+    	        android:layout_height="fill_parent"            
+    	        android:layout_weight="1.0"   
+    	        android:gravity="center"           
+    	         android:text="稿件管理"            
+    	         android:textColor="#FFFFFF"            
+    	         android:textSize="10.0dip" />        
+    	         <TextView            
+    	             android:id="@+id/tvFaster"            
+    	             android:layout_width="fill_parent"            
+    	             android:layout_height="fill_parent"            
+    	             android:layout_weight="1.0"            
+    	             android:gravity="center"            
+    	             android:text="快讯"            
+    	             android:textColor="#FFFFFF"            
+    	             android:textSize="10.0dip" />        
+		</LinearLayout>
+		<ImageView        
+		    android:id="@+id/cursor"        
+		    android:layout_width="fill_parent"       
+		    android:layout_height="wrap_content"        
+		    android:scaleType="matrix"        
+		    android:src="@drawable/a" />
+    	<android.support.v4.view.ViewPager
+    	    android:id="@+id/vPager"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="0dip"
+    	    android:layout_gravity="center"
+    	    android:layout_weight="1.0"
+    	    android:background="@null"
+    	   android:flipInterval="30"        
+    	   android:persistentDrawingCache="animation" />
+    	<LinearLayout        
+    	    android:id="@+id/linearLayout3"        
+    	    android:layout_width="fill_parent"        
+    	    android:layout_height="100dip"        
+    	    android:background="@null" 
+    	    android:gravity="center">
+    	         <ImageButton 
+    	    	    android:id="@+id/configBtn"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:src="@drawable/systemconfig_button"
+    	    	    android:padding="0dip"          
+    	    	    ></ImageButton>
+    	    	<ImageButton 
+    	    	    android:id="@+id/messageBtn"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:src="@drawable/message_button"
+    	    	    android:layout_marginLeft="5dip" 
+    	    	    android:padding="0dip"
+    	    	    ></ImageButton>
+    	    	<ImageButton 
+    	    	    android:id="@+id/moreBtn"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:src="@drawable/more_button"
+    	    	    android:layout_marginLeft="5dip" 
+    	    	    android:padding="0dip"
+    	    	    ></ImageButton>
+    	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" 
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal">
+	<RelativeLayout
+        android:id="@+id/relativeLayoutBanner_ETA"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        style ="@style/background_color_blue"
+        android:gravity="center" >
+   			<ImageButton 
+   			    android:id="@+id/iBtnBack_ETA"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/phone_common_goback" 	
+				android:layout_marginLeft="10dip" 
+				android:layout_centerVertical="true"
+				android:gravity="center"
+				android:contentDescription="@string/defaultContentDesc"/>
+   			<TextView 
+	   			    android:id="@+id/tViewTitle_ETA"
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:layout_centerInParent="true"
+	   			    android:text="@string/title_ETA"
+	   			    android:gravity="bottom"
+	   			    style="@style/banner_title" 
+	   			    android:drawableLeft="@drawable/phone_template_logo"
+	   			    android:drawablePadding="10dip"/>			
+   			<ImageButton 
+   			    android:id="@+id/iBtnStoreTemplate_ETA"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:background="@drawable/phone_draftlabel_submit"   
+   			    android:layout_centerVertical="true"
+   			    android:layout_alignParentRight="true"
+   			    android:layout_marginRight="10dip"
+   			    android:contentDescription="@string/defaultContentDesc" />
+   		</RelativeLayout>
+
+   	<RelativeLayout 
+   		    android:id="@+id/relativeLayoutContentSend_ETA" 
+   		    android:layout_width="match_parent"
+   		    android:layout_height="match_parent"
+   		    android:layout_marginLeft="15dip"
+   		    android:layout_marginRight="10dip"
+   		    android:layout_marginTop="50dip"
+   		    android:layout_marginBottom="45dip">		
+   	    <RelativeLayout
+   		    android:id="@+id/relativeLayoutTab_ETA" 
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginTop="5dip">
+   		    <Button 
+   		        android:id="@+id/btnSelectContentAttributeTab_ETA"
+   		        style="@style/template_tab_selected"
+   		        android:text="@string/tab_content_attribute_ETA"
+   		        android:layout_width="wrap_content"
+   		        android:layout_height="25dip" 
+   		        android:background="@drawable/rounded_button_gray"  />
+   		    <Button
+   		        android:id="@+id/btnSelectSendAttributeTab_ETA"
+   		        style="@style/template_tab_unselected"
+   		        android:text="@string/tab_send_attribute_ETA"
+   		        android:background="@drawable/rounded_button_blue" 
+   		        android:layout_width="wrap_content"
+   		        android:layout_height="25dip" 
+   		        android:layout_toRightOf="@id/btnSelectContentAttributeTab_ETA"
+   		        android:layout_marginLeft="20dip"/>
+   		</RelativeLayout>
+   		<RelativeLayout
+   		    android:id="@+id/relativeLayoutScroll_ETA" 
+   		    android:layout_width="match_parent"
+   		    android:layout_height="match_parent"
+   		    android:layout_marginTop="30dip"
+   		    style="@style/template_content_background_color" >    	
+   	    		<!-- 稿件属性 -->
+   		    	<ScrollView 
+   		    	    android:id="@+id/scrollViewContentAttribute_ETA" 
+   		    	    android:layout_width="match_parent"
+   		    	    android:layout_height="match_parent"
+   		    	    >
+   		    	    <LinearLayout 
+						android:layout_width="match_parent"
+   		    	        android:layout_height="wrap_content"
+   		    	        android:orientation="vertical"
+   		    	        >
+   		    	        <!-- 稿签名称 -->
+	   		    	    <RelativeLayout
+	   		    	        android:id="@+id/relativeLayoutTemplateName_ETA"
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewTemplateName_ETA"
+				   			        style="@style/template_unnecessary_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateName_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextTemplateName_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width = "200dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewTemplateName_ETA"
+			   			        android:layout_marginLeft="10dip"
+			   			        android:background="@null"
+			   			        android:maxLength="50"
+			   			        android:maxLines="1" 
+			   			        android:inputType="text" />
+   		    	   	 	</RelativeLayout>
+   		    	   	 	
+	   		    	    <View 
+	   		    	        android:id="@+id/viewTemplateName_ETA"
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip"  />
+	   		    	    
+	   		    	    <!-- 作者 -->
+	   		    	     <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewAuthor_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateAuthor_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextAuthor_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="195dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewAuthor_ETA"
+			   			        android:layout_marginLeft="10dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text" />
+			   			   <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectAuthor_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+			   			        android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 稿源_多选 -->
+	   		    	    <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewDepartment_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateDepartment_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextDepartment_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="140dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewDepartment_ETA"
+			   			        android:layout_marginLeft="10dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnMultiSelectDepartment_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />"
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 供稿类别_单选 -->
+	   		    	     <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewInternalInternational_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateInternalInternational_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextInternalInternational_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="160dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewInternalInternational_ETA"
+			   			        android:layout_marginLeft="5dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectInternalInternational_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+			   			        android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	   	<!-- 分类_单选_树 -->
+	   		    	    <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewNewsCategory_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateNewsCategory_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextNewsCategory_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="150dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewNewsCategory_ETA"
+			   			        android:layout_marginLeft="5dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectNewsCategory_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 地区_单选_树 -->
+	   		    	    <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewGeographyCategory_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateGeographyCategory_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextGeographyCategory_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="150dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewGeographyCategory_ETA"
+			   			        android:layout_marginLeft="5dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectGeographtCategory_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 发稿地点_单选_平级_可编辑 -->
+	   		    	    <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewSendArea_ETA"
+				   			        style="@style/template_unnecessary_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateSendArea_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextSendArea_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="150dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewSendArea_ETA"
+			   			        android:layout_marginLeft="5dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectSendArea_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	     <!-- 事发地点_单选_平级_可编辑 -->
+	   		    	    <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewHappenPlace_ETA"
+				   			        style="@style/template_unnecessary_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateHappenPlace_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextHappenPlace_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="150dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewHappenPlace_ETA"
+			   			        android:layout_marginLeft="5dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectHappenPlace_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 报道地点_单选_平级_可编辑 -->
+	   		    	    <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewReportPlace_ETA"
+				   			        style="@style/template_unnecessary_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateReportPlace_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextReportPlace_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="150dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewReportPlace_ETA"
+			   			        android:layout_marginLeft="5dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectReportPlace_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 关键字_单选_平级_可编辑 -->
+	   		    	    <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewKeywords_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateKeywords_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextKeywords_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="150dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewKeywords_ETA"
+			   			        android:layout_marginLeft="5dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectKeywords_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 送审情况 -->
+	   		    	     <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewReviewStatus_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateReviewStatus_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextReviewStatus_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="195dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewReviewStatus_ETA"
+			   			        android:layout_marginLeft="10dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!--默认标题 -->
+	   		    	     <RelativeLayout 
+	   		    	        android:id="@+id/relativeLayoutDefaultTitle_ETA"
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewDefaultTitle_ETA"
+				   			        style="@style/template_unnecessary_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateDefaultTitle_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextDefaultTitle_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="195dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewDefaultTitle_ETA"
+			   			        android:layout_marginLeft="10dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text" />			   			    
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+	   		    	        android:id="@+id/viewDefaultTitle_ETA"
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	     <!--默认正文 -->
+	   		    	     <RelativeLayout 
+	   		    	        android:id="@+id/relativeLayoutDefaultContent_ETA"
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewDefaultContent_ETA"
+				   			        style="@style/template_unnecessary_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateDefaultContent_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextDefaultContent_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="195dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewDefaultContent_ETA"
+			   			        android:layout_marginLeft="10dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+	   		    	        android:id="@+id/viewDefaultContent_ETA"
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+   		    	    </LinearLayout>
+   		    	</ScrollView>
+   		    	
+   		    	<!-- 发稿属性 -->
+   		    	<ScrollView 
+   		    	    android:id="@+id/scrollViewSendAttribute_ETA" 
+   		    	    android:layout_width="match_parent"
+   		    	    android:layout_height="match_parent">
+   		    	    <LinearLayout 
+						android:layout_width="match_parent"
+   		    	        android:layout_height="wrap_content"
+   		    	        android:orientation="vertical"
+   		    	        >
+   		    	        <!-- 文种_单选 -->
+	   		    	    <RelativeLayout
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">"
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewLanguage_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateLanguage_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextLanguage_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width = "200dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewLanguage_ETA"
+			   			        android:layout_marginLeft="10dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:inputType="text"
+			   			        android:contentDescription="@string/defaultContentDesc" />
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectLanguage_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+			   			    
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 优先级_单选 -->
+	   		    	     <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewPriority_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templatePriority_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextPriority_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="195dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewPriority_ETA"
+			   			        android:layout_marginLeft="10dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text" />
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectPriority_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+			   			    
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 稿件类型_单选 -->
+	   		    	    <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewManuscriptsType_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateManuscriptsType_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextManuscriptsType_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="140dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewManuscriptsType_ETA"
+			   			        android:layout_marginLeft="10dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnSingleSelectManuscriptsType_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+								android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />"
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+	   		    	    
+	   		    	    <!-- 发稿地址_多选 -->
+	   		    	     <RelativeLayout 
+	   		    	        android:layout_width="match_parent"
+	   		    	        android:layout_height="38dip"
+	   		    	        android:orientation="horizontal"
+	   		    	        android:gravity="center_vertical">
+	   		    	   		<TextView
+				   			        android:id="@+id/textViewSendToAddress_ETA"
+				   			        style="@style/template_text_tag"
+				   			        android:layout_width="wrap_content"
+				   			        android:layout_height="wrap_content"
+				   			        android:text="@string/templateSendToAddress_textview_ETA"
+				   			        android:paddingLeft="5dip" />
+			   			    <EditText
+			   			        android:id="@+id/editTextSendToAddress_ETA"
+			   			        style="@style/template_text_content"
+			   			        android:layout_width ="160dip"
+			   			        android:layout_height="wrap_content"
+			   			        android:layout_toRightOf="@id/textViewSendToAddress_ETA"
+			   			        android:layout_marginLeft="5dip"
+			   			        android:background="@null"
+			   			        android:maxLines="1" 
+			   			        android:contentDescription="@string/defaultContentDesc"
+			   			        android:inputType="text"/>
+			   			    <ImageButton 
+			   			        android:id = "@+id/iBtnMultiSelectSendToAddress_ETA"    
+								android:layout_width = "wrap_content"    
+								android:layout_height = "wrap_content"  
+								android:background="@drawable/phone_common_dropdownlist" 
+			   			        android:layout_alignParentRight="true"
+			   			        android:layout_marginRight="12dip"
+								android:contentDescription="@string/defaultContentDesc" />
+   		    	   	 	</RelativeLayout>
+	   		    	    <View 
+							android:layout_width="fill_parent" 
+							android:layout_height="1dip"
+							style ="@style/background_color_blue"
+							android:layout_marginRight="5dip"
+							android:layout_marginBottom="8dip" />
+   		    	    </LinearLayout>
+   		    	</ScrollView>
+		</RelativeLayout>
+		</RelativeLayout>
+		<RelativeLayout
+   		    android:id="@+id/relativeLayoutOperation_ETA" 
+   		    android:layout_width="match_parent"
+   		    android:layout_height="50dip"
+   		    android:layout_alignParentBottom="true"
+   		    android:gravity="center_vertical">
+   		  	<Button
+   		        android:id="@+id/btnAdoptTemplate_ETA"
+   		        style="@style/template_operation"
+   		        android:text="@string/operation_adopttemplate_ETA"
+   		        android:background="@drawable/rounded_button_blue" 
+   		        android:layout_width="60dip"
+   		        android:layout_height="30dip"  
+   		        android:layout_alignParentRight = "true"
+   		        android:layout_marginRight="40dip"/>"
+   		    <Button 
+   		        android:id="@+id/btnSaveAs_ETA"
+   		        style="@style/template_operation"
+   		        android:text="@string/operation_saveas_ETA"
+   		        android:layout_width="60dip"
+   		        android:layout_height="30dip" 
+   		       	android:layout_alignWithParentIfMissing="true"
+   		        android:layout_toLeftOf="@id/btnAdoptTemplate_ETA" 
+   		        android:layout_marginRight="40dip"
+   		        android:background="@drawable/rounded_button_blue"  />
+  		  
+   		</RelativeLayout>
+   		<RelativeLayout
+	        android:id="@+id/relativeLayoutTempletSwitcher_ETA"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerInParent="true">
+        	<ImageView
+        	    android:id="@+id/iViewTempletSwitcher_ETA" 
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"    	    
+        	    android:src="@drawable/switcher_to_right" 
+				android:contentDescription="@string/defaultContentDesc"/>
+    </RelativeLayout>
+</RelativeLayout>

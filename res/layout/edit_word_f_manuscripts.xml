@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_EWordFM"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        style ="@style/background_color_blue"
+        android:gravity="center" >
+   			<ImageButton 
+   			    android:id="@+id/iBtnBack_EWordFM"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/phone_common_goback" 	
+				android:layout_marginLeft="10dip" 
+				android:layout_centerVertical="true"
+				android:gravity="center"
+				android:contentDescription="@string/defaultContentDesc"/>
+   			<TextView 
+   			    android:id="@+id/tViewTitle_EWordFM"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:text="@string/title_EWordFM"
+   			    android:drawableLeft="@drawable/word_flash_logo_960x540"
+   			    android:drawablePadding="3dip"
+   			    android:layout_centerInParent="true"   			   
+   			    style="@style/banner_title" 
+   			    android:gravity="bottom"/>
+   			<!--<ImageView 
+   			    android:id ="@+id/iViewTitle_EWordFM"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:background ="@drawable/word_flash_logo"
+   			    android:layout_centerInParent="true"
+   			    android:padding="0dip"
+   			    android:layout_toLeftOf="@id/tViewTitle_EWordFM"
+   			    android:contentDescription="@string/defaultContentDesc"/>  			
+   			-->
+   			<ImageButton 
+   			    android:id="@+id/iBtnSendManu_EWordFM"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:background="@drawable/send_manuscript_960x540"   
+   			    android:layout_alignParentRight="true"
+   			    android:layout_marginRight="10dip"
+   			    android:contentDescription="@string/defaultContentDesc"
+   			    android:layout_centerVertical="true" />
+   		</RelativeLayout>
+    	<ScrollView
+	    	android:id="@+id/scrollViewManuContent_EWordFM"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:scrollbars="none"
+			android:focusable="false"
+	    	android:focusableInTouchMode="false"
+	    	android:layout_marginBottom="80dip"
+	    	android:layout_below="@id/relativeLayoutBanner_EWordFM"> 			
+    	    <LinearLayout 
+    	         android:layout_width="fill_parent"
+    	         android:layout_height="wrap_content"
+    	         android:orientation="vertical"
+    	     >
+    	     	<LinearLayout 
+    	     	    android:layout_width="fill_parent"
+    	     	    android:layout_height="wrap_content"
+    	     	    android:orientation="horizontal">   	     	    
+    	     	    <TextView 
+    	     	    android:id="@+id/textViewManuTitle_EWordFM"
+    	     	    android:layout_width="65dip"
+    	     	    android:layout_height="wrap_content"
+					android:layout_marginTop="8dip"
+    	     	    style="@style/manu_text_content"
+    	     	    android:text="@string/manuTitle_textview"
+    	     	    android:padding="5dip" />
+	    	     	<EditText
+	    	     	    android:id="@+id/editTextManuTitle_EWordFM"
+	    	     	    style="@style/manu_text_content"
+	    	     	    android:layout_width="240dp"
+	    	     	    android:layout_height="wrap_content"
+	    	     	    android:layout_marginBottom="8dip"
+	    	     	    android:layout_marginTop="8dip"
+	    	     	    android:background="@null"
+	    	     	    android:gravity="top"
+	    	     	    android:hint="@string/manuTitle_hint"
+	    	     	    android:maxLines="2"
+	    	     	    android:padding="5dip" />
+    	     	</LinearLayout>
+    	     	
+   			<View 
+					android:layout_width="fill_parent" 
+					android:layout_height="2dip"
+					style ="@style/background_color_blue"
+					android:layout_marginLeft="10dip"
+					android:layout_marginRight="10dip"
+					android:layout_marginBottom="8dip" />
+
+   			<LinearLayout
+   			    android:layout_width="fill_parent"
+   			    android:layout_height="wrap_content"
+   			    android:orientation="horizontal" >
+   			    <TextView
+   			        android:id="@+id/textViewManuContent_EWordFM"
+   			        style="@style/manu_text_content"
+   			        android:layout_width="65dip"
+   			        android:layout_height="wrap_content"
+   			        android:padding="5dip"
+   			        android:text="@string/manuContent_textview"/>
+   			    <EditText
+   			        android:id="@+id/editTextManuContent_EWordFM"
+   			        style="@style/manu_text_content"
+   			        android:layout_width="0dip"
+   			        android:layout_height="wrap_content"
+   			        android:layout_weight="0.04"
+   			        android:background="@null"
+   			        android:gravity="top"
+   			        android:hint="@string/manuContent_hint"
+   			        android:minLines="12"
+   			        android:padding="5dip" />
+   			</LinearLayout>
+			
+    	     </LinearLayout>
+    	</ScrollView>
+    	
+    	<LinearLayout
+		    android:id="@+id/linearLayoutBottom_EWordFM"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginTop="-80dip"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginBottom="10dip"
+		    >
+    	    <LinearLayout 
+    	        android:id="@+id/linearLayoutInfo_EWordFM"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical"
+			    android:layout_marginBottom="10dip" >
+   					<ImageView
+		        	    android:id="@+id/iViewlocationStatus_EWordFM" 
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content" 
+		        	    android:layout_marginLeft="30dip" 
+		        	    android:src="@drawable/get_location" 
+						android:contentDescription="@string/defaultContentDesc"/>
+	    	        <Button
+		    		    android:id="@+id/btnManuTextCounter_EWordFM"
+		    		    style="@style/text_counter"
+		    		    android:layout_width="wrap_content"
+		    		    android:layout_height="wrap_content"
+		    		    android:layout_marginLeft="200dip"
+		    		    android:background="@drawable/manuscript_text_count"
+		    		    android:paddingRight="15dip" />
+    	    </LinearLayout>
+    		
+				<View 
+					android:layout_width="fill_parent" 
+					android:layout_height="2dip"
+					style ="@style/background_color_blue"
+					android:layout_marginLeft="10dip"
+					android:layout_marginRight="10dip"
+					android:layout_marginBottom="8dip" />
+				<LinearLayout 
+				    android:id="@+id/linearLayoutBottoms"
+				    android:layout_gravity="center"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal">
+	   				<ImageButton 
+			   			android:id="@+id/iBtnGetLocationAdd_EWordFM"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/get_location_960x540" 
+						android:layout_marginLeft="80dip"
+						android:contentDescription="@string/defaultContentDesc"/> 
+					<ImageButton 
+			   			android:id="@+id/iBtnVoice_EWordFM"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/phone_common_voiceinput" 
+						android:layout_marginLeft="50dip"
+						android:contentDescription="@string/defaultContentDesc"/> 
+	   				<ImageButton 
+			   			android:id="@+id/iBtnSaveLocalization_EWordFM"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/save_localization_960x540" 
+						android:layout_marginLeft="50dip"
+						android:contentDescription="@string/defaultContentDesc"/> 			
+					
+				</LinearLayout>
+		</LinearLayout>
+		<RelativeLayout
+        android:id="@+id/relativeLayoutTempletSwitcher_EWordFM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true">
+        	<ImageView
+        	    android:id="@+id/iViewTempletSwitcher_EWordFM" 
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"    	    
+        	    android:src="@drawable/switcher_to_left" 
+				android:contentDescription="@string/defaultContentDesc"/>
+    </RelativeLayout>
+</RelativeLayout>

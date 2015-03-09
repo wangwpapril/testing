@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:background="#FFFFFF"
+	android:gravity="center_vertical">
+	<TextView android:id="@+id/textViewText_lvITFTS2"
+		android:paddingLeft="2dip" android:layout_width="wrap_content"
+		android:layout_height="50dip" android:gravity="center_vertical|left"
+		style="@style/template_text_treeselectnode2"  android:layout_marginLeft="5dip" />
+	<ImageButton android:id="@+id/ibtnExEc_lvITFTS2"
+		android:paddingLeft="2dip" android:paddingRight="2dip"
+		android:layout_centerVertical="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:gravity="center_vertical"
+		android:background="@drawable/tree_next_page_icon"
+		android:layout_alignParentRight="true" android:contentDescription="@string/defaultContentDesc"
+		android:layout_marginRight="5dip" />
+</RelativeLayout>

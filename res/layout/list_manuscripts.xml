@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   
+    	<LinearLayout 
+    	    android:id="@+id/linearlayoutManu1_Main"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"  	  
+    	    android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="30dip" >
+    	    	<RelativeLayout 
+					android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    >
+    	    	<ImageButton 
+    	    	    android:id="@+id/iBtnEditingManu_Main"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:background="@drawable/selector_main_editinglist_bg_960x540_true"
+    	    	    android:contentDescription="@string/defaultContentDesc"
+    	    	    android:padding="0dip"          
+    	    	    ></ImageButton>
+   	    	    <TextView 
+    	    	     android:layout_width="wrap_content"
+    	    	     android:layout_height="wrap_content"
+    	    	     android:text="@string/textViewEditinglist_Main"
+    	    	     android:drawableTop="@drawable/main_editinglist_960x540"
+   			    	 android:drawablePadding="5dip"
+    	    	     style="@style/mainform_icon_text_flashmanagement"
+    	    	     android:layout_centerInParent="true"
+    	    	     android:gravity="center_vertical"
+    	    	     /> 
+    	    	</RelativeLayout>
+    	    	<RelativeLayout 
+					android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_marginLeft="10dip"
+		    	    >    
+    	    	<ImageButton 
+    	    	    android:id="@+id/iBtnStandToManu_Main"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:background="@drawable/selector_main_standtomanuscript_bg_960x540_true"
+    	    	    android:contentDescription="@string/defaultContentDesc"
+    	    	    android:padding="0dip"
+    	    	   
+    	    	    ></ImageButton>
+    	    	    <TextView 
+    	    	     android:layout_width="wrap_content"
+    	    	     android:layout_height="wrap_content"
+    	    	     android:text="@string/textViewStandtomanuscript_Main"
+    	    	     android:drawableTop="@drawable/main_standtomanuscript_960x540"
+   			    	 android:drawablePadding="5dip"
+    	    	     style="@style/mainform_icon_text_flashmanagement"
+    	    	     android:layout_centerInParent="true"
+    	    	     android:gravity="center_vertical"
+    	    	     /> 
+    	    	</RelativeLayout>
+    	    </LinearLayout>
+    	    <LinearLayout 
+    	    android:id="@+id/linearlayoutManu2_Main"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"  	  
+    	    android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:layout_marginTop="5dip" 
+			android:layout_below = "@+id/linearlayoutManu1_Main"
+			 android:layout_marginLeft="30dip">
+			 <RelativeLayout 
+					android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	      
+		    	    >
+    	    	<ImageButton 
+    	    	    android:id="@+id/iBtnEliminationManu_Main"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:background="@drawable/selector_main_deletelist_bg_960x540_true"
+    	    	    android:contentDescription="@string/defaultContentDesc"
+    	    	    android:padding="0dip"
+    	    	    ></ImageButton>
+    	    	    <TextView 
+    	    	     android:layout_width="wrap_content"
+    	    	     android:layout_height="wrap_content"
+    	    	     android:text="@string/textViewDeletelist_Main"
+    	    	     android:drawableTop="@drawable/main_deletelist_960x540"
+   			    	 android:drawablePadding="10dip"
+    	    	     style="@style/mainform_icon_text_flashmanagement"
+    	    	     android:layout_centerInParent="true"
+    	    	     android:gravity="center_vertical"
+    	    	     /> 
+    	    	</RelativeLayout>
+    	    	<RelativeLayout 
+					android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_marginLeft="10dip" 
+		    	    >
+    	    	<ImageButton 
+    	    	    android:id="@+id/iBtnSentManu_Main"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:background="@drawable/selector_main_sendinglist_bg_960x540_true"
+    	    	    android:contentDescription= "@string/defaultContentDesc"
+    	    	    android:padding="0dip"          
+    	    	    ></ImageButton>
+    	    	 <TextView 
+    	    	     android:layout_width="wrap_content"
+    	    	     android:layout_height="wrap_content"
+    	    	     android:text="@string/textViewSendinglist_Main"
+    	    	     android:drawableTop="@drawable/main_sendinglist_960x540"
+   			    	 android:drawablePadding="5dip"
+    	    	     style="@style/mainform_icon_text_flashmanagement"
+    	    	     android:layout_centerInParent="true"
+    	    	     android:gravity="center_vertical"
+    	    	     /> 
+    	    	</RelativeLayout>
+    	    	
+    	    </LinearLayout>
+</RelativeLayout>
+
+

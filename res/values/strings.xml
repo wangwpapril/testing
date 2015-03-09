@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello world,Test!</string>
+    <string name="app_name">eNews</string>
+    <string name="helloButton">Confirm</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="agree_button">Agree</string>
+    <string name="disagree_button">disagree</string>
+
+    <!-- test -->
+    <string name="song_button">Song Button</string>
+    <string name="wen_button">Wen Button</string>
+    <string name="shiqing_button">Shi Button</string>
+    <string name="guanwei_button">Guan Button</string>
+    <string name="lln_button">lln Button</string>
+    <string name="cao_button">Cao Button</string>
+
+    <!-- Splash -->
+    <string name="SplashImageDesc">SplashPic</string>
+    <string name="basedata_uploading">BaseData Updating:</string>
+    <string name="default_pro">0%</string>
+    <string name="network_wifi_connected">Wi-Fi is available</string>
+    <string name="network_mobile_connected">mobile is available</string>
+    <string name="network_disconnected">network is unavailable</string>
+    <!-- <string name="network_connected">Network is available</string> -->
+    <string name="InterfaceAccessError">interface access error</string>
+    <string name="DBCreateError">database create error</string>
+    <string name="BaseDataUpdateFinished">basedata update Finished</string>
+    <string name="updateSysVersionDialogTitle">upgrade version</string>
+    <string name="updateSysVersionDialogPositiveButton">upgrade</string>
+    <string name="updateSysVersionDialogNegativeButton">cancel</string>
+    <string name="updateSysVersionDialogAbsoluteMsg">version too low,must upgrade!</string>
+    <string name="updateSysVersionDialogOpotionMsg">new version,please upgrade!</string>
+    <string name="noNewVersion">no new version!</string>
+    <string name="synTempFinish">synchronous template finished</string>
+    <string name="synTempError">synchronous template error</string>
+    <string name="cleanDataFinish">data clean  finished</string>
+    <string name="cleanDataError">data clean error</string>
+    <string name="requestNetTimeout">request network timeout,please check!</string>
+    <string name="requestNetError">request network error!</string>
+    <string name="SysVersionTooLow">current system version too low to send manuscript,please upgrade first!</string>
+    <string name="SysVersionLatest">latest version:</string>
+    <string name="SysVersionUpgradeNow">,please upgrade soon!</string>
+    <string name="network_disconnectedToSend">current network disconnected to send！\n</string>
+    <string name="noMoreUpdate">no need to update</string>
+    <string name="updating">updating</string>
+    <string name="updateFinished">update finished</string>
+    <string name="logining">logining</string>
+
+    <!-- Main -->
+    <string name="defaultContentDesc"></string>
+    <string name="textViewNewManuscript_Main">New</string>
+    <string name="textViewEditinglist_Main">Editing</string>
+    <string name="textViewStandtomanuscript_Main">Standto</string>
+    <string name="textViewSendinglist_Main">Sent</string>
+    <string name="textViewDeletelist_Main">Elimination</string>
+    <string name="textViewSystemconfig_Main">Settings</string>
+    <string name="textViewMessage_Main">Msg</string>
+    <string name="textViewMore_Main">More</string>
+    <string name="exitSysDialogMsg_Main">Exit system?</string>
+    <string name="exitSysDialogTitle_Main">Alert</string>
+    <string name="checkTemplate_Main">Content null,please complete template\n</string>
+
+    <!-- Login -->
+    <string name="loginBtnText">Login</string>
+    <string name="userNameTViewText">UserName:</string>
+    <string name="passwordTViewText">Password:</string>
+    <string name="setting">setting</string>
+    <string name="userNameETextHint">username please!</string>
+    <string name="passwordETextHint">password please!</string>
+    <string name="menu_serverSet">server set</string>
+    <string name="menu_deviceid">Device ID</string>
+    <string name="menu_versionid">version ID</string>
+    <string name="SetCurrentServer_Login">SetCurrentServer:</string>
+    <string name="menu_optionSet">Set option</string>
+    <string name="loginAlertDialogTitle_Login">Login alert</string>
+    <string name="loginAlertDialogMsg_Login">username or password can not be null</string>
+    <string name="loginFailure_Login">system exception</string>
+    <string name="menu_optionSetTitle">option setting</string>
+    <string name="sessionTimeout">Your session tomeout,login again!\n </string>
+    <string name="noRightToSend">sorry,you have no right to send!\n </string>
+    <string name="noRightToSendByAddress">sorry,your address is wrong,please confirm!\n </string>
+    <string name="failedToGetUser">failed to get user information! </string>
+    <string name="loginAlert">Alert</string>
+    <string name="usernameOrPassError">username or password is error </string>
+    <string name="offlineLoginSucceed"> Offline login successfully</string>
+    <string name="firstLoginMustHasNet">first login need network</string>
+
+    <!-- Home Page -->
+    <string name="textViewWordFlash_Main">Word Flash</string>
+    <string name="textViewPictureFaster_Main">Picture Flash</string>
+    <string name="textViewVoiceFaster_Main">Voice Flash</string>
+    <string name="textViewVideoFaster_Main">Video Flash</string>
+
+    <!-- AttachmentUpload -->
+    <string name="filepath_textview">File Path</string>
+    <string name="choose_button">Choose File</string>
+    <string name="upload_button">Upload File</string>
+    <string name="reslt_textview">Result</string>
+    <string name="login_button">Login</string>
+    <string name="getuserinfo_button">GetUserInfo</string>
+    <string name="pause_button">Pause</string>
+    <string name="sessionid_textview">SessionId</string>
+    <string name="xml_update_button">XMLUpdate</string>
+    <string name="download_button">Download File</string>
+
+    <!-- Menu -->
+    <string name="menu_logout">Logout</string>
+
+    <!-- Message -->
+    <string name="textViewTitle_MCA">Message Center</string>
+    <string name="systemMsg_MCA">System Message</string>
+    <string name="recommendMsg_MCA">Recommend Message</string>
+    <string name="instantMsg_MCA">Instant Message</string>
+    <string name="XMPPMsg_MCA">Xmpp Message</string>
+    <string name="sentMsg_MCA">Sent Message</string>
+    <string name="messageFrom_MCA">From</string>
+    <string name="messageTo_MCA">To</string>
+    <string name="btnReplyTitle_MCA">Reply</string>
+    <string name="btnDelTitle_MCA">Delete</string>
+    <string name="details_nonews">no new msg！</string>
+    <string name="btnReplyAgainTitle_MCA">Reply again</string>
+    <string name="btnRefreshTitle_MCA">Refresh</string>
+    <string name="msgUpdateFinished_MCA">update finished!</string>
+    <string name="msgUpdateFailed_MCA">update failed！</string>
+    <string name="btnDelOrNotTitle_MCA">Delete or not?</string>
+    <string name="inputReplyContent_MCA">Input reply content！</string>
+    <string name="replySucceed_MCA"> reply succeed!</string>
+    <string name="replyFailed_MCA"> reply failed!</string>
+    <string name="replyFailedAsNetProblem_MCA">current network unvailable,reply failed!</string>
+    <string name="delFriend">delete friend:</string>
+
+    <!-- More -->
+    <string name="textViewTitle_More">More</string>
+
+    <!-- Cao_Login -->
+    <string name="title_Login">eNews 博  众  采  集</string>
+    <string name="userName_Login">UserName：</string>
+    <string name="password_Login">Password：</string>
+
+    <!-- Accessory Delete Confirm Dialog -->
+    <string name="accessory_delete_alert_title">Notice</string>
+    <string name="accessory_delete_alert_content">Please confirm that you want to delete this item!</string>
+
+    <!-- 稿件、快讯公有的属性 -->
+    <string name="manuTitle_textview">Title:</string>
+    <string name="manuTitle_hint">Please input manuscript title</string>
+    <string name="manuContent_textview">Content:</string>
+    <string name="manuContent_hint">Please input manuscript content</string>
+    <string name="manuTitleNotNull">title can not be null!</string>
+    <string name="validateFinished">validate finished,already go into Standto list!</string>
+    <string name="manu_autosaved">manuscript auto to save</string>
+    <string name="manu_standtosend">manuscript already go into Standto list</string>
+    <string name="manu_successtosend">Succeed to send!</string>
+    <string name="manu_failtosend">failed to send！</string>
+    <string name="manuAlreadySaved">manuscript already saved</string>
+    <string name="manuSuccessToSave">Succeed to save!</string>
+    <string name="manuNotSaved">Not to save!</string>
+    <string name="manuSavedError">failed to save!</string>
+    <string name="canNotGetLocation">can not get location</string>
+    <string name="filePathError">file path error！</string>
+    <string name="manuMustHaveAcc">such flash must have accessories!</string>
+    <string name="stillBuilding">building...</string>
+    <string name="saveAsSuccess">saveAs success</string>
+    <string name="saveAsTemplateName">template name</string>
+    <string name="templateNameNotNull">template name can not be null!</string>
+    <string name="templateNameExist">template name exists,please input another name!</string>
+    <string name="templateAddSucceed">Add succeed！</string>
+    <string name="failedToSendValidateAgain">failed to send,please validate manuscript again</string>
+    <string name="succeedToSendManu">manuscripts send successfully</string>
+    <string name="failedToSendManusValidateAgain">manuscripts failed to send,please validate manuscript again</string>
+    <string name="addressError">address error！</string>
+
+    <!-- Faster Word Manuscript -->
+    <string name="title_EWordFM">Word Flash</string>
+    <string name="manuContent_delete_alert_title">Notice</string>
+    <string name="manuContent_delete_alert_content">Please confirm that you want to delete content that you have wrote</string>
+
+    <!-- Faster Pic Manuscript -->
+    <string name="title_EPicFM">Picture Flash</string>
+    <string name="manuTitle_textview_EPicFM">Title:</string>
+    <string name="manuTitle_hint_EPicFM">Please input manuscript title</string>
+
+    <!-- Faster Voice Manuscript -->
+    <string name="title_EVoiceFM">Voice Flash</string>
+
+    <!-- Faster Video Manuscript -->
+    <string name="title_EVideoFM">Video Flash</string>
+
+    <!-- manuscript operation -->
+    <string name="manuscript_operation_edit">edit</string>
+    <string name="manuscript_operation_recover">recover</string>
+    <string name="manuscript_operation_elimination">elimination</string>
+    <string name="manuscript_operation_send">Send</string>
+    <string name="manuscript_operation_delete">delete</string>
+    <string name="manuscript_operation_view">view</string>
+    <string name="manuscript_operation_rebuild">recover</string>
+    <string name="editButton_true_manuscriptList">edit</string>
+    <string name="editButton_false_manuscriptList">cancel</string>
+    <string name="editButton_pre">prev</string>
+    <string name="editButton_next">next</string>
+    <string name="newButton_manuscriptList">new Message</string>
+    <string name="manuscript_operation_restart">Restart</string>
+    <string name="manuscript_operation_start">Start</string>
+    <string name="manuscript_operation_pause">Pause</string>
+    <string name="manuscript_operation_cancel">Cancel</string>
+    <string name="contextmenu_operation_tip">Please select the operating</string>
+    <string name="manuscripi_operation_more">more</string>
+    <string name="manuscripi_operation_more_waiting">waiting</string>
+    <string name="manuscripi_operation_nodata">data empty</string>
+    <string name="value_manu_notitle_default">(no title)</string>
+    <string name="manuscript_acc_size">file size:</string>
+    <string name="manuscript_acc_time">remaining time:</string>
+    <string name="hour">h</string>
+    <string name="minute">m</string>
+    <string name="second">s</string>
+
+    <!-- edit_manuscripts -->
+    <string name="TackPicture">shoot</string>
+    <string name="RecordVideo">record video</string>
+    <string name="RecordVoice">record audio</string>
+    <string name="MediaStore">media store</string>
+    <string name="Picture">picture</string>
+    <string name="Video">video</string>
+    <string name="Voice">audio</string>
+    <string name="ComplexFile">file system</string>
+    <string name="titleA_editM">new</string>
+    <string name="titleE_editM">edit</string>
+    <string name="titleV_editM">view</string>
+    <string name="manuscripi_operation_send_waiting">please,waiting...</string>
+
+    <!-- standto_manuscriptlist -->
+    <string name="title_StandTMA">StandTo</string>
+    <string name="currentPageIsFirst">current page is the first</string>
+    <string name="currentPageIsLast">current page is the last</string>
+
+    <!-- editing_manuscript list -->
+    <string name="title_EditMA">Editing</string>
+
+    <!-- elimination_manuscript list -->
+    <string name="title_EliMA">Elimination</string>
+
+    <!-- send_manuscript list -->
+    <string name="title_SendTMA">Sent</string>
+    <string name="noManuOperator">no manuscript,please select other operation</string>
+
+    <!-- EmployeeSendToAddress -->
+    <string name="title_ESTA">Custom Send To Address</string>
+    <string name="inputSearchKeyword_ESTA">Input keyword...</string>
+    <!-- Location Service -->
+    <string name="titleA_LCT">Location Service</string>
+    <string name="sendButton_LCT">send</string>
+    <string name="titleLocation_LCT">Searching Current Location</string>
+    <string name="noFindLocation_LCT">Can not get Current Location</string>
+    <string name="findLocation_LCT">Current Location is already got</string>
+    <string name="titleContent_LCT">Content:</string>
+    <string name="sending_LCT">Sending</string>
+    <!-- Manuscript  Template -->
+    <string name="title_ETA">Template</string>
+    <string name="tab_content_attribute_ETA">ContentAttr</string>
+    <string name="operation_saveas_ETA">Save</string>
+    <string name="operation_adopttemplate_ETA">Adopt</string>
+    <string name="operation_adopttemplate">Adopt</string>
+    <string name="tab_send_attribute_ETA">SendAttr</string>
+    <string name="operation_new_MTA">New</string>
+    <string name="titleA_MTA">ManageTemplate</string>
+    <string name="subTitleA_MTA">System</string>
+    <string name="subTitleB_MTA">Custom</string>
+    <string name="set_as_default_MTA">Set as default</string>
+    <string name="set_as_default_confirm_title_MTA">Confirm set as default</string>
+    <string name="delete_MTA">Delete</string>
+    <string name="delete_confirm_title_MTA">Confirm delete operation</string>
+    <string name="save_confirm_title_MTA">Sure to save?</string>
+    <string name="templateName_textview_ETA">Name:</string>
+    <string name="templateName_hint_ETA">Please input</string>
+    <string name="templateAuthor_textview_ETA">Author:</string>
+    <string name="templateAuthor_hint_ETA">Please input</string>
+    <string name="templateDepartment_textview_ETA">Department:</string>
+    <string name="templateDepartment_hint_ETA">Please select</string>
+    <string name="templateInternalInternational_textview_ETA">OfferType:</string>
+    <string name="templateInternalInternational_hint_ETA">Please select</string>
+    <string name="templateNewsCategory_textview_ETA">NewsCate:</string>
+    <string name="templateNewsCategory_hint_ETA">Please select</string>
+    <string name="templateGeographyCategory_textview_ETA">Geography:</string>
+    <string name="templateGeographyCategory_hint_ETA">Please select</string>
+    <string name="templateSendArea_textview_ETA">SendArea:</string>
+    <string name="templateSendArea_hint_ETA">Please select</string>
+    <string name="templateHappenPlace_textview_ETA">HappenPlace:</string>
+    <string name="templateHappenPlace_hint_ETA">Please select</string>
+    <string name="templateReportPlace_textview_ETA">ReportPlace:</string>
+    <string name="templateReportPlace_hint_ETA">Please select</string>
+    <string name="templateKeywords_textview_ETA">Keywords:</string>
+    <string name="templateKeywords_hint_ETA">Please select</string>
+    <string name="templateReviewStatus_textview_ETA">ReviewStatus:</string>
+    <string name="templateReviewStatus_hint_ETA">Please select</string>
+    <string name="templateDefaultTitle_textview_ETA">DefaultTitle:</string>
+    <string name="templateDefaultTitle_hint_ETA">Please select</string>
+    <string name="templateDefaultContent_textview_ETA">DefaultContent:</string>
+    <string name="templateDefaultContent_hint_ETA">Please select</string>
+    <string name="templateLanguage_textview_ETA">Language:</string>
+    <string name="templateLanguage_hint_ETA">Please select</string>
+    <string name="templatePriority_textview_ETA">Priority:</string>
+    <string name="templatePriority_hint_ETA">Please select</string>
+    <string name="templateManuscriptsType_textview_ETA">MediaType:</string>
+    <string name="templateManuscriptsType_hint_ETA">Please select</string>
+    <string name="templateSendToAddress_textview_ETA">SendToAddress:</string>
+    <string name="templateSendToAddress_hint_ETA">Please select</string>
+
+    <!-- 稿件校验 -->
+    <string name="validate_titleNull">title is null,please input\n</string>
+    <string name="validate_authorNull">author is null,please input\n</string>
+    <string name="validate_keyWordNull">keyWord is null,please input\n</string>
+    <string name="validate_languageNull">language is null,please input\n</string>
+    <string name="validate_priorityNull">priority is null,please input\n</string>
+    <string name="validate_provtypeNull">provtype is null,please input\n</string>
+    <string name="validate_doctypeNull">doctype is null,please input\n</string>
+    <string name="validate_comefromDeptNull">comefromDept is null,please input\n</string>
+    <string name="validate_regionNull">region is null,please input\n</string>
+    <string name="validate_addressNull">address is null,please input\n</string>
+    <string name="validate_reviewstatusNull">reviewstatus is null,please input\n</string>
+
+    <!-- 附件管理 -->
+    <string name="title_MComplexA">Complex Accessory</string>
+    <string name="title_MVoiceA">Voice Accessory</string>
+    <string name="title_MVideoA">Video Accessory</string>
+    <string name="title_MPicA">Picture Accessory</string>
+    <string name="explained_MA">This part is the picture explained, will be spliced in the manuscript text</string>
+
+    <!-- 枚举类型 -->
+    <string name="author_enum">Author</string>
+    <string name="department_enum">Department</string>
+    <string name="internalInternational_enum">InternalInternational</string>
+    <string name="newsCategory_enum">NewsCategory</string>
+    <string name="geographyCategory_enum">GeographyCategory</string>
+    <string name="sendArea_enum">SendArea</string>
+    <string name="happenPlace_enum">HappenPlace</string>
+    <string name="reportPlace_enum">ReportPlace</string>
+    <string name="keywords_enum">Keywords</string>
+    <string name="language_enum">Language</string>
+    <string name="priority_enum">Priority</string>
+    <string name="manuscriptsType_enum">ManuscriptsType</string>
+    <string name="releAddress_enum">ReleAddress</string>
+    <string name="customReleAddress_enum">CustomReleAddress</string>
+    <string name="worldLocationCategory_enum">WorldLocationCategory</string>
+    <string name="online_enum">online</string>
+    <string name="offline_enum">offline</string>
+    <string name="none_enum">none</string>
+    <string name="network_unavailable_enum">unavailable</string>
+    <string name="network_wifiAvailable_enum">WIFI</string>
+    <string name="network_mobileNetAvailable_enum">mobile network</string>
+
+    <!-- UserPreference -->
+    <string name="prefs_noTemplateToSelect">no template to select</string>
+    <string name="UPScreenTitle">Settings</string>
+    <string name="DefaultTemplate">Default Template</string>
+    <string name="TemplateChoose">Template Choose</string>
+    <string name="CurrentUser">Current User</string>
+    <string name="CurrentServer">Current Server</string>
+    <string name="TransmissionFilePackSize">Transmission pack size</string>
+    <string name="PackSizeChoose">Choose pack size</string>
+    <string name="DefaultPackSize">0</string>
+    <string name="NewsSendPolicy">News send policy</string>
+    <string name="NewsSendPolicyChoose">Choose news send policy</string>
+    <string name="DefaultNewsSendPolicy">1</string>
+    <string name="DeletePolicy">News delete policy</string>
+    <string name="DeletePolicyChoose">Choose news delete policy</string>
+    <string name="DefaultDeletePolicy">0</string>
+    <string name="SendNum">News send num</string>
+    <string name="SendNumSet">Choose news send num </string>
+    <string name="DefaultSendNum">1</string>
+    <string name="FailurePolicy">News failure policy</string>
+    <string name="FailurePolicyChoose">Choose news failure policy </string>
+    <string name="DefaultFailurePolicy">0</string>
+    <string name="EncryptPolicy">News encrypt policy</string>
+    <string name="EncryptPolicyChoose">Choose news encrypt policy</string>
+    <string name="DefaultEncryptPolicy">0</string>
+    <string name="AutoSaveInterval">Auto save interval</string>
+    <string name="AutoSendLocationInterval">Auto send location interval</string>
+    <string name="AutoSaveIntervalSet">set auto save interval</string>
+    <string name="AutoSendLocationSet">set auto send location interval</string>
+    <string name="AutoSaveIntervalChoose">Set auto save interval </string>
+    <string name="DefaultAutoSaveInterval">15</string>
+    <string name="DefaultAutoSendLocationInterval">15</string>
+    <string name="SendByWifi">Send news network config</string>
+    <string name="SendByWifiChoose">Only when on Wi-Fi</string>
+    <string name="SendByAnyChoose">On any network</string>
+    <string name="DefaultSendByWifi">0</string>
+    <string name="SavePassword">Save password</string>
+    <string name="SavePasswordSet">Set save password</string>
+    <string name="DefaultSavePassword">1</string>
+    <string name="DefaultVersion">Default version</string>
+    <string name="DefaultCurrentUser">Current user</string>
+    <string name="DefaultCurrentDeviceID">Current deviceID</string>
+    <string name="CurrentNetStatus">Current Net Status</string>
+    <string name="CurrentLoginType">Current Login Type</string>
+    <string name="UpdateBaseData">Update Base Data</string>
+    <string name="SynManuTemp">Synchronous Manuscripts Template</string>
+    <string name="UpdateSysVersion">System Version Upgrade</string>
+    <string name="CleanData">Clean data</string>
+    <string name="DefaultCurrentServer">Current server</string>
+    <string name="DefaultLoginServer">Login server</string>
+    <string name="DefaultLoginServer_dialog_title">Input login server URL</string>
+    <string name="TransmissionTheardCount">Max send thread count</string>
+    <string name="AutoSaveDuration">auto save duration</string>
+    <string name="AutoTransmission">News sent Strategy</string>
+    <string name="Version">System Version</string>
+    <string name="About">About us</string>
+
+    <!-- guanwei_function_list -->
+    <string name="editTemplateButtongw">enter into editTemplatePage</string>
+
+    <!-- Tablet OA列表项 -->
+    <string name="oa_listviewitem_department">Department:</string>
+    <string name="oa_listviewitem_writer">Writer:</string>
+    <string name="oa_listviewitem_title">Title:</string>
+    <string name="oa_message">OA Information</string>
+    <string name="oa_details_nomorepage_end">no more much earlier msg</string>
+    <string name="oa_details_nonews">no new OA msg</string>
+    <string name="oa_details_news_updated">OA msg updated</string>
+    <string name="soundInput">Voice Input</string>
+    <string name="app_id">502b00b6</string>
+    <string name="preference_key_iat_rate">iat_rate</string>
+    <string name="preference_default_iat_rate">rate16k</string>
+    <string name="preference_key_iat_engine">iat_engine</string>
+    <string name="preference_default_iat_engine">sms</string>
+
+    <!-- 下拉更新列表 -->
+
+    <string name="pulldown_footer_more">Click for more</string>
+    <string name="pulldown_header_up_refresh">Release to Refresh</string>
+    <string name="pulldown_header_down_refresh">Pull to Refresh</string>
+    <string name="pulldown_header_refreshing">Loading...</string>
+    <string name="pulldown_update">Latest Update：</string>
+    <string name="pulldown_load_more">Loading more...</string>
+    <string name="xinhua_loading">loading...</string>
+
+    <!-- 好友搜素列表 -->
+    <string name="search_label">Search</string>
+    <string name="search_hint">there is null,please click search</string>
+    <string name="onlineUsers">available users</string>
+    <string name="offlineUsers">unavailable users</string>
+    <string name="resultUsers">results</string>
+    <string name="resultUsersNull">no results</string>
+    <string name="button_msgSend">send</string>
+    <string name="msg_serverconnectionfailed">Message Server connection failed，please try again later.</string>
+    <string name="chooseFriend">Choose Friend</string>
+    <string name="addFriend">Add Friend</string>
+    <!-- 分享 -->
+    <string name="share_title">If you want use Enews, you must open it first.Open it right now?</string>
+    <string name="yes">OK</string>
+    <string name="no">cancel</string>
+    <string name="alert">Alert!</string>
+
+    <!-- 一键同步 -->
+    <string name="choose">Please choose</string>
+    <string name="oneKeySynchro">one Key synchronization</string>
+    <string name="chooseNeedSynchro">choose to synchronization</string>
+    <string name="cancel">cancel</string>
+    <string name="noPermission">No Permission!</string>
+
+    <!-- 消息 -->
+    <string name="msgFrom">Message From </string>
+
+</resources>

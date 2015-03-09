@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+	android:background="#FFFFFF">
+	<RelativeLayout
+        android:id="@+id/relativeLayoutBanner_ETA"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        style ="@style/background_color_blue">
+   			<ImageButton 
+   			    android:id="@+id/iBtnBack_MTA"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/phone_common_goback" 	
+				android:layout_marginLeft="10dip" 
+				android:layout_centerVertical="true"
+				android:contentDescription="@string/defaultContentDesc"/>
+   			<TextView 
+	   			    android:id="@+id/tViewTitle_MTA"
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:layout_centerInParent="true"
+	   			    android:text="@string/titleA_MTA"
+	   			    android:gravity="bottom"
+	   			    style="@style/banner_title" />			
+   		</RelativeLayout>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+			android:background="#FFFFFF" 
+			android:id="@+id/llTitle_MTA"
+			android:orientation="vertical" 
+			android:layout_height="wrap_content"> 
+
+				<!--<include layout="@layout/manage_template_listview_header" />-->
+
+				<LinearLayout 
+				    android:id="@+id/linearLayoutSystemTemplateHeader_MTA"
+				    android:layout_width="match_parent"
+					android:background="#FFFFFF" 
+					android:layout_height="wrap_content"> 
+				</LinearLayout>
+				<ListView android:id="@+id/lvSubTitleA_MTA" 
+				    android:layout_height="match_parent" 
+				    android:layout_width="match_parent"
+					android:layout_marginLeft="10dip" 
+					android:layout_marginRight="10dip"
+					android:choiceMode="singleChoice"
+					android:fadingEdge="none"
+					android:headerDividersEnabled="true"
+					android:footerDividersEnabled ="true"/>
+				<LinearLayout 
+				    android:id="@+id/linearLayoutCustomTemplateHeader_MTA"
+				    android:layout_width="match_parent"
+					android:background="#FFFFFF" 		
+					android:layout_height="wrap_content"> 
+				 </LinearLayout>		
+				<ListView
+				     android:id="@+id/lvSubTitleB_MTA" 
+				     android:layout_height="match_parent" 
+				     android:layout_width="match_parent"
+					 android:layout_marginLeft="10dip" 
+					 android:layout_marginRight="10dip"
+					 android:choiceMode="singleChoice"
+					 android:fadingEdge="none" 
+					 android:headerDividersEnabled="true"/>
+		</LinearLayout>
+</LinearLayout>

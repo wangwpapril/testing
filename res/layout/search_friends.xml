@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pic_test_SF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_Message"
+        style="@style/background_color_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip" >
+
+        <ImageButton
+            android:id="@+id/iBtnBackSC_SF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/phone_common_goback"
+            android:contentDescription="@string/defaultContentDesc" />
+
+        <TextView
+            android:id="@+id/textViewTitleSC_SF"
+            style="@style/banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/addFriend" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSearch_SF"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="6dip"
+        android:background="#FFFFFF" >
+
+        <ImageButton
+            android:id="@+id/iBtnsearch_SF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/search" >
+        </ImageButton>
+
+        <EditText
+            android:id="@+id/searchContent_SF"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@+id/iBtnsearch"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="@string/search_hint"
+            android:singleLine="true" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/searchLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/searchContent_SF"
+            android:layout_alignRight="@+id/searchContent_SF"
+            android:layout_below="@+id/searchContent_SF"
+            android:background="@drawable/line" >
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitle_SF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dip"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutResultHeader_SF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lvResult_SF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:choiceMode="singleChoice"
+                android:fadingEdge="none"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="2dip"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true" />
+
+            <TextView
+                android:id="@+id/textViewresultNull_SF"
+                style="@style/template_manage_text_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/defaultContentDesc"
+                android:gravity="center"
+                android:text="@string/resultUsersNull" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

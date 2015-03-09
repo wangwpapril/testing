@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 页面顶部功能区当前页面功能描述字体格式 -->
+    <style name="banner_title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 稿件标题标识字体格式 -->
+    <style name="manu_title_tag">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 稿件标题内容字体格式 -->
+    <style name="manu_title_content">
+        <item name="android:textColor">#000000</item>
+       	<item name="android:textSize">18dip</item>
+       	<item name="android:textStyle">normal</item>
+    </style>
+    <!-- 稿件正文标识字体格式 -->
+    <style name="manu_text_tag">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 稿件正文内容字体格式 -->
+    <style name="manu_text_content">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 首页新建稿件图标字体格式 -->
+    <style name="mainform_icon_text_newmanu">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">25dip</item>
+        <item name="android:textStyle">bold</item>     
+    </style>
+    <!-- 首页稿件查看/快讯图标字体格式 -->
+    <style name="mainform_icon_text_flashmanagement">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:textStyle">bold</item>     
+    </style>
+     <!-- 首页消息中心/设置/更多字体格式 -->
+    <style name="mainform_icon_text_config">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:textStyle">bold</item>     
+    </style>
+    <!-- 稿签设置页面Tab选中情况下字体样式 -->
+    <style name="template_tab_selected">
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">#0089d3</item>
+        <item name="android:textStyle">bold</item>   
+    </style>
+    <!-- 稿签设置页面Tab未选中情况下字体样式 -->
+    <style name="template_tab_unselected">
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>     
+    </style>
+    <!-- 稿签设置页面操作按钮字体样式 -->
+    <style name="template_operation">
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>     
+    </style>
+    <!-- 稿签设置页面Tab页背景颜色 -->
+    <style name="template_content_background_color">
+        <item name="android:background">#EEEFEF</item>
+    </style>
+    <!-- 稿签设置必填标识字体格式 -->
+    <style name="template_text_tag">
+        <item name="android:textColor">#FF0000</item>
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textStyle">bold</item>
+    </style>
+      <!-- 稿签设置非必填标识字体格式 -->
+    <style name="template_unnecessary_text_tag">
+        <item name="android:textColor">#000000</item>
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textStyle">bold</item>
+    </style>
+    <!-- 稿签设置内容字体格式 -->
+    <style name="template_text_content">
+        <item name="android:textColor">#000000</item>
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textStyle">normal</item>
+    </style>
+     <!-- 稿签设置基础数据选择树字体格式 -->
+    <style name="template_text_treeselectnode">
+        <item name="android:textColor">#FFFFFF</item>
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textStyle">normal</item>
+    </style>
+    <!-- 稿签设置基础数据选择树字体格式2 -->
+    <style name="template_text_treeselectnode2">
+        <item name="android:textColor">#000000</item>
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textStyle">normal</item>
+    </style>
+    <!-- 稿签管理列表字体格式 -->
+    <style name="template_manage_text_tag">
+        <item name="android:textColor">#000000</item>
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textStyle">bold</item>
+    </style>
+	<style name="message_recomm_datecolor">
+	     <item name="android:textColor">#EFEFEF</item>
+	</style>
+    
+    <style name="messageFrom_style">
+       	<item name="android:textSize">14dip</item>
+    </style>
+    
+    <!-- 稿签列表基础数据查询字体格式 -->
+    <style name="template_manage_text_search_tag">
+        <item name="android:textColor">#000000</item>
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textStyle">normal</item>
+    </style>   
+     <style name="template_manage_text_search_content">
+        <item name="android:textColor">#000000</item>
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textStyle">bold</item>
+    </style>
+    
+    
+    
+    <style name="background_color_orange">
+        <item name="android:background">#DA7600</item>
+    </style>
+    <style name="background_color_blue">
+        <item name="android:background">#0089d3</item>
+    </style>
+    <style name="background_color_darkcyan">
+        <item name="android:background">#006781</item>
+    </style>
+    <style name="background_color_green">
+        <item name="android:background">#5A9234</item>
+    </style>
+    <style name="background_color_purple">
+        <item name="android:background">#853F62</item>
+    </style>
+    
+    <style name="text_counter">
+		<item name="android:textColor">#343635</item>
+		<item name="android:textSize">16dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="text_counter_orange">
+		<item name="android:textColor">#DA7600</item>
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+	<style name="text_counter_purple">
+		<item name="android:textColor">#853F62</item>
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+	<style name="text_counter_darkcyan">
+		<item name="android:textColor">#006781</item>
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+	<style name="text_counter_green">
+		<item name="android:textColor">#5A9234</item>
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+	<style name="text_counter_blue">
+		<item name="android:textColor">#0089d3</item>
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<!-- 四个稿件列表项背景 & 稿件列表项文字样式-->
+	<style name="manuscript_list_item_background">
+		<item name="android:background">#EFEFEF</item>
+	</style>
+	<style name="manuscript_list_item_Title">
+		<item name="android:textColor">#000000</item>
+		<item name="android:textSize">13dip</item>
+	</style>
+	<style name="manuscript_list_item_Time">
+		<item name="android:textColor">#838383</item>
+		<item name="android:textSize">12dip</item>
+	</style>
+	<style name="manuscript_list_item_Content">
+		<item name="android:textColor">#838383</item>
+		<item name="android:textSize">12dip</item>
+	</style>
+
+	<!-- 960*540登录页字体格式 -->
+	 <style name="login_title">
+        <item name="android:textColor">#343635</item>
+        <item name="android:textSize">30dip</item>
+        <item name="android:textStyle">normal</item>   
+     </style> 
+	 <style name="login_text_tag">
+        <item name="android:textColor">#0089d3</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:textStyle">normal</item>   
+     </style>  
+      <style name="login_text_content">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20dip</item> 
+        <item name="android:textStyle">normal</item>
+     </style>
+     <style name="login_text_config">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20dip</item> 
+        <item name="android:textStyle">normal</item>
+     </style>    
+ 
+     
+     	<!-- 800*400登录页字体格式 -->
+	 <style name="login_title2">
+        <item name="android:textColor">#343635</item>
+        <item name="android:textSize">27dip</item>
+        <item name="android:textStyle">normal</item>   
+     </style> 
+	 <style name="login_text_tag2">
+        <item name="android:textColor">#0089d3</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:textStyle">normal</item>   
+     </style>  
+      <style name="login_text_content2">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18dip</item> 
+        <item name="android:textStyle">normal</item>
+     </style>
+      <style name="login_text_config2">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20dip</item> 
+        <item name="android:textStyle">normal</item>
+     </style>     
+      
+	<style name="OAMessage_Department">
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textColor">#000000</item>
+       	<item name="android:textStyle">normal</item>
+    </style>
+     <style name="OAMessage_Writer">
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textColor">#000000</item>
+       	<item name="android:textStyle">normal</item>
+    </style>
+    <style name="OAMessage_Title">
+       	<item name="android:textSize">16dip</item>
+       	<item name="android:textColor">#000000</item>
+       	<item name="android:textStyle">normal</item>
+    </style>
+    <style name="OAMessage_Date">
+       	<item name="android:textSize">12dip</item>
+       	<item name="android:textColor">#0089D3</item>
+       	<item name="android:textStyle">normal</item>
+    </style>
+    <style name="MyListView" parent="@android:style/Widget.ListView">
+        <item name="android:overScrollFooter">@null</item>
+    </style>
+    <style name="MyTheme" parent="android:Theme">
+		<item name="android:windowBackground">@null</item>
+		<item name="android:listViewStyle">@style/MyListView</item>
+	</style>
+</resources>

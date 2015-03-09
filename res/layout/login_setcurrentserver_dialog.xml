@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@null" >
+					   	<TextView
+					    	android:id="@+id/txViewDevice_Login"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/menu_deviceid"
+					      />    					  	
+					   <EditText
+					    	android:id="@+id/editTextDevice_Login"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content" />
+					   <TextView
+					    	android:id="@+id/txViewVersion_Login"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/menu_versionid"/>    					  	
+					  <EditText
+					    	android:id="@+id/editTextVersion_Login"
+					    	android:layout_width="match_parent"
+					    	android:layout_height="wrap_content"
+					    	/> 
+					   <TextView
+					    	android:id="@+id/txViewSetCurrentServer_Login"
+					       android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/SetCurrentServer_Login"
+					       />    					  	
+					   <EditText
+					    	android:id="@+id/editTextSetCurrentServer_Login"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					       />
+</LinearLayout>
+

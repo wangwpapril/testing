@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background= "#FFFFFF" >
+	    <TextView  
+	        android:id="@+id/textViewItemName_lvSF"  
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="30dip"
+			android:layout_marginTop="10dip"
+			style="@style/template_manage_title_tag" />
+	    <TextView  
+	        android:id="@+id/textViewItemUserName_lvSF"  
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dip"
+			android:layout_alignLeft="@id/textViewItemName_lvSF"
+			android:layout_below="@id/textViewItemName_lvSF"
+			style="@style/template_manage_text_tag" />
+	    
+   		<ImageView
+   		    android:id="@+id/imageViewAddF_lvSF"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentRight="true"
+   		    android:layout_marginRight="20dip"
+   		    android:layout_centerVertical="true"
+   		    android:background="@drawable/add_user"
+   		    android:contentDescription="@string/defaultContentDesc" />
+   	</RelativeLayout>
+</RelativeLayout>

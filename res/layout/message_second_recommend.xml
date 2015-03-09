@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_Message"
+        style="@style/background_color_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip" >
+
+        <ImageButton
+            android:id="@+id/iBtnBackSC_MCA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/phone_common_goback"
+            android:contentDescription="@string/defaultContentDesc" />
+
+        <TextView
+            android:id="@+id/textViewTitleSC_MCA"
+            style="@style/banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/btnRefreshSC_MCA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/textViewTitleSC_MCA"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/textViewTitleSC_MCA"
+            android:background="@drawable/msg_refresh"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:textColor="#FFFFFF"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llTitle_MCA"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/relativeLayoutBanner_Message"
+        android:layout_above="@+id/messagelinearLayout"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="25dip"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <ImageButton
+            android:id="@+id/ibtnCheckMessage_MCA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="5dip"
+            android:background="#00000000"
+            android:src="@drawable/message_uncheck"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnEdit_MCA"
+            style="@style/background_color_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@+id/ibtnCheckMessage_MCA"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:text="@string/editButton_true_manuscriptList"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/ibtnRemoveMessage_MCA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@+id/btnEdit_MCA"
+            android:background="#00000000"
+            android:src="@drawable/message_delete"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/viewSplitTitle_MCA"
+            style="@style/background_color_blue"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/btnEdit_MCA" >
+        </View>
+
+        <TextView
+            android:id="@+id/textViewCount_MCA"
+            style="@style/text_counter_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/viewSplitTitle_MCA"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dip"
+            android:text="0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContent_MCA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textViewCount_MCA"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="2dip"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lvMessageSC_MCA"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutProgress_MCA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCount_MCA"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="2dip"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/textviewLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xinhua_loading" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/messagelinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPre_MCA"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:background="@drawable/rounded_button_blue"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:text="@string/editButton_pre"
+            android:textColor="#FFFFFF"
+            android:textSize="15dip" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNext_MCA"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="30dip"
+            android:background="@drawable/rounded_button_blue"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:text="@string/editButton_next"
+            android:textColor="#FFFFFF"
+            android:textSize="15dip" >
+        </Button>
+
+        <TextView
+            android:id="@+id/textviewPageNum_MCA"
+            style="@style/text_counter_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:text="0/0"
+            android:textSize="15dip" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

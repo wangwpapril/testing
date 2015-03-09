@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dip"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageViewCheck_StandTMAItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:contentDescription="@string/defaultContentDesc"
+        android:src="@drawable/phone_draftstate_editingdraft_editcheck"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_StandTMAItem"
+        style="@style/manuscript_list_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewCheck_StandTMAItem" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutContent_StandTMAItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dip"
+            android:layout_toLeftOf="@+id/imageViewTitle_StandTMAItem"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <TextView
+                android:id="@+id/textViewTitle_StandTMAItem"
+                style="@style/manuscript_list_item_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/textViewTime_StandTMAItem"
+                style="@style/manuscript_list_item_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewTitle_StandTMAItem"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/textViewTitle_StandTMAItem" />
+
+            <TextView
+                android:id="@+id/textViewContent_StandTMAItem"
+                style="@style/manuscript_list_item_Content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTime_StandTMAItem"
+                android:layout_marginTop="10dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutFileTrans_StandTMAItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayoutContent_StandTMAItem"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <TextView
+                android:id="@+id/textView_sizeTitle_StantTMAItem"
+                style="@style/manuscript_list_item_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/manuscript_acc_size" />
+
+            <TextView
+                android:id="@+id/textView_size_StandTMAItem"
+                style="@style/manuscript_list_item_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView_sizeTitle_StantTMAItem"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/textView_sizeTitle_StantTMAItem" />
+
+            <TextView
+                android:id="@+id/textView_timeTitle_StandTMAItem"
+                style="@style/manuscript_list_item_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView_size_StandTMAItem"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/textView_size_StandTMAItem"
+                android:text="@string/manuscript_acc_time" />
+
+            <TextView
+                android:id="@+id/textView_time_StandTMAItem"
+                style="@style/manuscript_list_item_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView_timeTitle_StandTMAItem"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/textView_timeTitle_StandTMAItem" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewTitle_StandTMAItem"
+            android:layout_width="100dip"
+            android:layout_height="70dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/defaultContentDesc"
+            android:src="@drawable/phone_flashvoice_display" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_sendProgress_StandTMAItem"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:layout_below="@+id/relativeLayout_StandTMAItem"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/orange_progressbar" />
+
+</RelativeLayout>

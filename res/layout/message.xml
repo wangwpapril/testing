@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+  	android:background="#FFFFFF" >
+      <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_Message"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        style ="@style/background_color_blue"
+        >
+          <ImageButton 
+   			    android:id="@+id/iBtnBack_MCA"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/phone_common_goback" 	
+				android:layout_marginLeft="10dip" 
+				android:layout_centerVertical="true"
+				android:contentDescription="@string/defaultContentDesc"/>
+          <TextView 
+   			    android:id="@+id/textViewTitle_MCA"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:layout_centerInParent="true"   			   
+   			    style="@style/banner_title" 
+          		android:text="@string/textViewTitle_MCA"/>
+          		<!--  android:text="@string/btnRefreshTitle_MCA"   -->
+          <Button
+			android:id="@+id/btnRefresh_MCA"
+			android:background="@drawable/msg_refresh"
+			android:paddingLeft="15dip"
+			android:paddingTop="5dip" 
+			android:paddingRight="15dip"
+			android:textColor="#FFFFFF" 
+			android:paddingBottom="5dip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dip"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@id/textViewTitle_MCA"
+   		    android:layout_alignTop="@id/textViewTitle_MCA"
+			/>
+     </RelativeLayout>
+   
+          <LinearLayout 
+		    android:layout_width="match_parent"
+			android:background="#FFFFFF" 
+			android:id="@+id/llTitle_MCA"
+			android:orientation="vertical" 
+			android:layout_height="wrap_content"> 
+				<ListView android:id="@+id/lvMessage_MCA" 
+				    android:layout_height="match_parent" 
+				    android:layout_width="match_parent"
+					android:layout_marginLeft="10dip" 
+					android:layout_marginRight="10dip"
+					android:choiceMode="singleChoice"
+					android:fadingEdge="none"
+					android:headerDividersEnabled="true"
+					android:footerDividersEnabled ="true"/>
+		</LinearLayout>
+   
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+<LinearLayout 
+	android:orientation="horizontal" android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+		
+	<Button android:id="@+id/btnDelDB" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="删除原来数据库" />
+	<Button android:id="@+id/btnCreDB" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="生成新数据库" />
+	
+	
+	</LinearLayout>	
+	
+	<LinearLayout 
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	
+		<Button android:id="@+id/btnNewsTypeAdd" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="添加稿件类型XML到SDCard" />
+		<Button android:id="@+id/btnNewsTypeDel" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="从SDCard删除稿件类型XML" />
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="XML->数据库" />
+		<LinearLayout 
+		android:orientation="horizontal" android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	
+				<Button android:id="@+id/btnNewsType" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="稿件类型" />
+				<Button android:id="@+id/btnPlace" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="地点" />
+					
+				<Button android:id="@+id/btnNewsCategory" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="稿件分类" />
+					
+				<Button android:id="@+id/btnNewsPriority" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="优先级" />
+			
+		</LinearLayout>	
+		<LinearLayout 
+		android:orientation="horizontal" android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+						
+			<Button android:id="@+id/btnProvideType" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="供稿类别" />
+			
+			<Button android:id="@+id/btnRegion" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="地区" />
+				
+			<Button android:id="@+id/btnComeFromAddress" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="稿源" />
+			
+			<Button android:id="@+id/btnLanguage" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="文种" />
+		
+		</LinearLayout>
+		<LinearLayout 
+		android:orientation="horizontal" android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<Button android:id="@+id/btnMTAmanager" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="稿签管理" />
+		
+		</LinearLayout>
+	</LinearLayout>	
+</LinearLayout>

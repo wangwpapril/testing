@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFFFF">
+	  <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_TSB"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        style ="@style/background_color_blue"
+        android:gravity="center" >  	
+        	<ImageButton 
+   			    android:id="@+id/iBtnBack_TSB"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/phone_common_goback" 	
+				android:layout_marginLeft="10dip" 
+				android:layout_centerVertical="true"
+				android:gravity="center"
+				android:contentDescription="@string/defaultContentDesc"/>	
+   			<TextView 
+   			    android:id="@+id/textViewTitle_TSB"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:layout_centerInParent="true"   			   
+   			    style="@style/banner_title" />
+   			<ImageButton 
+   			    android:id="@+id/iBtnStoreChoose_TSB"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:background="@drawable/phone_draftlabel_submit"   
+   			    android:layout_alignParentRight="true"
+   			    android:layout_marginRight="10dip"
+   			    android:contentDescription="@string/defaultContentDesc" />
+   		</RelativeLayout>
+   		<RelativeLayout
+   		    android:id="@+id/relativeLayoutContent_TSB"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="match_parent"
+   		    android:gravity="center" 
+   		    android:background="#FFFFFF">
+				<ListView 
+				    android:id="@+id/listViewSelectBaseData_TSB" 
+					android:layout_width="match_parent"  
+					android:layout_height="match_parent"
+					android:fastScrollEnabled="true" 
+					android:scrollbars="none"	/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <item android:title="@string/menu_optionSet" android:id="@+id/menu_optionSet"
+        android:icon="@drawable/login_server_config_960x540"/>
+   
+   <!--
+    <item android:title="@string/menu_serverSet" android:id="@+id/menu_serverSet"
+        android:icon="@drawable/login_server_config_960x540"/>
+    <item android:title="@string/menu_deviceid" android:id="@+id/menu_deviceid"
+        android:icon ="@drawable/deviceid_960x540"/>   
+    -->
+    <item android:title="@string/menu_logout" android:id="@+id/menu_logout"
+        android:icon="@drawable/exit_960x540"/>
+     
+</menu>

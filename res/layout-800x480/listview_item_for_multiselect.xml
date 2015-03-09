@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" android:background="#FFFFFF">
+    	<TextView 
+    	    android:id="@+id/textViewListViewItemKey_lvITFMS"
+			android:layout_width="0dip"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:gravity="center_vertical" style="@style/template_text_tag"/>
+    	<TextView 
+    	    android:id="@+id/textViewListViewItemValue_lvITFMS"
+			android:layout_width="0dip"
+    	    android:layout_height="0dip"
+    	    android:visibility="invisible" />"
+    	<CheckBox
+    	    android:id="@+id/checkBoxListViewItem_lvITFMS"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+			android:clickable="false"
+			android:focusable="false"
+			android:focusableInTouchMode="false" 
+			android:gravity="center_vertical" />
+</LinearLayout>

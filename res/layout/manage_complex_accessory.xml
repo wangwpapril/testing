@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_MPicA"
+        style="@style/background_color_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/imageBtnBack_MComplexA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/phone_common_goback"
+            android:contentDescription="@string/defaultContentDesc" />
+
+        <TextView
+            android:id="@+id/tViewTitle_MComplexA"
+            style="@style/banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="bottom"
+            android:text="@string/title_MComplexA" />
+
+        <ImageButton
+            android:id="@+id/imageBtnSubmit_MComplexA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/phone_draftlabel_submit"
+            android:contentDescription="@string/defaultContentDesc"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView_MPicA"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/explain_textview"
+        android:layout_below="@+id/relativeLayoutBanner_MPicA"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llAccContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dip"
+                android:background="#00000000"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:id="@+id/imageView_MComplexA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/complex_file" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAccTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:padding="0dip" >
+
+                <TextView
+                    android:id="@+id/textViewTitle_MComplexA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="@string/manuTitle_textview"
+                    android:textColor="#000000"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/editTextTitle_MComplexA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:paddingTop="5dip"
+                    android:textSize="18sp" >
+
+                    <requestFocus>
+                    </requestFocus>
+                </EditText>
+            </LinearLayout>
+
+            <View
+                style="@style/background_color_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip" >
+            </View>
+
+            <EditText
+                android:id="@+id/editTextContent_MComplexA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="#00000000"
+                android:gravity="top"
+                android:minHeight="150dip"
+                android:paddingTop="10dip"
+                android:scrollbars="vertical"
+                android:textSize="18sp" >
+            </EditText>
+
+            <View
+                style="@style/background_color_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip" >
+            </View>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/explain_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:singleLine="false"
+        android:text="@string/explained_MA" />
+
+</RelativeLayout>

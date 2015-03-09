@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="autosaveinterval_options">
+        <item>0s</item>
+        <item>15s</item>
+        <item>30s</item>
+        <item>1min</item>
+        <item>2min</item>
+        <item>10min</item>
+        <item>30min</item>
+    </string-array>
+    <string-array name="autosaveinterval_options_values">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>600</item>
+        <item>1800</item>
+    </string-array>
+    <string-array name="autosendlocationinterval_options">
+        <item>close</item>
+        <item>15s</item>
+        <item>30s</item>
+        <item>1min</item>
+        <item>2min</item>
+        <item>10min</item>
+        <item>30min</item>
+    </string-array>
+    <string-array name="autosendlocationinterval_options_values">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>600</item>
+        <item>1800</item>
+    </string-array>
+    <string-array name="filepacksize_options">
+        <item>8KB</item>
+        <item>16KB</item>
+        <item>32KB</item>
+        <item>64KB</item>
+        <item>128KB</item>
+        <item>256KB</item>
+        <item>512KB</item>
+        <item>1MB</item>
+        <item>2MB</item>
+        <item>4MB</item>
+    </string-array>
+    <string-array name="filepacksize_options_values">
+        <item>8192</item>
+        <item>16384</item>
+        <item>32768</item>
+        <item>65536</item>
+        <item>131072</item>
+        <item>262144</item>
+        <item>524288</item>
+        <item>1048576</item>
+        <item>2097152</item>
+        <item>4194304</item>
+    </string-array>
+    <string-array name="savepassword_options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="savepassword_options_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="newssendpolicy_options">
+        <item>Auto Send</item>
+        <item>Manual Send</item>
+    </string-array>
+    <string-array name="newssendpolicy_options_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="deletepolicy_options">
+        <item>Keep</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="deletepolicy_options_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="failurepolicy_options">
+        <item>Manual Send</item>
+        <item>Auto Send</item>
+    </string-array>
+    <string-array name="failurepolicy_options_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="sendnum_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="sendnum_options_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="encryptpolicy_options">
+        <item>None</item>
+        <item>Title|Content</item>
+        <item>Important</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="encryptpolicy_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="sendbywifi_options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="sendbywifi_options_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+	<string-array name="CompressRatio_options">
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+		<item>40</item>
+		<item>50</item>
+		<item>60</item>
+		<item>70</item>
+		<item>80</item>
+		<item>90</item>
+		<item>100</item>
+	</string-array>
+	<string-array name="CompressRatio_options_values">
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+		<item>40</item>
+		<item>50</item>
+		<item>60</item>
+		<item>70</item>
+		<item>80</item>
+		<item>90</item>
+		<item>100</item>
+	</string-array>
+</resources>

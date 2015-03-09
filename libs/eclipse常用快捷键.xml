@@ -1,0 +1,15 @@
+Eclipse快捷键
+
+Ctrl+1 快速修复
+Ctrl+Q 定位到最后编辑的地方
+Ctrl+M 最大化当前的Edit或View (再按则反之)
+Ctrl+/ 注释当前行,再按则取消注释
+Ctrl+O 快速显示 OutLine
+Ctrl+T 快速显示当前类的继承结构
+Ctrl+Shift+F 格式化当前代码
+F2 快速改名
+
+
+
+看android源码文件
+source insight

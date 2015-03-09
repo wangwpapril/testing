@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<Button android:id="@+id/btnXMLSerializer" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="生成XML" />
+	<Button android:id="@+id/btnSystemLog" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="生成系统日志" />
+	<Button android:id="@+id/btnOperationLog" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="生成操作日志" />
+	<Button android:id="@+id/btnAddPic" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="添加图片" />
+	<Button android:id="@+id/btnAddVideo" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="添加视频" />
+	<Button android:id="@+id/btnAddVoice" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="清空稿件" />
+	<Button android:id="@+id/btnAddMC" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="新建稿件" />
+		<Button android:id="@+id/btnEditingList_wyj" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="在编稿件" />
+		<Button android:id="@+id/btnEliList_wyj" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="淘汰稿件" />
+		<Button android:id="@+id/btnSendToList_wyj" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="已发稿件" />
+</LinearLayout>

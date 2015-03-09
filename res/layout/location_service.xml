@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_LCT"
+        style="@style/background_color_blue"
+        android:layout_width="match_parent"
+        android:layout_height="45dip" >
+
+        <ImageButton
+            android:id="@+id/iBtnBack_LCT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/phone_common_goback"
+            android:contentDescription="@string/defaultContentDesc" />
+
+        <TextView
+            android:id="@+id/tViewTitle_LCT"
+            style="@style/banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="bottom"
+            android:text="@string/titleA_LCT" />
+
+        <Button
+            android:id="@+id/btnSend_LCT"
+            android:layout_width="50dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/phone_newbuild_sendbutton"
+            android:contentDescription="@string/defaultContentDesc"
+            android:padding="5dip"
+            android:text="@string/sendButton_LCT"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llContent_LCT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LinearLayoutLocation_LCT"
+        android:layout_below="@+id/relativeLayoutBanner_LCT"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextLocation_LCT"
+                android:layout_width="match_parent"
+                android:layout_height="120dip"
+                android:background="#FFEEEE"
+                android:choiceMode="singleChoice"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="true"
+                android:gravity="top"
+                android:headerDividersEnabled="true"
+                android:hint="请输入当前位置描述(选填)..."
+                android:padding="10dip"
+                android:textColorHint="#888888"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dip"
+                android:background="#FFFFFF" 
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editTextContent_LCT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFEE"
+                android:choiceMode="singleChoice"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="true"
+                android:gravity="top"
+                android:headerDividersEnabled="true"
+                android:hint="请输入要发送的内容(选填)..."
+                android:padding="10dip"
+                android:textColorHint="#888888"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutLocation_LCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnLocation_LCT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dip"
+            android:background="@null"
+            android:contentDescription="@string/defaultContentDesc"
+            android:src="@drawable/phone_common_location" />
+
+        <TextView
+            android:id="@+id/textLocation_LCT"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:fadingEdge="none"
+            android:gravity="center_vertical"
+            android:text="@string/titleLocation_LCT"
+            android:textColor="#333333"
+            android:textSize="18dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_LCT"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="30dip" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_ftpusername"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#0089d3" >
+
+        <TextView
+            android:id="@+id/imageView_ftpusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/FtpUserForPhoto"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/iBtnBack_ftpusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/phone_common_goback"
+            android:contentDescription="@string/defaultContentDesc"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addftpuserlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout_ftpusername"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/txViewUserName_ftp"
+            style="@style/login_text_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingTop="10dip"
+            android:text="@string/tvaddftpindenti" />
+
+        <TextView
+            android:id="@+id/txViewPassword_ftp"
+            style="@style/login_text_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txViewUserName_ftp"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:paddingBottom="9dip"
+            android:paddingLeft="15dip"
+            android:text="@string/addftpusername" />
+
+        <EditText
+            android:id="@+id/edaddftpindenti"
+            style="@style/login_text_content"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txViewUserName_ftp"
+            android:layout_alignTop="@id/txViewUserName_ftp"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="9dip"
+            android:layout_toRightOf="@id/txViewUserName_ftp"
+            android:hint="@string/inputFtpCode"
+            android:lines="1" />
+
+        <EditText
+            android:id="@+id/edaddftpusername"
+            style="@style/login_text_content"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txViewPassword_ftp"
+            android:layout_alignLeft="@id/edaddftpindenti"
+            android:layout_alignTop="@id/txViewPassword_ftp"
+            android:layout_below="@id/edaddftpindenti"
+            android:layout_toRightOf="@id/txViewPassword_ftp"
+            android:hint="@string/inputFtpSign"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/addftpname"
+            style="@style/background_color_blue"
+            android:layout_width="75dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/edaddftpusername"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/confirm_button"
+            android:textColor="#FFFFFF"
+            android:textSize="18dip" >
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llTitle_ftpuser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addftpuserlayout"
+        android:layout_marginTop="30dip"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_FtpIdentication_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvOfFtpIdentication_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tvaddftpindenti_list"
+                android:textColor="#000000"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOfFtpUsername_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/addftpusername_list"
+                android:textColor="#000000"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ftpnameListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linearLayout_FtpIdentication_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+      <RelativeLayout
+        android:id="@+id/relativeLayout_Message_re"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        style ="@style/background_color_blue">
+          <ImageButton 
+   			    android:id="@+id/iBtnBackTHNow_MCA_re"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/phone_common_goback" 	
+				android:layout_marginLeft="10dip" 
+				android:layout_centerVertical="true"
+				android:contentDescription="@string/defaultContentDesc"/>
+          <TextView 
+   			    android:id="@+id/tvMsgFromTHNow_MCA_re"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:layout_centerInParent="true"   			   
+   			    style="@style/banner_title" 
+          		/>
+     </RelativeLayout>
+	 <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlListViewSC_MCA_re" 
+        android:layout_marginTop = "5dip"
+        android:layout_marginLeft = "13dip"
+		
+	    android:paddingLeft="5dip"
+	    android:paddingRight="5dip">
+   		<TextView
+   			android:id = "@+id/textViewFromOrTo_recommend"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    style = "@style/messageFrom_style"
+   		/>
+   		<TextView
+   		    android:id="@+id/tvContentSC_recommend"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:layout_toRightOf="@id/textViewFromOrTo_recommend"
+   		    android:layout_alignTop="@id/textViewFromOrTo_recommend"
+   		    android:background="@drawable/message_bg_rect" 
+   		    android:layout_marginLeft="3dip"
+   		    android:textColor="#000000"
+   		    android:textStyle="bold"
+   		    />
+		  <TextView
+		    android:id="@+id/tvTimeSC_recommend"
+		    android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content"
+		   	android:layout_below = "@id/tvContentSC_recommend"
+		    android:layout_alignLeft="@id/tvContentSC_recommend"
+		    android:layout_marginTop="5dip"
+		    style="style/message_recomm_datecolor" 
+		   	/>
+   	</RelativeLayout> 
+
+</LinearLayout>

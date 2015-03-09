@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#FFFFFF"
+	android:fillViewport="true">
+	<RelativeLayout android:id="@+id/relativeLayoutBanner_SendTMA"
+		android:layout_width="fill_parent" style="@style/background_color_green"
+		android:layout_height="45dip" android:gravity="center_vertical">
+		<ImageButton android:id="@+id/imageBtnBack_SendTMA"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/phone_common_goback"
+			android:layout_marginLeft="10dip" android:layout_alignParentLeft="true"
+			android:contentDescription="@string/defaultContentDesc"
+			android:layout_centerVertical="true" />
+		<TextView android:id="@+id/tViewTitle_SendTMA"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="@string/title_SendTMA" style="@style/banner_title"
+				android:layout_marginLeft="5dip"
+				android:drawableLeft="@drawable/phone_draftstate_sentdraft_logo"
+				android:layout_centerInParent="true" android:gravity="bottom" android:padding="10dip"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:background="#00000000" android:id="@+id/llTitle_SendTMA"
+		android:orientation="vertical" android:layout_height="fill_parent"
+		android:padding="0dip" android:layout_below="@id/relativeLayoutBanner_SendTMA"
+		android:layout_marginTop="25dip" android:layout_marginLeft="20dip"
+		android:layout_marginRight="20dip" android:layout_marginBottom="50dip">
+		<ImageButton android:layout_width="wrap_content"
+			android:src="@drawable/phone_draftstate_sentdraft_editcheck"
+			android:id="@+id/ibtnCheckManuscripts_SendTMA" android:layout_height="wrap_content"
+			android:background="#00000000" android:layout_marginRight="15dip"
+			android:layout_marginTop="5dip" android:layout_marginBottom="2dip"
+			android:visibility="gone" />
+		<Button android:id="@+id/btnEdit_SendTMA"
+			android:layout_height="wrap_content" android:paddingLeft="15dip"
+			android:paddingTop="5dip" android:layout_marginTop="2dip"
+			android:paddingRight="15dip" android:paddingBottom="5dip"
+			style="@style/background_color_green" android:textColor="#FFFFFF"
+			android:layout_width="wrap_content" android:text="@string/editButton_true_manuscriptList"
+			android:layout_toRightOf="@+id/ibtnCheckManuscripts_SendTMA"
+			android:layout_marginBottom="2dip" />
+		<ImageButton android:layout_width="wrap_content"
+			android:src="@drawable/phone_draftstate_sentdraft_delete" android:id="@+id/ibtnRemoveManuscripts_SendTMA"
+			android:layout_height="wrap_content" android:background="#00000000"
+			android:layout_alignParentTop="true" android:layout_toRightOf="@+id/btnEdit_SendTMA"
+			android:layout_marginBottom="2dip" android:layout_marginLeft="30dip"
+			android:visibility="gone" />
+		<View android:layout_width="fill_parent" android:layout_height="1dip"
+			style="@style/background_color_green" android:id="@+id/viewSplitTitle_SendTMA"
+			android:layout_below="@id/btnEdit_SendTMA">
+		</View>
+		<TextView android:layout_height="wrap_content" android:id="@+id/textViewCount_SendTMA"
+			android:layout_width="wrap_content" android:layout_marginBottom="2dip"
+			android:text="0" android:layout_above="@id/viewSplitTitle_SendTMA"
+			android:layout_alignParentRight="true" style="@style/text_counter_green"></TextView>
+		<ListView android:layout_height="fill_parent"
+			android:layout_marginTop="10dip" android:id="@+id/listViewManuscripts_SendTMA"
+			android:layout_width="match_parent" android:layout_below="@id/btnEdit_SendTMA"
+			android:dividerHeight="5px" android:divider="#FFFFFF"
+			android:isScrollContainer="true" android:smoothScrollbar="true"></ListView>
+		<TextView android:layout_height="wrap_content" android:id="@+id/textViewTip_SendTMA"
+			android:layout_width="wrap_content" android:layout_marginBottom="2dip"
+			android:text="@string/manuscripi_operation_nodata"
+			android:layout_below="@id/listViewManuscripts_SendTMA" style="@style/text_counter_green"
+			android:visibility="gone"></TextView>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true" android:layout_height="wrap_content"
+		android:id="@+id/linearLayout3" android:gravity="center"
+		android:layout_marginBottom="10dip" android:orientation="horizontal">
+		<Button android:text="@string/editButton_pre"  android:id="@+id/btnPre_SendTMA"
+			style="@style/background_color_green" android:paddingLeft="15dip"
+			android:paddingTop="5dip" android:paddingRight="15dip"
+			android:textColor="#FFFFFF" android:paddingBottom="5dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="@string/editButton_next" android:id="@+id/btnNext_SendTMA"
+			android:layout_marginLeft="30dip" android:paddingLeft="15dip"
+			android:paddingTop="5dip" android:paddingRight="15dip"
+			android:paddingBottom="5dip" android:textColor="#FFFFFF"
+			style="@style/background_color_green" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+		<TextView android:text="0/0" android:id="@+id/textviewPageNum_SendTMA"
+			android:layout_marginLeft="30dip" android:paddingLeft="15dip"
+			android:paddingTop="5dip" android:paddingRight="15dip"
+			android:paddingBottom="5dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" style="@style/text_counter_green"></TextView>
+	</LinearLayout>
+</RelativeLayout>

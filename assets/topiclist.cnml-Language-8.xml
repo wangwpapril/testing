@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CNML xmlns="http://www.cnml.org.cn/2005/CNMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Items>
+<Item xsi:type="TopicListItemType">
+<MetaInfo>
+<AdministrationMetaGroup>
+<Id>
+<PublicId>urn:cnml:xinhua.org:20070701:topiclist.cnml-Language-6:6</PublicId>
+<ProviderId>xinhua.org</ProviderId>
+<DateId>20070701</DateId>
+<ItemId>topiclist.cnml-Language-6</ItemId>
+<VersionId>6</VersionId>
+</Id>
+<Status>Usable</Status>
+</AdministrationMetaGroup>
+</MetaInfo>
+<Contents>
+<TopicList xsi:type="TopicListType" id="c023" domain="//DescriptionMetaGroup/Language/@topicRef">
+<Topics>
+<Topic id="c0230001" topicId="zh-CN" deleteFlag="Remain">
+<Name xml:lang="zh-CN">中文</Name>
+</Topic>
+<Topic id="c0230002" topicId="zh-TW" deleteFlag="Remain">
+<Name xml:lang="zh-CN">中文（繁体）</Name>
+</Topic>
+<Topic id="c0230003" topicId="en" deleteFlag="Remain">
+<Name xml:lang="zh-CN">英文</Name>
+</Topic>
+<Topic id="c0230004" topicId="es" deleteFlag="Remain">
+<Name xml:lang="zh-CN">西文</Name>
+</Topic>
+<Topic id="c0230005" topicId="fr" deleteFlag="Remain">
+<Name xml:lang="zh-CN">法文</Name>
+</Topic>
+<Topic id="c0230006" topicId="ru" deleteFlag="Remain">
+<Name xml:lang="zh-CN">俄文</Name>
+</Topic>
+<Topic id="c0230007" topicId="ar" deleteFlag="Remain">
+<Name xml:lang="zh-CN">阿文</Name>
+</Topic>
+<Topic id="c0230008" topicId="pt" deleteFlag="Remain">
+<Name xml:lang="zh-CN">葡文</Name>
+</Topic>
+<Topic id="c0230009" topicId="ja" deleteFlag="Remain">
+<Name xml:lang="zh-CN">日文</Name>
+</Topic>
+<Topic id="c0230010" topicId="ko" deleteFlag="Remain">
+<Name xml:lang="zh-CN">朝文</Name>
+</Topic>
+</Topics>
+</TopicList>
+</Contents>
+</Item>
+</Items>
+</CNML>

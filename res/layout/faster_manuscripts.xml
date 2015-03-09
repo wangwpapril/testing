@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    	<LinearLayout 
+    	    android:id="@+id/linearlayoutFaster1_Main"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"  	  
+    	    android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="30dip">
+    	    <RelativeLayout 
+    	        android:id = "@+id/relativeWordFlashBtn_Main"
+				android:layout_width="wrap_content"
+    	  		android:layout_height="wrap_content"    	  		
+    	    	>
+    	    	<ImageButton 
+    	    	    android:id="@+id/iBtnWordFlashBtn_Main"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:background="@drawable/selector_main_flashwordbutton_bg_960x540_true"
+    	    	    android:contentDescription="@string/defaultContentDesc"
+    	    	    android:paddingTop="0dip"     	    	    
+    	    	    />
+    	    	 <TextView
+    	    	 	android:id="@+id/textViewWordFlash_Main"
+    	    	 	android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:text = "@string/title_EWordFM"
+    	    	    android:layout_centerInParent="true"
+    	    	    android:gravity="center_vertical"
+    	    	    android:drawableTop="@drawable/main_textflashbtn_960x540"
+    	    	    style = "@style/mainform_icon_text_flashmanagement"
+    	    	    android:drawablePadding="5dip"
+    	    	 	></TextView>
+    	    </RelativeLayout>   	    
+    	   
+    	    <RelativeLayout 
+    	   	    android:id = "@+id/relativePicFlashBtn_Main"
+				android:layout_width="wrap_content"
+    	  		android:layout_height="wrap_content"
+ 				android:layout_alignTop = "@id/relativeWordFlashBtn_Main"
+                android:layout_marginLeft="10dip"
+    	    	>
+    	    	<ImageButton 
+    	    	    android:id="@+id/iBtnPicFlash_Main"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:background="@drawable/selector_main_flashpicbutton_bg_960x540_true"
+    	    	    android:contentDescription="@string/defaultContentDesc"
+    	    	    android:padding="0dip"
+    	    	    android:layout_toRightOf = "@id/iBtnWordFlashBtn_Main"
+					android:layout_alignTop = "@id/iBtnWordFlashBtn_Main"
+    	    	    ></ImageButton>
+    	    	<TextView
+    	    		android:id="@+id/textViewPictureFaster_Main"
+    	    	 	android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:text = "@string/title_EPicFM"
+		    	    android:drawablePadding="4dip"
+    	    	    android:layout_centerInParent="true"
+    	    	    android:gravity="center_vertical"
+    	    	    style = "@style/mainform_icon_text_flashmanagement"	
+    	    	    android:drawableTop="@drawable/main_pictureflashbtn_960x540"
+    	    	/>
+    	      </RelativeLayout>     	    	 
+    	    </LinearLayout>
+    	    <LinearLayout 
+    	   		 android:id="@+id/linearlayoutFaster2_Main"
+    	   		 android:layout_width="fill_parent"
+    	   		 android:layout_height="wrap_content"  	  
+    	         android:orientation="horizontal"
+			     android:gravity="center_vertical"
+			     android:layout_marginTop="4dip" 
+			     android:layout_below = "@id/linearlayoutFaster1_Main"
+			     android:layout_marginLeft="30dip" >
+ 	         <RelativeLayout 
+ 	             android:id = "@+id/relativeVoicefasterBtn_Main"
+ 	         	 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+    	  		 android:layout_alignLeft = "@id/relativeWordFlashBtn_Main"
+    	  		 android:layout_below = "@id/relativeWordFlashBtn_Main"
+    	  		 >
+    	    	<ImageButton 
+    	    	    android:id="@+id/iBtnVoiceFlash_Main"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:background="@drawable/selector_main_flashvoicebutton_bg_960x540_true"
+    	    	    android:contentDescription="@string/defaultContentDesc"
+    	    	    android:padding="0dip"       
+    	    	    />
+    	    	 <TextView
+    	    		android:id="@+id/textViewVoiceFaster_Main"
+    	    	 	android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:text = "@string/title_EVoiceFM"
+    	    	    android:layout_centerInParent="true"
+    	    	    android:gravity="center_vertical"
+    	    	    android:drawablePadding="5dip"
+    	    	    style = "@style/mainform_icon_text_flashmanagement"
+    	    	    android:drawableTop="@drawable/main_voiceflashbtn_960x540"  />
+    	     </RelativeLayout>
+
+    	        <RelativeLayout 
+    	            android:id = "@+id/relativeVideofasterBtn_Main"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dip" >
+    	    	<ImageButton 
+    	    	    android:id="@+id/iBtnVideoFlash_Main"
+    	    	    android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:background="@drawable/selector_main_flashvideobutton_bg_960x540_true"
+    	    	    android:contentDescription="@string/defaultContentDesc"
+    	    	    android:layout_marginLeft="5dip" 
+    	    	    android:padding="0dip"
+					android:layout_alignLeft = "@id/iBtnPicFlash_Main"
+    	    	    />
+    	    	<TextView
+    	    		android:id="@+id/textViewVideoFaster_Main"
+    	    	 	android:layout_width="wrap_content"
+    	    	    android:layout_height="wrap_content"
+    	    	    android:text = "@string/title_EVideoFM"
+                    android:drawablePadding="0dip"
+    	    	    style = "@style/mainform_icon_text_flashmanagement"
+    	    	    android:drawableTop="@drawable/main_videoflashbtn_960x540"
+    	    	    android:layout_centerInParent="true"
+    	    	    android:gravity="center_vertical"
+    	    	    />
+    	    	 </RelativeLayout>
+    	    </LinearLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"	
+    android:layout_width="match_parent"	
+    android:layout_height ="match_parent"
+    android:background= "#FFFFFF"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/relativeLayoutBannerTH_MOA"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        style ="@style/background_color_blue"
+        >
+          <ImageButton 
+   			    android:id="@+id/iBtnBackTH_MOA"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/phone_common_goback" 	
+				android:layout_marginLeft="10dip" 
+				android:layout_centerVertical="true"
+				android:contentDescription="@string/defaultContentDesc"/>
+         <com.cuc.miti.phone.xmc.ui.control.MarqueeTextView
+			android:id="@+id/textViewMsgTitle_MOA" android:layout_width="match_parent"
+			android:layout_height="match_parent" 
+			android:lines="1"
+			android:focusable="true" 
+			android:focusableInTouchMode="true"
+			android:scrollHorizontally="true" 
+			android:marqueeRepeatLimit="2"
+			android:singleLine="true" 
+			android:ellipsize="marquee"
+			android:gravity="center"  
+			style="@style/banner_title" 	
+			android:layout_toRightOf="@id/iBtnBackTH_MOA"
+			android:layout_centerInParent="true"
+			android:layout_centerVertical="true" 
+			android:paddingRight="25dp">
+		</com.cuc.miti.phone.xmc.ui.control.MarqueeTextView>
+     </RelativeLayout>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:background="#FFFFFF" 
+			android:id="@+id/relativeLayout_content_MOA"
+			android:layout_height="match_parent"
+			 android:layout_marginBottom="50dip">
+			
+			<WebView
+			 	android:layout_height="match_parent"
+			 	android:layout_width="match_parent"
+				android:id="@+id/webView_MOA"
+				
+	            
+			/>
+		</RelativeLayout>	
+	
+	
+</LinearLayout>

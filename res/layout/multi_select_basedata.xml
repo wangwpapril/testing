@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+      <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_MSB"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        style ="@style/background_color_blue"
+        android:gravity="center" >  	
+        	<ImageButton 
+   			    android:id="@+id/iBtnBack_MSB"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/phone_common_goback" 	
+				android:layout_marginLeft="10dip" 
+				android:layout_centerVertical="true"
+				android:gravity="center"
+				android:contentDescription="@string/defaultContentDesc"/>	
+   			<TextView 
+   			    android:id="@+id/textViewTitle_MSB"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:layout_centerInParent="true"   			   
+   			    style="@style/banner_title" />
+   			<ImageButton 
+   			    android:id="@+id/iBtnStoreChoose_MSB"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:background="@drawable/phone_draftlabel_submit"   
+   			    android:layout_alignParentRight="true"
+   			    android:layout_marginRight="10dip"
+   			    android:layout_centerVertical="true"
+   			    android:contentDescription="@string/defaultContentDesc" />
+   		</RelativeLayout>
+   		<RelativeLayout
+   		    android:id="@+id/relativeLayoutSearch_MSB"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="45dip"
+   		    android:gravity="center" 
+   		    android:background="#FFFFFF">	
+   		    
+	    	<EditText
+	    	    android:id="@+id/editTextSearch_MSB"
+	    	    style="@style/template_manage_text_search_content"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginBottom="8dip"
+	    	    android:layout_marginTop="8dip"
+	    	    android:background="@null"
+	    	    android:gravity="top"
+	    	    android:maxLines="1"
+	    	    android:padding="5dip" 
+	    	    android:hint="@string/inputSearchKeyword_ESTA"/>
+   		</RelativeLayout>
+
+   		<RelativeLayout
+   		    android:id="@+id/relativeLayoutContent_MSB"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="match_parent"
+   		    android:gravity="center" 
+   		    android:background="#000000">	
+		     <ListView  
+				android:id="@+id/listViewSelectBaseData_MSB"  
+				android:layout_width="match_parent"  
+				android:layout_height="match_parent"
+				android:fastScrollEnabled="true" 
+				android:scrollbars="none"
+				android:background="#FFFFFF" />	
+		</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBanner_attachC"
+        style="@style/background_color_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/imageBtnBack_attachC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/phone_common_goback"
+            android:contentDescription="@string/defaultContentDesc"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textViewPageTitle_attachC"
+            style="@style/banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择要同步的附件" />
+
+        <ImageButton
+            android:id="@+id/imageBtnFinish_attachC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/phone_draftlabel_submit"
+            android:contentDescription="@string/defaultContentDesc"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridViewAccerioes_attachC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutBanner_attachC"
+        android:layout_marginBottom="5dip"
+        android:clipChildren="true"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:isScrollContainer="true"
+        android:numColumns="3"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</RelativeLayout>

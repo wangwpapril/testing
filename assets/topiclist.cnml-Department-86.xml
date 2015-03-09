@@ -1,0 +1,1641 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CNML xmlns="http://www.cnml.org.cn/2005/CNMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Items>
+<Item xsi:type="TopicListItemType">
+<MetaInfo>
+<AdministrationMetaGroup>
+<Id>
+<PublicId>urn:cnml:xinhua.org:20070701:topiclist.cnml-Department-105:105</PublicId>
+<ProviderId>xinhua.org</ProviderId>
+<DateId>20070701</DateId>
+<ItemId>topiclist.cnml-Department-86</ItemId>
+<VersionId>86</VersionId>
+</Id>
+<Status>Usable</Status>
+</AdministrationMetaGroup>
+</MetaInfo>
+<Contents>
+<TopicList xsi:type="TopicListType" id="c024" domain="//DescriptionMetaGroup/SourceInfo/ItemSource/@topicRef">
+<Topics>
+<Topic id="c0241001" topicId="Gahfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">安徽分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241002" topicId="Gbjfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">北京分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241003" topicId="Gcqfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">重庆分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241004" topicId="Gcsfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">测试分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241005" topicId="Gfjfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">福建分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241006" topicId="Ggdfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">广东分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241007" topicId="Ggsfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">甘肃分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241008" topicId="Ggxfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">广西分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241009" topicId="Ggzfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">贵州分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241010" topicId="Ghbfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">湖北分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241011" topicId="Ghjfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">河北分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241012" topicId="Ghlfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">黑龙江分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241013" topicId="Ghnfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">湖南分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241014" topicId="Ghqfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">海南分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241015" topicId="Ghyfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">河南分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241016" topicId="Gjlfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">吉林分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241017" topicId="Gjsfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">江苏分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241018" topicId="Gjxfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">江西分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241019" topicId="Glnfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">辽宁分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241020" topicId="Gnmfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">内蒙古分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241021" topicId="Gnxfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">宁夏分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241022" topicId="Gqhfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">青海分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241023" topicId="Gscfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">四川分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241024" topicId="Gsdfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">山东分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241025" topicId="Gshfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">上海分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241026" topicId="Gsnfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">陕西分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241027" topicId="Gsxfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">山西分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241028" topicId="Gtjfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">天津分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241029" topicId="Gxjfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">新疆分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241030" topicId="Gxzfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">西藏分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241031" topicId="Gynfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">云南分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241032" topicId="Gzjfsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">浙江分社</Name>
+<Description kind="SourceType">国内分社</Description>
+</Topic>
+<Topic id="c0241033" topicId="Zdlzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">辽宁分社-大连支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241034" topicId="Zglzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">广西分社-桂林支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241035" topicId="Zjjzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">江西分社-九江支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241036" topicId="Zjwzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">山东分社-胶东支社（威海）</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241037" topicId="Zjyzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">山东分社-胶东支社（烟台）</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241038" topicId="Znbzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">浙江分社-宁波支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241039" topicId="Zpdzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">上海分社-浦东支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241040" topicId="Zqdzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">山东分社-青岛支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241041" topicId="Zsezsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">广东分社-深圳支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241042" topicId="Zsizsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">湖北分社-三峡支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241043" topicId="Zslzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">江苏分社-苏北支社（连云港）</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241044" topicId="Zsmzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">福建分社-厦门支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241045" topicId="Zstzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">广东分社-汕头支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241046" topicId="Zsxzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">江苏分社-苏北支社（徐州）</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241047" topicId="Zszzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">江苏分社-苏州支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241048" topicId="Zwzzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">浙江分社-温州支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0241049" topicId="Zzhzsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">广东分社-珠海支社</Name>
+<Description kind="SourceType">国内支社</Description>
+</Topic>
+<Topic id="c0244285" topicId="Xxjnmc" deleteFlag="Remain">  <Name xml:lang="zh-CN">新媒体中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244286" topicId="Xxjnls" deleteFlag="Remain">
+<Name xml:lang="zh-CN">新媒体中心-临时组</Name> <Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0242001" topicId="Babbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚的斯亚贝巴</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242002" topicId="Bagbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">阿尔及尔</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242003" topicId="Bahbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">阿布扎比</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242004" topicId="Bajbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">阿比让</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242005" topicId="Bakbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">安卡拉</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242006" topicId="Balbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">阿拉木图</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242007" topicId="Bambur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">安曼</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242008" topicId="Baobur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">安哥拉</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242009" topicId="Batbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">雅典</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242010" topicId="Bbabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">布宜诺斯艾利斯</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242011" topicId="Bbcbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">布加勒斯特</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242012" topicId="Bbdbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">贝尔格莱德</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242013" topicId="Bbkbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">曼谷</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242014" topicId="Bblbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">柏林</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242015" topicId="Bbnbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">波恩</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242016" topicId="Bbobur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">孟买</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242017" topicId="Bbpbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">布达佩斯</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242018" topicId="Bbrbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">贝鲁特</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242019" topicId="Bbsbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">布鲁塞尔</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242020" topicId="Bbtbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">波哥大</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242021" topicId="Bbvbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">布拉柴维尔</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242022" topicId="Bbzbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">巴西利亚</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242023" topicId="Bcbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">堪培拉</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242024" topicId="Bccbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">加拉加斯</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242025" topicId="Bcfbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">塞维利亚</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242026" topicId="Bclbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">科伦坡</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242027" topicId="Bcrbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">开罗</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242028" topicId="Bdhbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">达卡</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242029" topicId="Bdkbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">达喀尔</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242030" topicId="Bdmbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">大马士革</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242031" topicId="Bdsbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">达累斯萨拉姆</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242032" topicId="Bflbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">赫尔辛基</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242033" topicId="Bgvbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">日内瓦</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242034" topicId="Bgzbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">加沙</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242035" topicId="Bhkbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">香港</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242036" topicId="Bhnbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">河内</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242037" topicId="Bhrbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">哈拉雷</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242038" topicId="Bhvbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">哈瓦那</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242039" topicId="Bibbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">伊斯兰堡</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242040" topicId="Bikbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">巴格达</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242041" topicId="Bjhbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">约翰内斯堡</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242042" topicId="Bjkbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">雅加达</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242043" topicId="Bjrbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">耶路撒冷</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242044" topicId="Bkbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">喀布尔</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242045" topicId="Bkibur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">基辅</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242046" topicId="Bklbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">吉隆坡</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242047" topicId="Bkmbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">喀土穆</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242048" topicId="Bkpbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">坎帕拉</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242049" topicId="Bksbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">金沙萨</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242050" topicId="Bktbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">科威特</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242051" topicId="Blbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">里斯本</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242052" topicId="Bldbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">伦敦</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242053" topicId="Blgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉各斯</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242054" topicId="Blibur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">利马</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242055" topicId="Bljbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">里加</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242056" topicId="Blkbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">卢萨卡</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242057" topicId="Blmbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">洛美</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242058" topicId="Blobur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">罗安达</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242059" topicId="Blpbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉巴斯</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242060" topicId="Blvbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">利伯维尔</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242061" topicId="Bmabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">马那瓜</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242062" topicId="Bmcbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">莫斯科分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242063" topicId="Bmdbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">马德里</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242064" topicId="Bmlbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">马尼拉</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242065" topicId="Bmnbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">蒙得维的亚</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242066" topicId="Bmobur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">澳门</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242067" topicId="Bmtbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">马普托</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242068" topicId="Bmxbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">墨西哥</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242069" topicId="Bnabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">欧美编辑部</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242070" topicId="Bnbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">内罗毕</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242071" topicId="Bndbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">新德里</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242072" topicId="Bnpbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">加德满都</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242073" topicId="Bnsbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">尼科西亚</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242074" topicId="Bnybur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">纽约分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242075" topicId="Botbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">渥太华分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242076" topicId="Bpgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">布拉格</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242077" topicId="Bphbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">金边</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242078" topicId="Bpmbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">巴拿马</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242079" topicId="Bprbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">巴黎</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242080" topicId="Bpybur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">平壤</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242081" topicId="Bqtbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">基多</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242082" topicId="Brdbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">利雅得</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242083" topicId="Brgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">仰光</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242084" topicId="Brmbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">罗马</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242085" topicId="Brobur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">里约热内卢</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242086" topicId="Brtbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉巴特</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242087" topicId="Bsabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">索非亚</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242088" topicId="Bsebur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">首尔</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242089" topicId="Bsfbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">洛杉矶分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242090" topicId="Bsgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">圣地亚哥</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242091" topicId="Bsjbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">圣何塞</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242092" topicId="Bsmbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">斯德哥尔摩</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242093" topicId="Bsnbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">萨那</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242094" topicId="Bspbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">新加坡</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242095" topicId="Btgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">特古西加尔巴</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242096" topicId="Btkbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">东京</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242097" topicId="Btnbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">地拉那</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242098" topicId="Btrbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">德黑兰</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242099" topicId="Btsbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">突尼斯</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242100" topicId="Btvbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">塔那那利佛</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242101" topicId="Bubbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">乌兰巴托</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242102" topicId="Bunbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">联合国分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242103" topicId="Bvnbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">维也纳</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242104" topicId="Bwabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">华盛顿分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242105" topicId="Bwsbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">华沙</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242106" topicId="Bwtbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">惠灵顿</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242107" topicId="Bydbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">雅温得</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242108" topicId="Bzgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">萨格勒布</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242109" topicId="Bxsbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">休斯敦分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242110" topicId="Bfcbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">旧金山分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242111" topicId="Bcabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">芝加哥分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242112" topicId="Bwgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">温哥华分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242113" topicId="Bdrbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">多伦多分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242114" topicId="Bdbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">第比利斯分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242115" topicId="Bysbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">伊斯坦布尔分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242116" topicId="Bbibur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">比什凯克分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242117" topicId="Btabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">塔什干分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242118" topicId="Bdibur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">迪拜分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242119" topicId="Bhybur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">海牙分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242120" topicId="Bdobur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">弗拉迪沃斯托克分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242121" topicId="Bsibur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">悉尼分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242122" topicId="Bkfbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">法兰克福分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242123" topicId="Bjsbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">吉尔吉斯斯坦分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242124" topicId="Bosbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">奥斯陆分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242125" topicId="Baabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">阿克拉分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242126" topicId="Bsdbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">圣多明各分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242127" topicId="Bddbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">多哈分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242128" topicId="Bchbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">哥本哈根分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242129" topicId="Bjdbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">大阪（日本）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242130" topicId="Bwxbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">万象（老挝）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242131" topicId="Bfjbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">苏瓦（斐济）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242132" topicId="Bdlbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">的黎波里（利比亚）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242133" topicId="Blybur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">路易港（毛里求斯）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242134" topicId="Bhbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">哈博罗内（博茨瓦纳）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242135" topicId="Badbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">都柏林（爱尔兰）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242136" topicId="Bstbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">斯特拉斯堡（法国）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242137" topicId="Btlbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">塔林（爱沙尼亚）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242138" topicId="Basbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">巴库（阿塞拜疆）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242139" topicId="Bmsbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">明斯克（白俄罗斯）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242140" topicId="Bskbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">斯科普里（马其顿）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242141" topicId="Bbmbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">巴马科（马里）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242142" topicId="Blsbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉巴斯（玻利维亚）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242143" topicId="Bsbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">圣保罗（巴西）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242144" topicId="Blnbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">卢布尔雅那</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242145" topicId="Bmubur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">马斯喀特（阿曼）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242146" topicId="Bpbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">圣彼得堡分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242147" topicId="Bnhbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">慕尼黑（德国）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242148" topicId="Bslbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">斯里巴加湾（文莱）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242149" topicId="Bmebur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">马累（马尔代夫）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242150" topicId="Btibur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">帝力（东帝汶）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242151" topicId="Bmrbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">马赛（法国）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242152" topicId="Bmhbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">慕尼黑（德国）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242153" topicId="Blubur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">卢森堡（卢森堡）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242154" topicId="Bjjbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">基加利（卢旺达）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242155" topicId="Bknbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">科托努（贝宁）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242156" topicId="Bkkbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">科纳克里（几内亚）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242157" topicId="Bkdbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">开普敦（南非）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242158" topicId="Bapbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">阿布贾（尼日利亚）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242159" topicId="Bbbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">圣彼得堡（俄罗斯）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242160" topicId="Bycbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">叶卡捷琳堡（俄罗斯）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242161" topicId="Byebur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">伊尔库茨克（俄罗斯）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242162" topicId="Bdubur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">杜尚别（塔吉克斯坦）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242163" topicId="Baibur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">埃里温（亚美尼亚）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242164" topicId="Baebur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">阿什哈巴德（土库曼斯坦）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242165" topicId="Bxbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">西班牙港（特立尼达和多巴哥）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242166" topicId="Byabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚松森（巴拉圭）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242167" topicId="Bmkbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">马斯喀特（阿曼）分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242168" topicId="bjgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">加尔各答分社（印度）</Name>
+</Topic>
+<Topic id="c0242169" topicId="bmbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">墨尔本（澳大利亚）</Name>
+</Topic>
+<Topic id="c0242170" topicId="bkgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">金斯敦分社（牙买加）</Name>
+</Topic>
+<Topic id="c0242171" topicId="bmibur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">米兰分社（意大利）</Name>
+</Topic>
+<Topic id="c0242172" topicId="bedbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">爱丁堡分社（英国）</Name>
+</Topic>
+<Topic id="c0242173" topicId="bzbbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">朱巴分社（南苏丹）</Name>
+</Topic>
+<Topic id="c0242174" topicId="bsrbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">萨拉热窝分社（波黑）</Name>
+</Topic>
+<Topic id="c0242175" topicId="bwdbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">温得和克分社（纳米比亚）</Name>
+</Topic>
+<Topic id="c0242176" topicId="Bvtbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">瓦莱塔分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242177" topicId="Bacbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">阿斯塔纳分社</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242180" topicId="Bbfbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">布拉迪斯拉发分社（斯洛伐克）</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242178" topicId="Bbebur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">巴塞罗那分社（西班牙）</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242179" topicId="Bwnbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">维尔纽斯分社（立陶宛）</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242181" topicId="Blwbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">雷克雅未克分社（冰岛）</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242182" topicId="Bpabur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">帕拉马里博分社（苏里南）</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242183" topicId="Bynbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚松森分社（巴拉圭）</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242184" topicId="Bfgbur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">福冈分社（日本）</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0242185" topicId="Bhubur" deleteFlag="Remain">
+<Name xml:lang="zh-CN">胡志明市分社（越南）</Name>
+<Description kind="SourceType">国外分社</Description>
+</Topic>
+<Topic id="c0243001" topicId="Ccrbaa" deleteFlag="Remain">
+<Name xml:lang="zh-CN">中东总分社-阿文编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243002" topicId="Ccrbae" deleteFlag="Remain">
+<Name xml:lang="zh-CN">中东总分社-雇员组</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243003" topicId="Ccrbcr" deleteFlag="Remain">
+<Name xml:lang="zh-CN">中东总分社-开罗分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243004" topicId="Ccrbee" deleteFlag="Remain">
+<Name xml:lang="zh-CN">中东总分社-英文编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243005" topicId="Ccrzfs" deleteFlag="Remain">
+<Name xml:lang="zh-CN">中东总分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243006" topicId="Chkhae" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚太总分社-亚太编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243007" topicId="Chkhgc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚太总分社-中文编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243008" topicId="Chkhge" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚太总分社-英文编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243009" topicId="Chkzfs" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚太总分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243010" topicId="Cmcbrr" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚欧总分社-俄文编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243011" topicId="Cmczec" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚欧总分社-中俄文采访部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243012" topicId="Cmczfs" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚欧总分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243013" topicId="Cmxbmx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉美总分社-墨西哥分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243014" topicId="Cmxmes" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉美总分社-英翻西组</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243015" topicId="Cmxmex" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉美总分社-专家组</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243016" topicId="Cmxmse" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉美总分社-西翻英组</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243017" topicId="Cmxmss" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉美总分社-西文编辑组</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243018" topicId="Cmxzfs" deleteFlag="Remain">
+<Name xml:lang="zh-CN">拉美总分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243019" topicId="Cnbbee" deleteFlag="Remain">
+<Name xml:lang="zh-CN">非洲总分社-英文编辑部</Name>
+<Description xml:lang="zh-CN">内罗毕（肯尼亚）（见非洲总分社地址码）</Description>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243020" topicId="Cnbbff" deleteFlag="Remain">
+<Name xml:lang="zh-CN">非洲总分社-法文编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243021" topicId="Cnbbnb" deleteFlag="Remain">
+<Name xml:lang="zh-CN">非洲总分社-内罗毕分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243022" topicId="Cnbzfs" deleteFlag="Remain">
+<Name xml:lang="zh-CN">非洲总分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243023" topicId="Cnybny" deleteFlag="Remain">
+<Name xml:lang="zh-CN">北美总分社-英文编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243024" topicId="Cnynyc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">北美总分社-中文编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243025" topicId="Cnyzfs" deleteFlag="Delete">
+<Name xml:lang="zh-CN">欧美编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243026" topicId="Cprbff" deleteFlag="Remain">
+<Name xml:lang="zh-CN">法语地区总分社-法文编辑部</Name>
+<Description xml:lang="zh-CN">巴黎（法国）（见法语地区总分社地址码）</Description>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243027" topicId="Cprpab" deleteFlag="Remain">
+<Name xml:lang="zh-CN">巴黎-巴黎分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243028" topicId="Crobpp" deleteFlag="Remain">
+<Name xml:lang="zh-CN">巴西里约分社-葡文编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243029" topicId="Chkhac" deleteFlag="Remain">
+<Name xml:lang="zh-CN">亚太总分社-信息组</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243030" topicId="Cnynys" deleteFlag="Remain">
+<Name xml:lang="zh-CN">北美总分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243031" topicId="Cnyztp" deleteFlag="Remain">
+<Name xml:lang="zh-CN">北美总分社-图片编辑部</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243032" topicId="Cbsbef" deleteFlag="Remain">
+<Name xml:lang="zh-CN">欧洲总分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243033" topicId="Cyozfs" deleteFlag="Delete">
+<Name xml:lang="zh-CN">亚欧总分社</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0243035" topicId="Cbstmp" deleteFlag="Remain">
+<Name xml:lang="zh-CN">欧洲总分社-临时组</Name>
+<Description kind="SourceType">国外总分社及编辑部</Description>
+</Topic>
+<Topic id="c0244001" topicId="Xxjace" deleteFlag="Remain">
+<Name xml:lang="zh-CN">总编室-总编室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244003" topicId="Xxjadd" deleteFlag="Remain">
+<Name xml:lang="zh-CN">总编室-社长</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244004" topicId="Xxjadm" deleteFlag="Remain">
+<Name xml:lang="zh-CN">总编室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244005" topicId="Xxjadt" deleteFlag="Remain">
+<Name xml:lang="zh-CN">技术局-中文发稿室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244007" topicId="Xxjait" deleteFlag="Remain">
+<Name xml:lang="zh-CN">技术局-国际电讯室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244013" topicId="Xxjbbw" deleteFlag="Remain">
+<Name xml:lang="zh-CN">央采中心-编委会</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244014" topicId="Xxjbcj" deleteFlag="Remain">
+<Name xml:lang="zh-CN">央采中心-财经采访组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244015" topicId="Xxjbdm" deleteFlag="Remain">
+<Name xml:lang="zh-CN">央采中心-多媒体采访室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244016" topicId="Xxjbjj" deleteFlag="Remain">
+<Name xml:lang="zh-CN">央采中心-经济采访室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244017" topicId="Xxjbsy" deleteFlag="Remain">
+<Name xml:lang="zh-CN">央采中心-摄影采访室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244019" topicId="Xxjbvh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-央采中心前方采访组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244020" topicId="Xxjbws" deleteFlag="Remain">
+<Name xml:lang="zh-CN">央采中心-外事采访室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244021" topicId="Xxjbzw" deleteFlag="Remain">
+<Name xml:lang="zh-CN">央采中心-政文采访室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244022" topicId="Xxjbzy" deleteFlag="Remain">
+<Name xml:lang="zh-CN">中央新闻采访中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244023" topicId="Xxjcbn" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际先驱导报</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244024" topicId="Xxjckx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">参考消息</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244025" topicId="Xxjcws" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244026" topicId="Xxjdbg" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-办公室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244027" topicId="Xxjdcy" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-财经新闻专线</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244028" topicId="Xxjddf" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-民族编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244029" topicId="Xxjdfg" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-分管室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244030" topicId="Xxjdfw" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-服务新闻专线</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244031" topicId="Xxjdgd" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-广电新闻组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244032" topicId="Xxjdjb" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-经济编辑组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244033" topicId="Xxjdjc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-经济采访室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244034" topicId="Xxjdjr" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-今日新闻编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244035" topicId="Xxjdjs" deleteFlag="Remain">
+<Name xml:lang="zh-CN">军分社</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244038" topicId="Xxjdnt" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-网络采编室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244039" topicId="Xxjdom" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244041" topicId="Xxjdsd" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-新华视点</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244042" topicId="Xxjdtg" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-特稿室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244044" topicId="Xxjdvc" deleteFlag="Delete">
+<Name xml:lang="zh-CN">国内部-服务新闻专线</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244045" topicId="Xxjdvh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-国内部前方发稿中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244046" topicId="Xxjdwb" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-社文新闻专线</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244047" topicId="Xxjdzb" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-发稿中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244048" topicId="Xxjdzc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-政文采访室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244049" topicId="Xxjdzr" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-部主任</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244050" topicId="Xxjdzz" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国内部-政文编辑组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244051" topicId="Xxjebn" deleteFlag="Remain">
+<Name xml:lang="zh-CN">信息部</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244053" topicId="Xxjecj" deleteFlag="Remain">
+<Name xml:lang="zh-CN">信息部-新华财经分析专线</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244054" topicId="Xxjecw" deleteFlag="Remain">
+<Name xml:lang="zh-CN">信息部-对外英文信息专线</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244055" topicId="Xxjedm" deleteFlag="Remain">
+<Name xml:lang="zh-CN">信息部-舆情数据专线</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244062" topicId="Xxjesi" deleteFlag="Remain">
+<Name xml:lang="zh-CN">信息部-海外信息专线</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244066" topicId="Xxjfav" deleteFlag="Remain">
+<Name xml:lang="zh-CN">音视频部</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244078" topicId="Xxjgvh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-港台部前方发稿中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244079" topicId="Xxjhqx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">环球</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244084" topicId="Xxjiar" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-阿文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244085" topicId="Xxjidi" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-部主任</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244086" topicId="Xxjido" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-发稿中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244087" topicId="Xxjiec" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-经济组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244088" topicId="Xxjifr" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-法文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244089" topicId="Xxjigc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-国际观察编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244090" topicId="Xxjigd" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-广播电视新闻编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244091" topicId="Xxjihx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-海外信息组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244092" topicId="Xxjihy" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-社文服务专线编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244094" topicId="Xxjilb" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-资料组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244097" topicId="Xxjimo" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-机动组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244099" topicId="Xxjind" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244101" topicId="Xxjint" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-网络编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244102" topicId="Xxjinw" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-专稿要闻组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244103" topicId="Xxjiob" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-分管室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244104" topicId="Xxjioc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-海外中文专线组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244105" topicId="Xxjipf" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-法文专家组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244106" topicId="Xxjipl" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-英文改稿组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244108" topicId="Xxjips" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-西文专家组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244109" topicId="Xxjiql" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-财经室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244110" topicId="Xxjiru" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-俄文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244111" topicId="Xxjise" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-西文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244112" topicId="Xxjist" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-科技组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244115" topicId="Xxjivh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-国际部前方发稿中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244116" topicId="Xxjiwe" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-英文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244117" topicId="Xxjiyj" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-研究室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244118" topicId="Xxjizh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">国际部-综合新闻编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244119" topicId="Xxjjcx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">经济参考报</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244125" topicId="Xxjlwx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">瞭望</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244128" topicId="Xxjmvb" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244130" topicId="Xxjmv1" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动发稿中心1</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244131" topicId="Xxjmv2" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动发稿中心2</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244132" topicId="Xxjmv3" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动发稿中心3</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244133" topicId="Xxjmv4" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动发稿中心4</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244134" topicId="Xxjmv5" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动发稿中心5</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244143" topicId="Xxjpce" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-中国照片编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244144" topicId="Xxjpdi" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-部主任</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244146" topicId="Xxjpfm" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-中国照片档案室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244147" topicId="Xxjpge" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-图表新闻编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244148" topicId="Xxjpht" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244149" topicId="Xxjpie" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-国际照片编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244150" topicId="Xxjpne" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-网络新闻编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244151" topicId="Xxjpse" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-体育照片采编室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244152" topicId="Xxjpsg" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-发稿中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244153" topicId="Xxjpso" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-社会新闻采访室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244154" topicId="Xxjpzl" deleteFlag="Remain">
+<Name xml:lang="zh-CN">摄影部-对外展览编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244155" topicId="Xxjrxx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">每日电讯</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244158" topicId="Xxjspa" deleteFlag="Remain">
+<Name xml:lang="zh-CN">体育部-部主任</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244159" topicId="Xxjspc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">体育部-中文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244160" topicId="Xxjspd" deleteFlag="Remain">
+<Name xml:lang="zh-CN">体育部-发稿中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244161" topicId="Xxjspe" deleteFlag="Remain">
+<Name xml:lang="zh-CN">体育部-英文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244162" topicId="Xxjspl" deleteFlag="Remain">
+<Name xml:lang="zh-CN">体育部-资料室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244163" topicId="Xxjspr" deleteFlag="Remain">
+<Name xml:lang="zh-CN">体育部</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244165" topicId="Xxjsva" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-体育部前方部主任</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244166" topicId="Xxjsvc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-体育部前方中文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244167" topicId="Xxjsve" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-体育部前方英文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244169" topicId="Xxjtec" deleteFlag="Remain">
+<Name xml:lang="zh-CN">技术局</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244172" topicId="Xxjtst" deleteFlag="Remain">
+<Name xml:lang="zh-CN">测试部门</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244175" topicId="Xxjtvc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-技术局前方电讯室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244180" topicId="Xxjwhx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-行业信息</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244183" topicId="Xxjwne" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-国内新闻采编室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244189" topicId="Xxjwsa" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-阿文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244190" topicId="Xxjwsb" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-经济组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244191" topicId="Xxjwsc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-部主任</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244192" topicId="Xxjwsd" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-外事组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244193" topicId="Xxjwse" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-政文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244194" topicId="Xxjwsf" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-法文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244195" topicId="Xxjwsg" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-研究中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244196" topicId="Xxjwsh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-值班室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244197" topicId="Xxjwsi" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-调研室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244198" topicId="Xxjwso" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-办公室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244199" topicId="Xxjwsp" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-葡文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244200" topicId="Xxjwsr" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-俄文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244201" topicId="Xxjwss" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-西文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244202" topicId="Xxjwst" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-特稿社</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244203" topicId="Xxjwsz" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-港台部</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244205" topicId="Xxjwvc" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-对外部前方中文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244206" topicId="Xxjwve" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-对外部前方英文组</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244207" topicId="Xxjwvh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">移动部门-对外部前方发稿中心</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244208" topicId="Xxjwxe" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-信息二编室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244209" topicId="Xxjwzh" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-政文新闻采编室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244210" topicId="Xxjwzs" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-综述室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244211" topicId="Xxjwzw" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-中央外事室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244212" topicId="Xxjwzx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-综合信息</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244213" topicId="Xxjwzy" deleteFlag="Remain">
+<Name xml:lang="zh-CN">对外部-经济新闻采编室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244217" topicId="Xxjytb" deleteFlag="Remain">
+<Name xml:lang="zh-CN">半月谈-国际编辑室</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244218" topicId="Xxjzqx" deleteFlag="Remain">
+<Name xml:lang="zh-CN">中国证券报</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244221" topicId="Xxjows" deleteFlag="Remain">
+<Name xml:lang="zh-CN">外事局</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244222" topicId="Xxjtam" deleteFlag="Remain">
+<Name xml:lang="zh-CN">技术局-局领导</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+<Topic id="c0244231" topicId="Xxjozq" deleteFlag="Remain">
+<Name xml:lang="zh-CN">上海证券报</Name>
+<Description kind="SourceType">总社</Description>
+</Topic>
+</Topics>
+</TopicList>
+</Contents>
+</Item>
+</Items>
+</CNML>

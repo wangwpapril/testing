@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<CNML>
+<Items>
+<item>
+<Contents>
+<TopicList>
+<Topics>
+<Topic topicId="ahfsh" deleteFlag="Remain"><Name>Anhui News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="ahfsh" deleteFlag="Remain"><Name>Anhui News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="ahfsh" deleteFlag="Remain"><Name>Anhui News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="ahfsh" deleteFlag="Remain"><Name>安徽分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bjfsh" deleteFlag="Remain"><Name>Beijing News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bjfsh" deleteFlag="Remain"><Name>Beijing News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bjfsh" deleteFlag="Remain"><Name>Beijing News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bjfsh" deleteFlag="Remain"><Name>北京分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bsbef" deleteFlag="Remain"><Name>European Branch</Name> <Description kind="Order">0</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bsbef" deleteFlag="Remain"><Name>European Branch</Name> <Description kind="Order">0</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bsbef" deleteFlag="Remain"><Name>European Branch</Name> <Description kind="Order">0</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bsbef" deleteFlag="Remain"><Name>欧洲总分社</Name> <Description kind="Order">0</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bsbff" deleteFlag="Remain"><Name>European Branch，Paris Franchise editorial department</Name> <Description kind="Order">0</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bsbff" deleteFlag="Remain"><Name>European Branch，Paris Franchise editorial department</Name> <Description kind="Order">0</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bsbff" deleteFlag="Remain"><Name>European Branch，Paris Franchise editorial department</Name> <Description kind="Order">0</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="bsbff" deleteFlag="Remain"><Name>欧洲总分社-巴黎法文编辑部</Name> <Description kind="Order">0</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="cqfsh" deleteFlag="Remain"><Name>Chongqing News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="cqfsh" deleteFlag="Remain"><Name>Chongqing News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="cqfsh" deleteFlag="Remain"><Name>Chongqing News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="cqfsh" deleteFlag="Remain"><Name>重庆分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="crzfs" deleteFlag="Remain"><Name>Middle East Branch</Name> <Description kind="Order">0</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="crzfs" deleteFlag="Remain"><Name>Middle East Branch</Name> <Description kind="Order">0</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="crzfs" deleteFlag="Remain"><Name>Middle East Branch</Name> <Description kind="Order">0</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="crzfs" deleteFlag="Remain"><Name>中东总分社</Name> <Description kind="Order">0</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="csfsh" deleteFlag="Remain"><Name>测试分社</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="csfsh" deleteFlag="Remain"><Name>测试分社</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="csfsh" deleteFlag="Remain"><Name>测试分社</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="csfsh" deleteFlag="Remain"><Name>测试分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="fjfsh" deleteFlag="Remain"><Name>Fujian News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="fjfsh" deleteFlag="Remain"><Name>Fujian News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="fjfsh" deleteFlag="Remain"><Name>Fujian News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="fjfsh" deleteFlag="Remain"><Name>福建分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gdfsh" deleteFlag="Remain"><Name>Guangdong News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gdfsh" deleteFlag="Remain"><Name>Guangdong News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gdfsh" deleteFlag="Remain"><Name>Guangdong News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gdfsh" deleteFlag="Remain"><Name>广东分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gsfsh" deleteFlag="Remain"><Name>Gansu News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gsfsh" deleteFlag="Remain"><Name>Gansu News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gsfsh" deleteFlag="Remain"><Name>Gansu News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gsfsh" deleteFlag="Remain"><Name>甘肃分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gxfsh" deleteFlag="Remain"><Name>Ggxfsh</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gxfsh" deleteFlag="Remain"><Name>Ggxfsh</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gxfsh" deleteFlag="Remain"><Name>Ggxfsh</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gxfsh" deleteFlag="Remain"><Name>广西分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gzfsh" deleteFlag="Remain"><Name>Guizhou News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gzfsh" deleteFlag="Remain"><Name>Guizhou News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gzfsh" deleteFlag="Remain"><Name>Guizhou News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="gzfsh" deleteFlag="Remain"><Name>贵州分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hbfsh" deleteFlag="Remain"><Name>Hubei News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hbfsh" deleteFlag="Remain"><Name>Hubei News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hbfsh" deleteFlag="Remain"><Name>Hubei News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hbfsh" deleteFlag="Remain"><Name>湖北分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hjfsh" deleteFlag="Remain"><Name>Hebei News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hjfsh" deleteFlag="Remain"><Name>Hebei News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hjfsh" deleteFlag="Remain"><Name>Hebei News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hjfsh" deleteFlag="Remain"><Name>河北分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hkzfs" deleteFlag="Remain"><Name>Asia-Pacific Branch</Name> <Description kind="Order">0</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hkzfs" deleteFlag="Remain"><Name>Asia-Pacific Branch</Name> <Description kind="Order">0</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hkzfs" deleteFlag="Remain"><Name>Asia-Pacific Branch</Name> <Description kind="Order">0</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hkzfs" deleteFlag="Remain"><Name>亚太总分社</Name> <Description kind="Order">0</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hlfsh" deleteFlag="Remain"><Name>Hielongjiang News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hlfsh" deleteFlag="Remain"><Name>Hielongjiang News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hlfsh" deleteFlag="Remain"><Name>Hielongjiang News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hlfsh" deleteFlag="Remain"><Name>黑龙江分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hnfsh" deleteFlag="Remain"><Name>Hunan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hnfsh" deleteFlag="Remain"><Name>Hunan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hnfsh" deleteFlag="Remain"><Name>Hunan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hnfsh" deleteFlag="Remain"><Name>湖南分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hqfsh" deleteFlag="Remain"><Name>Hainan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hqfsh" deleteFlag="Remain"><Name>Hainan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hqfsh" deleteFlag="Remain"><Name>Hainan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hqfsh" deleteFlag="Remain"><Name>海南分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hyfsh" deleteFlag="Remain"><Name>Henan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hyfsh" deleteFlag="Remain"><Name>Henan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hyfsh" deleteFlag="Remain"><Name>Henan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="hyfsh" deleteFlag="Remain"><Name>河南分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jlfsh" deleteFlag="Remain"><Name>Jilin News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jlfsh" deleteFlag="Remain"><Name>Jilin News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jlfsh" deleteFlag="Remain"><Name>Jilin News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jlfsh" deleteFlag="Remain"><Name>吉林分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jsfsh" deleteFlag="Remain"><Name>Jiangsu News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jsfsh" deleteFlag="Remain"><Name>Jiangsu News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jsfsh" deleteFlag="Remain"><Name>Jiangsu News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jsfsh" deleteFlag="Remain"><Name>江苏分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jxfsh" deleteFlag="Remain"><Name>Jiangxi News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jxfsh" deleteFlag="Remain"><Name>Jiangxi News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jxfsh" deleteFlag="Remain"><Name>Jiangxi News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="jxfsh" deleteFlag="Remain"><Name>江西分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="lnfsh" deleteFlag="Remain"><Name>Liaoning News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="lnfsh" deleteFlag="Remain"><Name>Liaoning News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="lnfsh" deleteFlag="Remain"><Name>Liaoning News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="lnfsh" deleteFlag="Remain"><Name>辽宁分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="mxzfs" deleteFlag="Remain"><Name>Latin American Branch</Name> <Description kind="Order">0</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="mxzfs" deleteFlag="Remain"><Name>Latin American Branch</Name> <Description kind="Order">0</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="mxzfs" deleteFlag="Remain"><Name>Latin American Branch</Name> <Description kind="Order">0</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="mxzfs" deleteFlag="Remain"><Name>拉美总分社</Name> <Description kind="Order">0</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nbzfs" deleteFlag="Remain"><Name>Africa Branch</Name> <Description kind="Order">0</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nbzfs" deleteFlag="Remain"><Name>Africa Branch</Name> <Description kind="Order">0</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nbzfs" deleteFlag="Remain"><Name>Africa Branch</Name> <Description kind="Order">0</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nbzfs" deleteFlag="Remain"><Name>非洲总分社</Name> <Description kind="Order">0</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nmfsh" deleteFlag="Remain"><Name>Neimenggu News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nmfsh" deleteFlag="Remain"><Name>Neimenggu News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nmfsh" deleteFlag="Remain"><Name>Neimenggu News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nmfsh" deleteFlag="Remain"><Name>内蒙古分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nxfsh" deleteFlag="Remain"><Name>Ningxia News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nxfsh" deleteFlag="Remain"><Name>Ningxia News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nxfsh" deleteFlag="Remain"><Name>Ningxia News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nxfsh" deleteFlag="Remain"><Name>宁夏分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nynys" deleteFlag="Remain"><Name>North American Branch</Name> <Description kind="Order">0</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nynys" deleteFlag="Remain"><Name>North American Branch</Name> <Description kind="Order">0</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nynys" deleteFlag="Remain"><Name>North American Branch</Name> <Description kind="Order">0</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="nynys" deleteFlag="Remain"><Name>北美总分社</Name> <Description kind="Order">0</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="qhfsh" deleteFlag="Remain"><Name>Qinghai News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="qhfsh" deleteFlag="Remain"><Name>Qinghai News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="qhfsh" deleteFlag="Remain"><Name>Qinghai News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="qhfsh" deleteFlag="Remain"><Name>青海分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="scfsh" deleteFlag="Remain"><Name>Sichuan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="scfsh" deleteFlag="Remain"><Name>Sichuan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="scfsh" deleteFlag="Remain"><Name>Sichuan News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="scfsh" deleteFlag="Remain"><Name>四川分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="sdfsh" deleteFlag="Remain"><Name>Shandong News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="sdfsh" deleteFlag="Remain"><Name>Shandong News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="sdfsh" deleteFlag="Remain"><Name>Shandong News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="sdfsh" deleteFlag="Remain"><Name>山东分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="shfsh" deleteFlag="Remain"><Name>Shanghai News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="shfsh" deleteFlag="Remain"><Name>Shanghai News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="shfsh" deleteFlag="Remain"><Name>Shanghai News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="shfsh" deleteFlag="Remain"><Name>上海分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="snfsh" deleteFlag="Remain"><Name>Shanxi News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="snfsh" deleteFlag="Remain"><Name>Shanxi News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="snfsh" deleteFlag="Remain"><Name>Shanxi News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="snfsh" deleteFlag="Remain"><Name>陕西分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="sxfsh" deleteFlag="Remain"><Name>Shanxi News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="sxfsh" deleteFlag="Remain"><Name>Shanxi News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="sxfsh" deleteFlag="Remain"><Name>Shanxi News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="sxfsh" deleteFlag="Remain"><Name>山西分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="tjfsh" deleteFlag="Remain"><Name>Tianjin News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="tjfsh" deleteFlag="Remain"><Name>Tianjin News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="tjfsh" deleteFlag="Remain"><Name>Tianjin News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="tjfsh" deleteFlag="Remain"><Name>天津分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjadb" deleteFlag="Remain"><Name>总社多媒体待编稿库</Name> <Description kind="Order">2</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjadb" deleteFlag="Remain"><Name>总社多媒体待编稿库</Name> <Description kind="Order">2</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjadb" deleteFlag="Remain"><Name>总社多媒体待编稿库</Name> <Description kind="Order">2</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjadb" deleteFlag="Remain"><Name>总社多媒体待编稿库</Name> <Description kind="Order">2</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjnmc" deleteFlag="Remain"><Name>新媒体中心</Name> <Description kind="Order">2</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjnmc" deleteFlag="Remain"><Name>新媒体中心</Name> <Description kind="Order">2</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjnmc" deleteFlag="Remain"><Name>新媒体中心</Name> <Description kind="Order">2</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjnmc" deleteFlag="Remain"><Name>新媒体中心</Name> <Description kind="Order">2</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjadm" deleteFlag="Remain"><Name>Chief Editor Office</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjadm" deleteFlag="Remain"><Name>Chief Editor Office</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjadm" deleteFlag="Remain"><Name>Chief Editor Office</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjadm" deleteFlag="Remain"><Name>总编室</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjbzy" deleteFlag="Remain"><Name>Xxjbzy</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjbzy" deleteFlag="Remain"><Name>Xxjbzy</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjbzy" deleteFlag="Remain"><Name>Xxjbzy</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjbzy" deleteFlag="Remain"><Name>央采中心</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjcws" deleteFlag="Remain"><Name>Foreign Department</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjcws" deleteFlag="Remain"><Name>Foreign Department</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjcws" deleteFlag="Remain"><Name>Foreign Department</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjcws" deleteFlag="Remain"><Name>对外部</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjdom" deleteFlag="Remain"><Name>Domestic Department</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjdom" deleteFlag="Remain"><Name>Domestic Department</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjdom" deleteFlag="Remain"><Name>Domestic Department</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjdom" deleteFlag="Remain"><Name>国内部</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjfav" deleteFlag="Remain"><Name>音像部</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjfav" deleteFlag="Remain"><Name>音像部</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjfav" deleteFlag="Remain"><Name>音像部</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjfav" deleteFlag="Remain"><Name>音像部</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjfsh" deleteFlag="Remain"><Name>Xinjiang News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjfsh" deleteFlag="Remain"><Name>Xinjiang News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjfsh" deleteFlag="Remain"><Name>Xinjiang News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjfsh" deleteFlag="Remain"><Name>新疆分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjind" deleteFlag="Remain"><Name>International Department</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjind" deleteFlag="Remain"><Name>International Department</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjind" deleteFlag="Remain"><Name>International Department</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjind" deleteFlag="Remain"><Name>国际部</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjjcx" deleteFlag="Remain"><Name>经济参考报</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv1" deleteFlag="Remain"><Name>移动发稿中心1</Name> <Description kind="Order">3</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv1" deleteFlag="Remain"><Name>移动发稿中心1</Name> <Description kind="Order">3</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv1" deleteFlag="Remain"><Name>移动发稿中心1</Name> <Description kind="Order">3</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv1" deleteFlag="Remain"><Name>移动发稿中心1</Name> <Description kind="Order">3</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv2" deleteFlag="Remain"><Name>移动发稿中心2</Name> <Description kind="Order">3</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv2" deleteFlag="Remain"><Name>移动发稿中心2</Name> <Description kind="Order">3</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv2" deleteFlag="Remain"><Name>移动发稿中心2</Name> <Description kind="Order">3</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv2" deleteFlag="Remain"><Name>移动发稿中心2</Name> <Description kind="Order">3</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv3" deleteFlag="Remain"><Name>移动发稿中心3</Name> <Description kind="Order">3</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv3" deleteFlag="Remain"><Name>移动发稿中心3</Name> <Description kind="Order">3</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv3" deleteFlag="Remain"><Name>移动发稿中心3</Name> <Description kind="Order">3</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv3" deleteFlag="Remain"><Name>移动发稿中心3</Name> <Description kind="Order">3</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv4" deleteFlag="Remain"><Name>移动发稿中心4</Name> <Description kind="Order">3</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv4" deleteFlag="Remain"><Name>移动发稿中心4</Name> <Description kind="Order">3</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv4" deleteFlag="Remain"><Name>移动发稿中心4</Name> <Description kind="Order">3</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv4" deleteFlag="Remain"><Name>移动发稿中心4</Name> <Description kind="Order">3</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv5" deleteFlag="Remain"><Name>移动发稿中心5</Name> <Description kind="Order">3</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv5" deleteFlag="Remain"><Name>移动发稿中心5</Name> <Description kind="Order">3</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv5" deleteFlag="Remain"><Name>移动发稿中心5</Name> <Description kind="Order">3</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjmv5" deleteFlag="Remain"><Name>移动发稿中心5</Name> <Description kind="Order">3</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjpht" deleteFlag="Remain"><Name>Photography Department</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjpht" deleteFlag="Remain"><Name>Photography Department</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjpht" deleteFlag="Remain"><Name>Photography Department</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjpht" deleteFlag="Remain"><Name>摄影部</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjrxx" deleteFlag="Remain"><Name>新华每日电讯</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjspr" deleteFlag="Remain"><Name>Physical Department</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjspr" deleteFlag="Remain"><Name>Physical Department</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjspr" deleteFlag="Remain"><Name>Physical Department</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjspr" deleteFlag="Remain"><Name>体育部</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjtec" deleteFlag="Remain"><Name>Technical Bureau</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjtec" deleteFlag="Remain"><Name>Technical Bureau</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjtec" deleteFlag="Remain"><Name>Technical Bureau</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjtec" deleteFlag="Remain"><Name>技术局</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjtst" deleteFlag="Remain"><Name>测试部门</Name> <Description kind="Order">1</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjtst" deleteFlag="Remain"><Name>测试部门</Name> <Description kind="Order">1</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjtst" deleteFlag="Remain"><Name>测试部门</Name> <Description kind="Order">1</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjtst" deleteFlag="Remain"><Name>测试部门</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjwst" deleteFlag="Remain"><Name>Foreign Department, Special Article</Name> <Description kind="Order">2</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjwst" deleteFlag="Remain"><Name>Foreign Department, Special Article</Name> <Description kind="Order">2</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjwst" deleteFlag="Remain"><Name>Foreign Department, Special Article</Name> <Description kind="Order">2</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjwst" deleteFlag="Remain"><Name>对外部-特稿社</Name> <Description kind="Order">2</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xjwzb" deleteFlag="Remain"><Name>对外部-专版室</Name> <Description kind="Order">1</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xzfsh" deleteFlag="Remain"><Name>Tibet News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xzfsh" deleteFlag="Remain"><Name>Tibet News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xzfsh" deleteFlag="Remain"><Name>Tibet News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="xzfsh" deleteFlag="Remain"><Name>西藏分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="ynfsh" deleteFlag="Remain"><Name>Tehran News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="ynfsh" deleteFlag="Remain"><Name>Tehran News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="ynfsh" deleteFlag="Remain"><Name>Tehran News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="ynfsh" deleteFlag="Remain"><Name>云南分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="yozfs" deleteFlag="Remain"><Name>Asia and Europe Branch</Name> <Description kind="Order">0</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="yozfs" deleteFlag="Remain"><Name>Asia and Europe Branch</Name> <Description kind="Order">0</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="yozfs" deleteFlag="Remain"><Name>Asia and Europe Branch</Name> <Description kind="Order">0</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="yozfs" deleteFlag="Remain"><Name>亚欧总分社</Name> <Description kind="Order">0</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="zjfsh" deleteFlag="Remain"><Name>Zhejiang News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">en</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="zjfsh" deleteFlag="Remain"><Name>Zhejiang News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">es</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="zjfsh" deleteFlag="Remain"><Name>Zhejiang News Agency Bureax</Name> <Description kind="Order">4</Description><Description kind="Language">fr</Description><Description kind="Tag"></Description></Topic>
+<Topic topicId="zjfsh" deleteFlag="Remain"><Name>浙江分社</Name> <Description kind="Order">4</Description><Description kind="Language">zh-CHS</Description><Description kind="Tag"></Description></Topic>
+</Topics>
+</TopicList>
+</Contents>
+</item>
+</Items>
+</CNML>
