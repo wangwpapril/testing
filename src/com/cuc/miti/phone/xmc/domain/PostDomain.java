@@ -1,5 +1,9 @@
 package com.cuc.miti.phone.xmc.domain;
 
+import java.io.Serializable;
+
+import com.google.mitijson.annotations.SerializedName;
+
 public class PostDomain {
 	String email;
 	String password;
@@ -27,7 +31,5 @@ public class PostDomain {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-
 
 }

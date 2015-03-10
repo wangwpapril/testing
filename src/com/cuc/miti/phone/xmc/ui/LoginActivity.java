@@ -28,6 +28,8 @@ import com.cuc.miti.phone.xmc.IngleApplication;
 import com.cuc.miti.phone.xmc.domain.LocationDomain;
 import com.cuc.miti.phone.xmc.domain.PositionInfo;
 import com.cuc.miti.phone.xmc.domain.PostDomain;
+import com.cuc.miti.phone.xmc.domain.UserDemo;
+import com.cuc.miti.phone.xmc.domain.UserInfoDemo;
 import com.cuc.miti.phone.xmc.domain.XmcException;
 import com.cuc.miti.phone.xmc.domain.Enums.InterfaceType;
 import com.cuc.miti.phone.xmc.domain.Enums.NetStatus;
@@ -192,10 +194,15 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 //							if(lct!=null){
 //							PostDomain postDomain = new PostDomain(editTextUserName.getText().toString().trim(),
 	//								editTextPassword.getText().toString().trim());
-							PostDomain postDomain = new PostDomain("wwang@peakcontact.com","12345678");
+//							PostDomain postDomain = new PostDomain("wwang@peakcontact.com","12345678");
 
+							UserInfoDemo demo = new UserInfoDemo();
+							UserDemo user = new UserDemo();
+							user.setEmail("wwang@peakcontact.com");
+							user.setPsw("12345678");
+							demo.setUser(user);
 							Gson gson = new Gson();
-							String parasString = gson.toJson(postDomain);
+							String parasString = gson.toJson(demo);
 
 							HttpClient httpClient = new HttpClient();
 						
