@@ -55,7 +55,6 @@ import com.cuc.miti.phone.xmc.utils.SharedPreferencesHelper;
 import com.cuc.miti.phone.xmc.utils.StandardizationDataHelper;
 import com.cuc.miti.phone.xmc.utils.ToastHelper;
 import com.cuc.miti.phone.xmc.R;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -140,6 +139,15 @@ public class SplashScreenActivity extends Activity {
 		setContentView(R.layout.splash);
 		IngleApplication.getInstance().addActivity(this);
 		this.initialize();
+		Handler h = new Handler();
+		h.postDelayed(new Runnable() {
+			@Override
+			public void run(){
+				Intent mIntent = new Intent(SplashScreenActivity.this,LoginActivity.class);
+				startActivity(mIntent);
+				SplashScreenActivity.this.finish();
+			}
+		},2000);	
   
 	}
 
@@ -151,14 +159,14 @@ public class SplashScreenActivity extends Activity {
 		dvDeviceInfoHelper = new DeviceInfoHelper();
 		mSharedPreferencesHelper = new SharedPreferencesHelper(SplashScreenActivity.this);
 	
-		mComeFromAddressService = new ComeFromAddressService(SplashScreenActivity.this);
-		mLanguageService = new LanguageService(SplashScreenActivity.this);
-		mPlaceServices = new PlaceService(SplashScreenActivity.this);
-		mNewsCategoryServices = new NewsCategoryService(SplashScreenActivity.this);
-		mNewsPriorityService = new NewsPriorityService(SplashScreenActivity.this);
-		mProvideTypeService = new ProvideTypeService(SplashScreenActivity.this);
-		mRegionService = new RegionService(SplashScreenActivity.this);
-		mSendToAddressService = new SendToAddressService(SplashScreenActivity.this);
+//		mComeFromAddressService = new ComeFromAddressService(SplashScreenActivity.this);
+//		mLanguageService = new LanguageService(SplashScreenActivity.this);
+//		mPlaceServices = new PlaceService(SplashScreenActivity.this);
+//		mNewsCategoryServices = new NewsCategoryService(SplashScreenActivity.this);
+//		mNewsPriorityService = new NewsPriorityService(SplashScreenActivity.this);
+//		mProvideTypeService = new ProvideTypeService(SplashScreenActivity.this);
+//		mRegionService = new RegionService(SplashScreenActivity.this);
+//		mSendToAddressService = new SendToAddressService(SplashScreenActivity.this);
 		mBaseDataService = new BaseDataService(SplashScreenActivity.this);
 		
 		apkUrl = Configuration.getSystemUpgradeUrl();
@@ -167,7 +175,7 @@ public class SplashScreenActivity extends Activity {
 		savePath = StandardizationDataHelper.GetBaseDataFileStorePath();
 		saveFileName = savePath +apkUrl.substring(apkUrl.lastIndexOf("/"),apkUrl.length());
 		
-		this.setUpViews();	
+//		this.setUpViews();	
 		
 		//��װ������һ�����У��Ὣ��ݿⲿ��ϵͳĬ�ϵ�Data\Data\com.cuc.miti.phone.xmc/databasesĿ¼��
 		if(createDatabaseIfNewInstall()){			//�����ݿⴴ���ɹ�������Խ��л�ȡ�������Ƽ��ͻ���ݵĸ��µ�������
@@ -175,7 +183,7 @@ public class SplashScreenActivity extends Activity {
 			//��һ������û������״̬�ĸı䣬Application�е�netStatusΪnull����Ҫ������ȡ��ǰ����״̬����Ϊ�丳ֵ			
 			IngleApplication.setNetStatus(dvDeviceInfoHelper.getNetStatus());	
 			if(IngleApplication.getNetStatus() != NetStatus.Disable){
-				GetAppServer();		//����Ӧ�ø���û����õķ�������ַ��ȡϵͳ�Ƽ��ĵ�¼������URL		
+//				GetAppServer();		//����Ӧ�ø���û����õķ�������ַ��ȡϵͳ�Ƽ��ĵ�¼������URL		
 				//validateVersion();			//��ȡ�Ƿ������µĳ���汾
 			}else{
 				final int welcomeScreenDisplay = 2000;

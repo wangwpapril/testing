@@ -41,13 +41,18 @@ import com.cuc.miti.phone.xmc.domain.Enums.PreferenceType;
 import com.cuc.miti.phone.xmc.domain.Enums.TemplateType;
 import com.cuc.miti.phone.xmc.domain.KeyValueData;
 import com.cuc.miti.phone.xmc.domain.ManuscriptTemplate;
+import com.cuc.miti.phone.xmc.domain.PositionInfo;
 import com.cuc.miti.phone.xmc.domain.SendToAddress;
 import com.cuc.miti.phone.xmc.domain.UploadTask;
 import com.cuc.miti.phone.xmc.domain.User;
 import com.cuc.miti.phone.xmc.domain.UserAttribute;
+import com.cuc.miti.phone.xmc.domain.UserDemo;
+import com.cuc.miti.phone.xmc.domain.UserInfoDemo;
 import com.cuc.miti.phone.xmc.domain.XmcException;
 import com.cuc.miti.phone.xmc.http.Configuration;
 import com.cuc.miti.phone.xmc.http.DoRemoteResult;
+import com.cuc.miti.phone.xmc.http.HttpClient;
+import com.cuc.miti.phone.xmc.http.PostParameter;
 import com.cuc.miti.phone.xmc.http.RemoteCaller;
 import com.cuc.miti.phone.xmc.ui.AttachmentUploadActivity;
 import com.cuc.miti.phone.xmc.ui.LoginActivity;
@@ -63,6 +68,7 @@ import com.cuc.miti.phone.xmc.utils.StandardizationDataHelper;
 import com.cuc.miti.phone.xmc.utils.ToastHelper;
 import com.cuc.miti.phone.xmc.utils.XMLDataHandle;
 import com.cuc.miti.phone.xmc.R;
+import com.google.mitijson.Gson;
 
 public class UserService {
 
@@ -206,8 +212,50 @@ public class UserService {
 				String[] ss;
 
 				public void run() {
+					
+			///////////					
+									String[] returnValueString = {"",""};
+									
+									try {
+//										if(lct!=null){
+//										PostDomain postDomain = new PostDomain(editTextUserName.getText().toString().trim(),
+				//								editTextPassword.getText().toString().trim());
+//										PostDomain postDomain = new PostDomain("wwang@peakcontact.com","12345678");
 
-					HashMap<String, String> hsHashMap = Configuration
+										UserInfoDemo demo = new UserInfoDemo();
+										UserDemo user = new UserDemo();
+										user.setEmail("wwang@peakcontact.com");
+										user.setPsw("12345678");
+										demo.setUser(user);
+										Gson gson = new Gson();
+										String parasString = gson.toJson(demo);
+
+										HttpClient httpClient = new HttpClient();
+										PostParameter[] postParams = null;
+									
+										String JSONResult = httpClient.post(parasString, "https://api.intrepid247.com/v1/users/login", 6000);	
+										JSONResult = httpClient.doGet(postParams, 
+								"https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", 6000);
+										if (StringUtils.isNotBlank(JSONResult)) {
+
+											JSONObject jb = new JSONObject(JSONResult);
+		//									returnValueString[0]=(String) jb.get("token");
+			//								returnValueString[1]=(String) jb.get("role");
+											if (dialog != null) {
+												dialog.dismiss();
+											}
+
+										}
+//									}
+									} catch (Exception e) {
+//										exceptionTypeJudge(e);
+									}
+
+
+								 ////////////					
+
+
+/*					HashMap<String, String> hsHashMap = Configuration
 							.getHashMapAppAddress();
 					sharedPreferencesHelper = new SharedPreferencesHelper(
 							context);
@@ -237,7 +285,7 @@ public class UserService {
 					}// URL��ַ���ò���ȷ�����ܵ�¼
 						// else{
 					// login(user);
-					// }
+					// }*/
 				}
 			}).start();
 		}

@@ -137,7 +137,8 @@ public class HttpClient {
 				HttpURLConnection connection = null;
 				try {
 
-					connection = (HttpURLConnection) new URL(connectionUrl+"?"+encodeParameters(getParams)).openConnection();
+//					connection = (HttpURLConnection) new URL(connectionUrl+"?"+encodeParameters(getParams)).openConnection();
+					connection = (HttpURLConnection) new URL(connectionUrl).openConnection();
 					if(connectTimeout !=0){
 						connection.setConnectTimeout(connectTimeout);
 					}

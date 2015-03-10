@@ -18,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -37,6 +38,7 @@ import com.cuc.miti.phone.xmc.domain.Enums.PreferenceKeys;
 import com.cuc.miti.phone.xmc.domain.Enums.PreferenceType;
 import com.cuc.miti.phone.xmc.http.Configuration;
 import com.cuc.miti.phone.xmc.http.HttpClient;
+import com.cuc.miti.phone.xmc.http.PostParameter;
 import com.cuc.miti.phone.xmc.logic.LocationService;
 import com.cuc.miti.phone.xmc.logic.UserService;
 import com.cuc.miti.phone.xmc.services.AppStatusService;
@@ -51,7 +53,7 @@ import com.google.mitijson.Gson;
 public class LoginActivity extends BaseActivity implements OnClickListener {
 	private SharedPreferencesHelper sharedPreferencesHelper;
 	private DeviceInfoHelper deviceInfoHelper;
-	ImageButton imBtnSignIn;
+	Button imBtnSignIn;
 	EditText editTextUserName, editTextPassword;
 	TextView txViewServer, txViewConfig;
 
@@ -68,7 +70,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.login);
+		setContentView(R.layout.login_layout);
 
 		this.setUpViews();
 
@@ -83,9 +85,9 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 		sharedPreferencesHelper = new SharedPreferencesHelper(
 				LoginActivity.this);
 
-		imBtnSignIn = (ImageButton) findViewById(R.id.imBtnSignIn_Login);
-		editTextUserName = (EditText) findViewById(R.id.editTextUserName_Login);
-		editTextPassword = (EditText) findViewById(R.id.editTextPassword_Login);
+		imBtnSignIn = (Button) findViewById(R.id.butSignIn);
+		editTextUserName = (EditText) findViewById(R.id.signinEmailEditText);
+		editTextPassword = (EditText) findViewById(R.id.signinPasswordEditText);
 		editTextUserName.setText(sharedPreferencesHelper
 				.getPreferenceValue(PreferenceKeys.Sys_CurrentUser.toString()));
 		if ("0"
@@ -104,20 +106,20 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 		editTextPassword.setTransformationMethod(PasswordTransformationMethod
 				.getInstance());
 
-		txViewConfig = (TextView) findViewById(R.id.textViewConfig_Login);
+/*		txViewConfig = (TextView) findViewById(R.id.textViewConfig_Login);
 		txViewConfig.setText(R.string.setting);
 		if (Integer.parseInt(DeviceInfoHelper.getDeviceVersionSDK()) >= 14) {
 			txViewConfig.setOnClickListener(this);
 		} else {
 			txViewConfig.setVisibility(View.GONE);
 		}
-
+*/
 	}
 
 	public void onClick(View v) {
 		switch (v.getId()) {
 		// 锟斤拷录
-		case R.id.imBtnSignIn_Login:
+		case R.id.butSignIn:
 			try {
 				login();
 			} catch (Exception e) {
@@ -181,47 +183,9 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 				}
 
 				if (onlineState == true) {// 锟斤拷锟斤拷锟铰�
-/*					userServices.userLoginOnline(editTextUserName.getText()
+					userServices.userLoginOnline(editTextUserName.getText()
 							.toString().trim(), editTextPassword.getText()
-							.toString().trim());
-///////////					
-					public static String[] Location(String userName, String sessionId,
-							PositionInfo lct, String location, String memo, String source)
-							throws XmcException {*/
-						String[] returnValueString = {"",""};
-						
-						try {
-//							if(lct!=null){
-//							PostDomain postDomain = new PostDomain(editTextUserName.getText().toString().trim(),
-	//								editTextPassword.getText().toString().trim());
-//							PostDomain postDomain = new PostDomain("wwang@peakcontact.com","12345678");
-
-							UserInfoDemo demo = new UserInfoDemo();
-							UserDemo user = new UserDemo();
-							user.setEmail("wwang@peakcontact.com");
-							user.setPsw("12345678");
-							demo.setUser(user);
-							Gson gson = new Gson();
-							String parasString = gson.toJson(demo);
-
-							HttpClient httpClient = new HttpClient();
-						
-							String JSONResult = httpClient.post(parasString, "https://api.intrepid247.com/v1/users/login", 6000);	
-							if (StringUtils.isNotBlank(JSONResult)) {
-
-								JSONObject jb = new JSONObject(JSONResult);
-								returnValueString[0]=(String) jb.get("id");
-								returnValueString[1]=(String) jb.get("username");
-
-							}
-//						}
-						} catch (Exception e) {
-//							exceptionTypeJudge(e);
-						}
-
-
-					 ////////////					
-					
+							.toString().trim());					
 					
 					
 				} else {// 锟斤拷锟斤拷锟斤拷锟铰�

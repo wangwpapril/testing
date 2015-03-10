@@ -24,9 +24,11 @@ import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.view.View.OnClickListener;
 
-public class BaseActivity extends Activity{
+public class BaseActivity extends Activity implements OnClickListener{
 
 	ActivityManager activityManager;
 	
@@ -76,6 +78,15 @@ public class BaseActivity extends Activity{
 		
 	}
 
-	
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onBackClick(View view){
+		onBackPressed();
+	}
+
 	
 }
