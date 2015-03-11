@@ -1,0 +1,31 @@
+<resources>
+     
+    <dimen name="text_size_large">22dp</dimen>
+    
+    <dimen name="text_size_big">20dp</dimen>
+    
+    <dimen name="text_size_normal">18dp</dimen>
+    
+    <dimen name="text_size_small">14dp</dimen>
+    
+    <dimen name="text_size_mini">12dp</dimen>
+    
+    <dimen name="triangle_size">25dip</dimen>
+    
+    <dimen name="base_padding">8dip</dimen>
+    
+    <dimen name="divier_height">1dip</dimen>
+	<dimen name="guide_spot_height">20dip</dimen>
+	<dimen name="guide_sport_margin_bottom">30dip</dimen>
+	<dimen name="order_detail_interval">30dip</dimen>
+	<!-- 更多item设置 -->
+	<dimen name="more_margin_left">10dp</dimen>
+	<dimen name="more_margin_right">10dp</dimen>
+	<dimen name="order_detail_padding_top">15dip</dimen>
+	<dimen name="order_detail_padding_bottom">15dip</dimen>
+	<dimen name="order_detail_image_icon">25dip</dimen>
+	<dimen name="order_detail_state_padding_top">15dip</dimen>
+	<dimen name="button_padding_side">15dip</dimen>
+	<dimen name="setting_button">30dip</dimen>
+	<dimen name="popwindow_item_height">50dip</dimen>
+</resources>

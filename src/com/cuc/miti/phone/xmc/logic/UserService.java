@@ -59,6 +59,7 @@ import com.cuc.miti.phone.xmc.ui.LoginActivity;
 import com.cuc.miti.phone.xmc.ui.MainActivity;
 import com.cuc.miti.phone.xmc.ui.SplashScreenActivity;
 import com.cuc.miti.phone.xmc.ui.TestEntranceActivity;
+import com.cuc.miti.phone.xmc.ui.WelcomeActivity;
 import com.cuc.miti.phone.xmc.utils.DeviceInfoHelper;
 import com.cuc.miti.phone.xmc.utils.Encrypt;
 import com.cuc.miti.phone.xmc.utils.Format;
@@ -244,6 +245,9 @@ public class UserService {
 											if (dialog != null) {
 												dialog.dismiss();
 											}
+											Intent intent = new Intent(context, WelcomeActivity.class);
+											context.startActivity(intent);
+											((Activity) context).finish();
 
 										}
 //									}
@@ -337,7 +341,7 @@ public class UserService {
 							.setLoginStatus(LoginStatus.offline); // ��ʶΪ���ߵ�½
 					uploadTaskService = new UploadTaskService(context);
 					uploadTaskService.loadUploadTaskIntoWaitingQueue(); // �����ϴ�����
-					Intent intent = new Intent(context, MainActivity.class);
+					Intent intent = new Intent(context, WelcomeActivity.class);
 					context.startActivity(intent);
 					// Toast.makeText(context, "���ߵ�¼�ɹ�",
 					// Toast.LENGTH_SHORT).show();

@@ -355,4 +355,9 @@ public class IngleApplication extends Application implements UncaughtExceptionHa
         System.exit(1);	
 		
 	}
+
+	public int getVersionCode() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

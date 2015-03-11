@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/guide_sport_margin_bottom"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="@dimen/guide_sport_margin_bottom"
+	    android:layout_centerHorizontal="true"
+	    android:gravity="center_horizontal"
+	    >
+	    <ImageView android:id="@+id/spot_one"
+	        android:layout_width="@dimen/guide_spot_height"
+	        android:layout_height="@dimen/guide_spot_height"
+	        />
+	    <ImageView android:id="@+id/spot_two"
+	        android:layout_width="@dimen/guide_spot_height"
+	        android:layout_height="@dimen/guide_spot_height"
+	        />
+	    <ImageView android:id="@+id/spot_three"
+	        android:layout_width="@dimen/guide_spot_height"
+	        android:layout_height="@dimen/guide_spot_height"
+	        />
+	    <ImageView android:id="@+id/spot_four"
+	        android:layout_width="@dimen/guide_spot_height"
+	        android:layout_height="@dimen/guide_spot_height"
+	        />
+	    <ImageView android:id="@+id/spot_five"
+	        android:layout_width="@dimen/guide_spot_height"
+	        android:layout_height="@dimen/guide_spot_height"
+	        />
+	</LinearLayout>
+</RelativeLayout>
