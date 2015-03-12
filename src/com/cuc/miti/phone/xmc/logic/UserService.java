@@ -54,6 +54,8 @@ import com.cuc.miti.phone.xmc.http.DoRemoteResult;
 import com.cuc.miti.phone.xmc.http.HttpClient;
 import com.cuc.miti.phone.xmc.http.PostParameter;
 import com.cuc.miti.phone.xmc.http.RemoteCaller;
+import com.cuc.miti.phone.xmc.models.Company;
+import com.cuc.miti.phone.xmc.models.User1;
 import com.cuc.miti.phone.xmc.ui.AttachmentUploadActivity;
 import com.cuc.miti.phone.xmc.ui.LoginActivity;
 import com.cuc.miti.phone.xmc.ui.MainActivity;
@@ -238,6 +240,11 @@ public class UserService {
 										String JSONResult = httpClient.post(parasString, "https://api.intrepid247.com/v1/users/login", 6000);	
 //										JSONResult = httpClient.doGet(postParams, 
 	//							"https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", 6000);
+
+										
+							            JSONObject jsonObj = new JSONObject(JSONResult);	
+							            JSONObject userObj = jsonObj.getJSONObject("user");
+							            User1 user1 = new User1(userObj);
 										if (StringUtils.isNotBlank(JSONResult)) {
 
 											JSONObject jb = new JSONObject(JSONResult);

@@ -383,15 +383,7 @@
         <service android:name=".services.AppStatusService" />
         <service android:name=".services.FTPServerService" />
         <service android:name=".services.LocationService" />
-        <service
-            android:name=".xmpp.NotificationService"
-            android:enabled="true"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="com.cuc.miti.phone.xmc.xmpp.NotificationService" />
-            </intent-filter>
-        </service>
-        <service
+       <service
             android:name="com.baidu.location.f"
             android:enabled="true"
             android:process=":remote" />
