@@ -80,7 +80,7 @@ public class ParamBuilder {
      */
     public static String parseUrl(String resouce, List<NameValuePair> params) {
     	StringBuffer sBuffer = new StringBuffer(resouce);
-    	sBuffer.append("?token=").append(PreferencesUtil.getValue("token"));
+//    	sBuffer.append("?token=").append(PreferencesUtil.getValue("token"));
     	
         if (params == null || params.size() == 0) {
         	return sBuffer.toString();

@@ -168,10 +168,10 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 
 		getMessageThread();
 
-		ServiceManager serviceManager = new ServiceManager(this);
+/*		ServiceManager serviceManager = new ServiceManager(this);
 		serviceManager.setNotificationIcon(R.drawable.logo);
 		serviceManager.startService();
-	}
+*/	}
 
 	/**
 	 * ҳ���л�����

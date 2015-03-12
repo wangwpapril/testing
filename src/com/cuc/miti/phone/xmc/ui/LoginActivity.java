@@ -1,5 +1,7 @@
 package com.cuc.miti.phone.xmc.ui;
 
+import java.util.List;
+
 import org.apache.commons.lang3.StringUtils;
 import org.json.JSONObject;
 
@@ -24,8 +26,14 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
+
+
 import com.cuc.miti.phone.xmc.R;
 import com.cuc.miti.phone.xmc.IngleApplication;
+import com.cuc.miti.phone.xmc.ServiceManager;
+import com.cuc.miti.phone.xmc.config.ParamBuilder;
 import com.cuc.miti.phone.xmc.domain.LocationDomain;
 import com.cuc.miti.phone.xmc.domain.PositionInfo;
 import com.cuc.miti.phone.xmc.domain.PostDomain;
@@ -41,6 +49,7 @@ import com.cuc.miti.phone.xmc.http.HttpClient;
 import com.cuc.miti.phone.xmc.http.PostParameter;
 import com.cuc.miti.phone.xmc.logic.LocationService;
 import com.cuc.miti.phone.xmc.logic.UserService;
+import com.cuc.miti.phone.xmc.net.NetworkService.ICallback;
 import com.cuc.miti.phone.xmc.services.AppStatusService;
 import com.cuc.miti.phone.xmc.services.ReceiverService;
 import com.cuc.miti.phone.xmc.utils.DeviceInfoHelper;
@@ -183,6 +192,26 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 				}
 
 				if (onlineState == true) {// 锟斤拷锟斤拷锟铰�
+/////////////////////////					
+/*					ParamBuilder pb = new ParamBuilder();
+	//				pb.append("productId", mPd == null ? mCpd.id : mPd.id);
+					
+//					Logg.d("---------------------- " + ParamBuilder.parseUrl(LeyouApi.PRODUCT_SIZE, pb.getParamList()));
+					ServiceManager.getNetworkService().get(ParamBuilder.parseUrl("https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", pb.getParamList()),
+							
+							new ICallback() {
+								@Override
+								public void onResponse(int status, String result) {
+//									hideLoadPb();
+									if (status != 200) return;
+									
+/*									List<ProductColorSize> sizes = parseColorSizes(result);
+									mHeightAdapter.setList(sizes);
+									mHeightAdapter.notifyDataSetChanged();
+								}
+							});*/
+/////////////////////////					
+					
 					userServices.userLoginOnline(editTextUserName.getText()
 							.toString().trim(), editTextPassword.getText()
 							.toString().trim());					

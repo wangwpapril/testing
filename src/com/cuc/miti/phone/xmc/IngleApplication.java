@@ -218,6 +218,8 @@ public class IngleApplication extends Application implements UncaughtExceptionHa
 		super.onCreate();
 		Log.i(TAG, "Application onCreate()");
 		instance=this;
+		ServiceManager.init(this);
+
 		mLock=new Object();
 		intentHashMap=new HashMap<String, Object>();
 		currentUserInfo = new User();

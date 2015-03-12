@@ -234,9 +234,10 @@ public class UserService {
 										HttpClient httpClient = new HttpClient();
 										PostParameter[] postParams = null;
 									
+//										String JSONResult = null;
 										String JSONResult = httpClient.post(parasString, "https://api.intrepid247.com/v1/users/login", 6000);	
-										JSONResult = httpClient.doGet(postParams, 
-								"https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", 6000);
+//										JSONResult = httpClient.doGet(postParams, 
+	//							"https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", 6000);
 										if (StringUtils.isNotBlank(JSONResult)) {
 
 											JSONObject jb = new JSONObject(JSONResult);
