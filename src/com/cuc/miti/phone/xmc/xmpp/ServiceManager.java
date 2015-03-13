@@ -78,8 +78,8 @@ public final class ServiceManager {
     public void startService() {
         Thread serviceThread = new Thread(new Runnable() {
             public void run() {
-                Intent intent = NotificationService.getIntent();
-                mContext.startService(intent);
+//                Intent intent = NotificationService.getIntent();
+  //              mContext.startService(intent);
             }
         });
         serviceThread.start();
@@ -98,8 +98,8 @@ public final class ServiceManager {
 
    
     public static void viewNotificationSettings(Context context) {
-        Intent intent = new Intent().setClass(context,NotificationSettingsActivity.class);
-        context.startActivity(intent);
+ //       Intent intent = new Intent().setClass(context,NotificationSettingsActivity.class);
+   //     context.startActivity(intent);
     }
 
 }

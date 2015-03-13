@@ -378,7 +378,6 @@
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
 
-        <service android:name=".services.ReceiverService" />
         <service android:name=".services.FileUploadService" />
         <service android:name=".services.AppStatusService" />
         <service android:name=".services.FTPServerService" />

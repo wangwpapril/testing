@@ -11,6 +11,7 @@ import org.jivesoftware.smack.XMPPConnection;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -95,8 +96,8 @@ public class IngleApplication extends Application implements UncaughtExceptionHa
 		Intent locationIntent = new Intent(this, LocationService.class);
 		stopService(locationIntent);
 		
-		Intent notificationIntent = new Intent(this, NotificationService.class);
-		stopService(notificationIntent);
+//		Intent notificationIntent = new Intent(this, NotificationService.class);
+	//	stopService(notificationIntent);
 		
 		Intent receiverServiceIntent=new Intent(this,ReceiverService.class);
 		stopService(receiverServiceIntent);
@@ -218,6 +219,7 @@ public class IngleApplication extends Application implements UncaughtExceptionHa
 		super.onCreate();
 		Log.i(TAG, "Application onCreate()");
 		instance=this;
+
 		ServiceManager.init(this);
 
 		mLock=new Object();
@@ -230,15 +232,15 @@ public class IngleApplication extends Application implements UncaughtExceptionHa
 		loginStatus = LoginStatus.none;
 		activityList = new ArrayList<Activity>();
 		
-		Intent receiverServiceIntent=new Intent(this,ReceiverService.class);
-		startService(receiverServiceIntent);
+//		Intent receiverServiceIntent=new Intent(this,ReceiverService.class);
+	//	startService(receiverServiceIntent);
 		
 		isStop=false;
 		Intent appStatusIntent=new Intent(this,AppStatusService.class);
 		startService(appStatusIntent);	
 		
-		Intent notificationIntent=new Intent(this,NotificationService.class);
-		startService(notificationIntent);
+//		Intent notificationIntent=new Intent(this,NotificationService.class);
+//		startService(notificationIntent);
 		
 		//�����쳣��ֹʱȡ��ϵͳ�����ĳ���Ի���
 	    Thread.setDefaultUncaughtExceptionHandler(this);  
@@ -360,6 +362,10 @@ public class IngleApplication extends Application implements UncaughtExceptionHa
 
 	public int getVersionCode() {
 		// TODO Auto-generated method stub
-		return 0;
+        try {
+            return getPackageManager().getPackageInfo(getPackageName(), 0).versionCode;
+        } catch (PackageManager.NameNotFoundException e) {
+            return -1;
+        }
 	}
 }

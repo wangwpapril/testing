@@ -18,7 +18,7 @@ public class ServiceManager {
         context = ctx;
 //        dataService = new DataService();
         networkService = new NetworkService();
-//        databaseManager = new DatabaseManager(ctx);
+        databaseManager = new DatabaseManager(ctx);
     }
 
     public static NetworkService getNetworkService() {

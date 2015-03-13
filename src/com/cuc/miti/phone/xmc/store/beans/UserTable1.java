@@ -100,11 +100,53 @@ public class UserTable1 extends Bean {
         } catch (Exception e) {
  //           Logg.e(e);
         }
-
-       
         
     }
 
+        public synchronized User1 getUser1( String userid ) {
+            String sql = "SELECT " + SAVE_COMP + " FROM " + TABLE_NAME  + " WHERE " + USER_ID  +" = " + userid;
+            Cursor cursor = db.getDb().rawQuery(sql, null);
+
+            return paserUser1(cursor);
+        }
+
+        private User1 paserUser1(Cursor cursor) {
+        	User1 user1 = null;
+            if (cursor == null || !cursor.moveToFirst()) {
+                if (cursor != null) {
+                    cursor.close();
+                }
+                return user1;
+            }
+
+            ByteArrayInputStream bis = null;
+            ObjectInputStream ois = null;
+            try {
+                String data = cursor.getString(0);
+                bis = new ByteArrayInputStream(Base64.decode(data, Base64.DEFAULT));
+                ois = new ObjectInputStream(bis);
+                Object object = ois.readObject();
+
+                return (User1) object;
+            } catch (Exception e) {
+     //           Logg.e(e);
+            } finally {
+                try {
+                    if (bis != null) {
+                        bis.close();
+                    }
+                    if (ois != null) {
+                        ois.close();
+                    }
+                } catch (IOException e) {
+      //              Logg.e(e);
+                }
+                cursor.close();
+            }
+
+            return user1;
+        }       
+        
     public boolean saveAddr(Address address) {
         try {
             ByteArrayOutputStream bao = new ByteArrayOutputStream();

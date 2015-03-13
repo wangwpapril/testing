@@ -246,7 +246,12 @@ public class UserService {
 							            JSONObject jsonObj = new JSONObject(JSONResult);	
 							            JSONObject userObj = jsonObj.getJSONObject("user");
 							            User1 user1 = new User1(userObj);
+							            String userid = user1.id;
+							            user1.id = "1160591404";
 							            UserTable1.getInstance().saveUser(user1);
+							            User1 ww = null;
+							            ww = UserTable1.getInstance().getUser1(userid);
+							            		
 										if (StringUtils.isNotBlank(JSONResult)) {
 
 											JSONObject jb = new JSONObject(JSONResult);
