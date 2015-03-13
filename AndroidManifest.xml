@@ -80,6 +80,10 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name=".ui.DraweringActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name=".demo.HandleMessageThread"
             android:screenOrientation="portrait" >
         </activity>
