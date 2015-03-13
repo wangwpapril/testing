@@ -143,7 +143,8 @@ public class SplashScreenActivity extends Activity {
 		h.postDelayed(new Runnable() {
 			@Override
 			public void run(){
-				Intent mIntent = new Intent(SplashScreenActivity.this,LoginActivity.class);
+//				Intent mIntent = new Intent(SplashScreenActivity.this,LoginActivity.class);
+				Intent mIntent = new Intent(SplashScreenActivity.this,SlidingdrawerActivity.class);
 				startActivity(mIntent);
 				SplashScreenActivity.this.finish();
 			}

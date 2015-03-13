@@ -96,10 +96,11 @@
 				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content"
 				    android:layout_below="@+id/signinPasswordLayout"
+				    android:layout_alignLeft="@id/signinPasswordLayout"
 				    android:layout_marginTop="20dp"
 				    android:text="Auto-login" />
 		   		
-				<Button 
+ 					<Button 
 				    android:id="@+id/butSignIn"
 				    android:layout_marginTop="20dp"
 				    android:background="@android:color/holo_blue_dark"
@@ -114,8 +115,8 @@
 				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content"
 				    android:layout_alignParentRight="true"
-				    android:layout_alignTop="@+id/autoLoginCheckBox"
-				    android:gravity="right"
+				    android:layout_below="@+id/signinPasswordLayout"
+				    android:layout_alignRight="@+id/signinPasswordLayout"
 				    android:text="Forget Password?"
 				    android:textAppearance="?android:attr/textAppearanceSmall" />
 

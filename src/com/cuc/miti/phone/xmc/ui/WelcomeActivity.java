@@ -136,6 +136,7 @@ public class WelcomeActivity extends BaseActivity {
 		b = BitmapFactory.decodeResource(this.getResources(), R.drawable.add_new_trip);
 		guide_fourth_image.setImageBitmap(b);
 		guide_fourth_image.setScaleType(ScaleType.FIT_XY);
+		guide_fourth_image.setOnClickListener(mStartAppListener);
 		guide_fourth.addView(guide_fourth_image);
 		
 /*		ImageView startApp = new ImageView(this);
@@ -164,7 +165,7 @@ public class WelcomeActivity extends BaseActivity {
 		
 		@Override
 		public void onClick(View v) {
-			Intent intent = new Intent(getBaseContext(), MainActivity.class);
+			Intent intent = new Intent(getBaseContext(), SlidingdrawerActivity.class);
 			intent.putExtras(getIntent());
 			startActivity(intent);
 			finish();
