@@ -56,6 +56,7 @@ import com.cuc.miti.phone.xmc.http.PostParameter;
 import com.cuc.miti.phone.xmc.http.RemoteCaller;
 import com.cuc.miti.phone.xmc.models.Company;
 import com.cuc.miti.phone.xmc.models.User1;
+import com.cuc.miti.phone.xmc.store.beans.UserTable1;
 import com.cuc.miti.phone.xmc.ui.AttachmentUploadActivity;
 import com.cuc.miti.phone.xmc.ui.LoginActivity;
 import com.cuc.miti.phone.xmc.ui.MainActivity;
@@ -245,6 +246,7 @@ public class UserService {
 							            JSONObject jsonObj = new JSONObject(JSONResult);	
 							            JSONObject userObj = jsonObj.getJSONObject("user");
 							            User1 user1 = new User1(userObj);
+							            UserTable1.getInstance().saveUser(user1);
 										if (StringUtils.isNotBlank(JSONResult)) {
 
 											JSONObject jb = new JSONObject(JSONResult);

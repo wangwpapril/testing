@@ -10,6 +10,8 @@ import com.cuc.miti.phone.xmc.models.Address;
 import com.cuc.miti.phone.xmc.models.Invoice;
 import com.cuc.miti.phone.xmc.models.PayType;
 import com.cuc.miti.phone.xmc.models.SendType;
+import com.cuc.miti.phone.xmc.models.User;
+import com.cuc.miti.phone.xmc.models.User1;
 import com.cuc.miti.phone.xmc.store.Bean;
 import com.cuc.miti.phone.xmc.utils.StringUtil;
 
@@ -22,10 +24,10 @@ import android.util.Base64;
  */
 public class UserTable1 extends Bean {
 
-	public static final String TABLE_NAME = "settlement_tab";
+	public static final String TABLE_NAME = "user";
 
 	private static final String USER_ID = "user_id";
-    private static final String SAVE_ADDR = "save_address";
+    private static final String SAVE_COMP = "save_company";
     private static final String SAVE_SEND = "save_send";
     private static final String SAVE_PAY = "save_pay";
     private static final String INVOCE = "invoce";
@@ -46,12 +48,61 @@ public class UserTable1 extends Bean {
     public void createTable() {
         String sql = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ("
         		+ USER_ID + " TEXT, "
-                + SAVE_ADDR + " TEXT, "
+                + SAVE_COMP + " TEXT, "
                 + SAVE_SEND + " TEXT, "
                 + SAVE_PAY + " TEXT, "
                 + INVOCE + " TEXT, "
                 + REMARK + " TEXT);";
         db.execSql(sql);
+    }
+
+    public void saveUser(User1 user) {
+/*        User loginUser = getUser();
+        if (loginUser != null) {
+            deleteData();
+        }*/
+        if (user != null) {
+            String sql = "insert into " + TABLE_NAME
+                    + " values(" + user.id                        + ","
+ //                                + "'" + user.name        + "'"    + ","
+   //                              + "'" + user.password    + "'"    + ","
+     //                            + "'" + user.accessToken + "'"    + ","
+       //                          + "'" + user.phoneNumber + "'"    + ","
+         //                        + (user.isLogin ? 1 : 0 )            + ","
+           //                      + "1"                                  + ")";
+                    				                               + ")";
+            db.execSql(sql);
+        }
+        
+        
+        try {
+            ByteArrayOutputStream bao = new ByteArrayOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(bao);
+            oos.writeObject(user);
+            oos.flush();
+            oos.close();
+            bao.close();
+
+            String dealStream = Base64.encodeToString(bao.toByteArray(), Base64.DEFAULT);
+            
+            //存到当前登录用户的记录里
+            String sql;
+            String userId = user.id;
+            if (getCount() > 0) {
+            	sql = "UPDATE " + TABLE_NAME + " SET " + SAVE_COMP + " = ? "  + " WHERE " + USER_ID  +" = " + userId ;
+            	db.execSql(sql, dealStream);
+            } else {
+            	sql = StringUtil.simpleFormat("replace into %s (%s,%s) values (?,?)", TABLE_NAME, SAVE_COMP,USER_ID);
+            	 db.execSql(sql, dealStream,userId);
+            }
+
+            
+        } catch (Exception e) {
+ //           Logg.e(e);
+        }
+
+       
+        
     }
 
     public boolean saveAddr(Address address) {
@@ -69,10 +120,10 @@ public class UserTable1 extends Bean {
             String sql;
             String userId = UserTable.getInstance().getLoginUserId();
             if (getCount() > 0) {
-            	sql = "UPDATE " + TABLE_NAME + " SET " + SAVE_ADDR + " = ? "  + " WHERE " + USER_ID  +" = " + userId ;
+            	sql = "UPDATE " + TABLE_NAME + " SET " + SAVE_COMP + " = ? "  + " WHERE " + USER_ID  +" = " + userId ;
             	return db.execSql(sql, dealStream);
             } else {
-            	sql = StringUtil.simpleFormat("replace into %s (%s,%s) values (?,?)", TABLE_NAME, SAVE_ADDR,USER_ID);
+            	sql = StringUtil.simpleFormat("replace into %s (%s,%s) values (?,?)", TABLE_NAME, SAVE_COMP,USER_ID);
             	return db.execSql(sql, dealStream,userId);
             }
 
@@ -257,7 +308,7 @@ public class UserTable1 extends Bean {
     }
 
     public synchronized Address getAddress() {
-        String sql = "SELECT " + SAVE_ADDR + " FROM " + TABLE_NAME + " WHERE " + USER_ID  +" = " + UserTable.getInstance().getLoginUserId() ;
+        String sql = "SELECT " + SAVE_COMP + " FROM " + TABLE_NAME + " WHERE " + USER_ID  +" = " + UserTable.getInstance().getLoginUserId() ;
         Cursor cursor = db.getDb().rawQuery(sql, null);
 
         return paserAddress(cursor);
