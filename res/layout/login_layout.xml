@@ -91,34 +91,53 @@
 
 		   		</LinearLayout>
 		   		
-				<CheckBox
-				    android:id="@+id/autoLoginCheckBox"
-				    android:layout_width="wrap_content"
-				    android:layout_height="wrap_content"
-				    android:layout_below="@+id/signinPasswordLayout"
-				    android:layout_alignLeft="@id/signinPasswordLayout"
-				    android:layout_marginTop="20dp"
-				    android:text="Auto-login" />
+				
 		   		
  					<Button 
 				    android:id="@+id/butSignIn"
 				    android:layout_marginTop="20dp"
 				    android:background="@android:color/holo_blue_dark"
 				    android:text="LOG IN"
-				    android:layout_below="@+id/autoLoginCheckBox"
+				    android:layout_below="@+id/signinPasswordLayout"
 				    android:layout_centerHorizontal="true"
 				    android:layout_width="200dp"
 				    android:layout_height="50dp"/>
-
+ 					
+ 				 <TextView
+				android:id="@+id/sign_up"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/butSignIn"
+				android:paddingTop="0dp"
+				android:gravity="center_horizontal"
+				android:text="Sign Up"
+			    android:textColor="@color/white"
+                android:textSize="25sp"				
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+ 			<LinearLayout
+ 			    	android:id="@+id/LoginHelp"
+ 			    	android:layout_below="@id/sign_up"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="center_horizontal" >		    
+			    					
 				<TextView
-				    android:id="@+id/forgetPasswordText"
+				    android:id="@+id/termsofuse"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_alignParentLeft="true"
+				    android:text="Terms of Use"
+				    android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+				<TextView
+				    android:id="@+id/learnMore"
 				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content"
 				    android:layout_alignParentRight="true"
-				    android:layout_below="@+id/signinPasswordLayout"
-				    android:layout_alignRight="@+id/signinPasswordLayout"
-				    android:text="Forget Password?"
+				    android:text="Learn More"
 				    android:textAppearance="?android:attr/textAppearanceSmall" />
+				</LinearLayout>
 
 			    </RelativeLayout>
 	</ScrollView>
