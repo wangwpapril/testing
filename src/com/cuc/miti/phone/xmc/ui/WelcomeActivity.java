@@ -165,7 +165,8 @@ public class WelcomeActivity extends BaseActivity {
 		
 		@Override
 		public void onClick(View v) {
-			Intent intent = new Intent(getBaseContext(), SlidingdrawerActivity.class);
+//			Intent intent = new Intent(getBaseContext(), SlidingdrawerActivity.class);
+			Intent intent = new Intent(getBaseContext(), DraweringActivity.class);			
 			intent.putExtras(getIntent());
 			startActivity(intent);
 			finish();

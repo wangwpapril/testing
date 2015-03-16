@@ -10,6 +10,7 @@ import java.util.UUID;
 import java.util.Map.Entry;
 
 import org.apache.commons.lang3.StringUtils;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -54,7 +55,9 @@ import com.cuc.miti.phone.xmc.http.DoRemoteResult;
 import com.cuc.miti.phone.xmc.http.HttpClient;
 import com.cuc.miti.phone.xmc.http.PostParameter;
 import com.cuc.miti.phone.xmc.http.RemoteCaller;
+import com.cuc.miti.phone.xmc.models.AssistanceProvider;
 import com.cuc.miti.phone.xmc.models.Company;
+import com.cuc.miti.phone.xmc.models.Destination;
 import com.cuc.miti.phone.xmc.models.User1;
 import com.cuc.miti.phone.xmc.store.beans.UserTable1;
 import com.cuc.miti.phone.xmc.ui.AttachmentUploadActivity;
@@ -239,9 +242,6 @@ public class UserService {
 									
 //										String JSONResult = null;
 										String JSONResult = httpClient.post(parasString, "https://api.intrepid247.com/v1/users/login", 6000);	
-//										JSONResult = httpClient.doGet(postParams, 
-	//							"https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", 6000);
-
 										
 							            JSONObject jsonObj = new JSONObject(JSONResult);	
 							            JSONObject userObj = jsonObj.getJSONObject("user");
@@ -251,7 +251,25 @@ public class UserService {
 							            UserTable1.getInstance().saveUser(user1);
 							            User1 ww = null;
 							            ww = UserTable1.getInstance().getUser1(userid);
-							            		
+
+										JSONResult = httpClient.doGet(postParams, 
+								"https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", 6000);
+
+										JSONObject des = new JSONObject(JSONResult);
+//										JSONObject dd = des.getJSONObject("destinations");
+										JSONArray array = des.getJSONArray("destinations");
+										int len = array.length();
+										
+										Destination de = new Destination(array.getJSONObject(0));
+										
+//										if (len > 0) {
+	//										apList = new ArrayList<AssistanceProvider>(len);
+		//									for (int i = 0; i < len; i ++) {
+	//											apList.add(new AssistanceProvider(array.getJSONObject(i)));
+	//										}
+		//								}
+
+							            
 										if (StringUtils.isNotBlank(JSONResult)) {
 
 											JSONObject jb = new JSONObject(JSONResult);
