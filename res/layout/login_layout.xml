@@ -2,9 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
-     
-    android:layout_gravity="bottom">
+    android:background="@drawable/login_background">
     
     <ScrollView
 	    android:id="@+id/scrollView1"
@@ -115,29 +113,30 @@
                 android:textSize="25sp"				
 				android:textAppearance="?android:attr/textAppearanceSmall" />
 	        
- 			<LinearLayout
+ 			<FrameLayout
  			    	android:id="@+id/LoginHelp"
+ 			    	android:orientation="horizontal"
  			    	android:layout_below="@id/sign_up"
 				    android:layout_width="match_parent"
 				    android:layout_height="wrap_content"
-				    android:gravity="center_horizontal" >		    
+				    android:layout_alignParentBottom="true"
 			    					
 				<TextView
 				    android:id="@+id/termsofuse"
 				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content"
-				    android:layout_alignParentLeft="true"
+				    android:layout_gravity="left"
 				    android:text="Terms of Use"
-				    android:textAppearance="?android:attr/textAppearanceSmall" />
+				    android:textSize="16sp" />
 	        
 				<TextView
 				    android:id="@+id/learnMore"
 				    android:layout_width="wrap_content"
 				    android:layout_height="wrap_content"
-				    android:layout_alignParentRight="true"
+				    android:layout_gravity="right"
 				    android:text="Learn More"
-				    android:textAppearance="?android:attr/textAppearanceSmall" />
-				</LinearLayout>
+				    android:textSize="16sp" />
+				</FrameLayout>
 
 			    </RelativeLayout>
 	</ScrollView>
