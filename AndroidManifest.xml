@@ -76,6 +76,10 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name=".ui.TripsListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name=".ui.SlidingdrawerActivity"
             android:screenOrientation="portrait" >
         </activity>

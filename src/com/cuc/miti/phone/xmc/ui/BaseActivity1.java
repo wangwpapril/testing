@@ -2,14 +2,15 @@ package com.cuc.miti.phone.xmc.ui;
 
 import java.util.List;
 
-
-
-
-
-
+import com.cuc.miti.phone.xmc.MainHandler;
 import com.cuc.miti.phone.xmc.IngleApplication;
-import com.cuc.miti.phone.xmc.R;
+import com.cuc.miti.phone.xmc.services.AppStatusService;
+import com.cuc.miti.phone.xmc.services.ReceiverService;
 import com.cuc.miti.phone.xmc.utils.Logger;
+import com.cuc.miti.phone.xmc.utils.XmcNotification;
+import com.cuc.miti.phone.xmc.R;
+import com.cuc.miti.phone.xmc.R.id;
+import com.cuc.miti.phone.xmc.R.menu;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -23,11 +24,24 @@ import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.view.View.OnClickListener;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-public class BaseActivity extends Activity{
+public abstract class BaseActivity1 extends Activity implements OnClickListener{
 
 	ActivityManager activityManager;
+
+	protected BaseActivity1 context;
+	protected TextView tvTitleName;
+	protected ImageView ivTitelName;
+	protected ImageView ivTitleBack;
+	protected ImageView ivTitleRight;
+	protected EditText ivTitleMiddle;
+	protected TextView tvTitleRight;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +52,22 @@ public class BaseActivity extends Activity{
 		Log.i(IngleApplication.TAG, "Base Activity onCreate()");
 		Logger.logHeap(this.getClass()); 
 		activityManager=(ActivityManager)this.getSystemService(Context.ACTIVITY_SERVICE);
-//		XinhuaManuscriptCollectionApplication.getInstance().addActivity(this);
+		IngleApplication.getInstance().addActivity(this);
 
 	}
+	
+	protected void initTitleView() {
+		tvTitleName = (TextView) findViewById(R.id.title_name);
+		ivTitelName = (ImageView)findViewById(R.id.title_name_iv);
+		ivTitleBack = (ImageView) findViewById(R.id.title_iv_back);
+		ivTitleRight = (ImageView) findViewById(R.id.title_iv_right);
+		ivTitleMiddle = (EditText) findViewById(R.id.title_name_et);
+		tvTitleRight = (TextView) findViewById(R.id.title_tv_right);
+		initTitle();
+	}
+
+	protected abstract void initTitle();
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -75,6 +102,15 @@ public class BaseActivity extends Activity{
 		
 	}
 
-	
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onBackClick(View view){
+		onBackPressed();
+	}
+
 	
 }

@@ -1,6 +1,7 @@
 package com.cuc.miti.phone.xmc.logic;
 
 import java.io.ByteArrayInputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -65,6 +66,7 @@ import com.cuc.miti.phone.xmc.ui.LoginActivity;
 import com.cuc.miti.phone.xmc.ui.MainActivity;
 import com.cuc.miti.phone.xmc.ui.SplashScreenActivity;
 import com.cuc.miti.phone.xmc.ui.TestEntranceActivity;
+import com.cuc.miti.phone.xmc.ui.TripsListActivity;
 import com.cuc.miti.phone.xmc.ui.WelcomeActivity;
 import com.cuc.miti.phone.xmc.utils.DeviceInfoHelper;
 import com.cuc.miti.phone.xmc.utils.Encrypt;
@@ -259,31 +261,17 @@ public class UserService {
 //										JSONObject dd = des.getJSONObject("destinations");
 										JSONArray array = des.getJSONArray("destinations");
 										int len = array.length();
-										
-										Destination de = new Destination(array.getJSONObject(0));
-										
-//										if (len > 0) {
-	//										apList = new ArrayList<AssistanceProvider>(len);
-		//									for (int i = 0; i < len; i ++) {
-	//											apList.add(new AssistanceProvider(array.getJSONObject(i)));
-	//										}
-		//								}
-
-							            
-										if (StringUtils.isNotBlank(JSONResult)) {
-
-											JSONObject jb = new JSONObject(JSONResult);
-		//									returnValueString[0]=(String) jb.get("token");
-			//								returnValueString[1]=(String) jb.get("role");
-											if (dialog != null) {
-												dialog.dismiss();
-											}
-											Intent intent = new Intent(context, WelcomeActivity.class);
-											context.startActivity(intent);
-											((Activity) context).finish();
-
+										List<Destination> desList = new ArrayList<Destination>(len);
+										for (int i =0;i < len; i++){
+											desList.add(new Destination(array.getJSONObject(i)));
 										}
-//									}
+										
+										Intent i = new Intent();
+										i.setClass(context, TripsListActivity.class);
+										i.putExtra("destinations", (Serializable )desList);
+										context.startActivity(i);
+						
+									   ((Activity) context).finish();
 									} catch (Exception e) {
 //										exceptionTypeJudge(e);
 									}

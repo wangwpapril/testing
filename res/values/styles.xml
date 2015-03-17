@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+        <style name="common_page_background">
+        <item name="android:background">#f3f3f3</item>
+    </style>
+    
     <!-- 页面顶部功能区当前页面功能描述字体格式 -->
     <style name="banner_title">
         <item name="android:textColor">#FFFFFF</item>
