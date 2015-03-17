@@ -53,6 +53,7 @@ public abstract class BaseActivity1 extends Activity implements OnClickListener{
 		Logger.logHeap(this.getClass()); 
 		activityManager=(ActivityManager)this.getSystemService(Context.ACTIVITY_SERVICE);
 		IngleApplication.getInstance().addActivity(this);
+		context = this;
 
 	}
 	

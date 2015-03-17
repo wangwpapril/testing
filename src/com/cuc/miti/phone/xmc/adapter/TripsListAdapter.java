@@ -22,14 +22,13 @@ import android.widget.TextView;
 
 public class TripsListAdapter extends MyBaseAdapter {
 	private List<Destination> datas;
-	private BaseActivity1 context;
 
 
 	public TripsListAdapter(List<Destination> datas,
 			BaseActivity1 context) {
 		this.datas = datas;
 		this.context = context;
-//		super.init();
+		super.init();
 	}
 
 	@Override
@@ -76,8 +75,9 @@ public class TripsListAdapter extends MyBaseAdapter {
 		holder.tvName.setText(model.name);
 		holder.tvDesc.setText(model.type);
 		final ImageView imageView = holder.ivIcon;
-		imageView.setTag(model.imageFlag.version1.sourceUrl);
-		ImageLoader.DisplayImage(model.imageFlag.version1.sourceUrl, context, imageView);
+		imageView.setTag(model.imageFlag.version3.sourceUrl);
+//		ImageLoader.DisplayImage("http://www.hopmet.com/ecshop/data/afficheimg/20150227qlfqth.jpg", context, imageView);
+		ImageLoader.DisplayImage(model.imageFlag.version3.sourceUrl, context, imageView);
 		convertView.setTag(holder);
 		return convertView;
 	}

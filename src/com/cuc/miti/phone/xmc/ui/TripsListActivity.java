@@ -62,9 +62,9 @@ public class TripsListActivity extends BaseActivity1 {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				Intent i = new Intent();
-//				i.setClass(context, ActivityCategoryList.class);
+				i.setClass(context, WelcomeActivity.class);
 	//			i.putExtra(IntentKeys.KEY_CATEGROY_SUBS, datas.get(arg2));
-		//		context.startActivity(i);
+				context.startActivity(i);
 			}
 		});
 	}
@@ -96,7 +96,8 @@ public class TripsListActivity extends BaseActivity1 {
 */
 	@Override
 	protected void initTitle(){
-//		ivTitleBack.setVisibility(View.VISIBLE);
+		ivTitleBack.setVisibility(View.VISIBLE);
+		ivTitleBack.setOnClickListener(this);
 		tvTitleName.setText("Trips");
 //		ivTitleRight.setVisibility(View.VISIBLE);
 //		ivTitleBack.setImageResource(R.drawable.title_left_search);

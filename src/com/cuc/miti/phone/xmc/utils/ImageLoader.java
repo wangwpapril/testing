@@ -6,9 +6,12 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Stack;
+
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -74,6 +77,14 @@ public class ImageLoader {
 		// I identify images by hashcode. Not a perfect solution, good for the
 		// demo.
 		String filename = String.valueOf(url.hashCode());
+		String Url=null;
+		try {
+			Url = URLEncoder.encode(url,"UTF-8");
+			Url = url.replaceAll(" ", "%20");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		File f = new File(cacheDir, filename);
 
 		// from SD cache
@@ -84,7 +95,7 @@ public class ImageLoader {
 		// from web
 		try {
 			Bitmap bitmap = null;
-			InputStream is = new URL(url).openStream();
+			InputStream is = new URL(Url).openStream();
 			OutputStream os = new FileOutputStream(f);
 			CopyStream(is, os);
 			os.close();
