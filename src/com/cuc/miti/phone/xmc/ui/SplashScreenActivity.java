@@ -144,8 +144,8 @@ public class SplashScreenActivity extends Activity {
 			@Override
 			public void run(){
 //				Intent mIntent = new Intent(SplashScreenActivity.this,WelcomeActivity.class);
-				Intent mIntent = new Intent(SplashScreenActivity.this,LoginActivity.class);
-//				Intent mIntent = new Intent(SplashScreenActivity.this,SlidingdrawerActivity.class);
+//				Intent mIntent = new Intent(SplashScreenActivity.this,LoginActivity.class);
+				Intent mIntent = new Intent(SplashScreenActivity.this,SlidingdrawerActivity.class);
 //				Intent mIntent = new Intent(SplashScreenActivity.this,DraweringActivity.class);
 				startActivity(mIntent);
 				SplashScreenActivity.this.finish();

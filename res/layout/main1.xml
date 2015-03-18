@@ -97,12 +97,13 @@
     </RelativeLayout>
   
   
-  <SlidingDrawer
+  <com.cuc.miti.phone.xmc.ui.control.WrapSlidingDrawer
     android:id="@+id/sd"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:handle="@+id/imageview"
     android:content="@+id/gridview"
+    android:orientation="vertical"
    >
  
       <ImageView
@@ -119,8 +120,7 @@
       android:numColumns="3"
       android:gravity="center"
       android:background="@drawable/menu2x"
-      android:layout_gravity="bottom"
     /> 
         
-  </SlidingDrawer>
+  </com.cuc.miti.phone.xmc.ui.control.WrapSlidingDrawer>
 </RelativeLayout>
