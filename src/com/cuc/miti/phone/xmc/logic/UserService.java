@@ -270,7 +270,8 @@ public class UserService {
 //							            showPreviewDialog(user1);
 
 										JSONResult = httpClient.doGet(postParams, 
-								"https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", 6000);
+												"https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", 6000);
+//										"https://api.intrepid247.com/v1/destinations?token=ce6f284088d8c6bf88802f51f6d49776", 12000);
 
 										JSONObject des = new JSONObject(JSONResult);
 //										JSONObject dd = des.getJSONObject("destinations");
