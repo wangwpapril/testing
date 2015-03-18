@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 import com.cuc.miti.phone.xmc.R;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -16,9 +17,13 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.DisplayMetrics;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout.LayoutParams;
@@ -26,8 +31,13 @@ import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
 
-public class WelcomeActivity extends BaseActivity {
+public class WelcomeActivity extends BaseActivity implements OnClickListener,OnTouchListener,GestureDetector.OnGestureListener{
 	private final String FLAG_EXIST = "flag_exist";
+	
+    GestureDetector mGesture = null; 
+	private int verticalMinDistance = 100;
+	private int minVelocity = 0;
+
 	
 	private ImageView mFirstSpot;
 	private ImageView mSecondSpot;
@@ -42,7 +52,10 @@ public class WelcomeActivity extends BaseActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		createUI();				
+		createUI();		
+        mGesture = new GestureDetector(this,this); 
+        mGesture.setIsLongpressEnabled(false); 
+
 /*		String cid = PreferenceUtils.readStrConfig(Constant.PreferKeys.KEY_GETUI_CLIENTID, getBaseContext(), "0");
 		if (!mWebApi.isLogined()) {
 			cid = "";
@@ -280,6 +293,120 @@ public class WelcomeActivity extends BaseActivity {
 			// TODO Auto-generated method stub
 //			container.removeView(mGuideViewList.get(position));
 		}
+		
+	}
+
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		// TODO Auto-generated method stub
+		int i = 1;
+		i ++;
+		return false;
+	}
+	
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		return false;
+		
+	}
+
+	@Override
+	public boolean onDown(MotionEvent e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
+			float velocityY) {
+		// TODO Auto-generated method stub
+////////////////////////////////
+		int i;
+        float x = e2.getX() - e1.getX();
+        float y = e2.getY() - e1.getY();
+        //限制必须得划过屏幕的1/4才能算划过
+        DisplayMetrics dm = new DisplayMetrics();
+        WindowManager windowManager = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
+        windowManager.getDefaultDisplay().getMetrics(dm);
+         float x_limit = dm.widthPixels / 4;
+        float y_limit = dm.heightPixels / 4;
+        float x_abs = Math.abs(x);
+        float y_abs = Math.abs(y);
+        if(x_abs >= y_abs){
+            //gesture left or right
+            if(x > x_limit || x < -x_limit){
+                if(x>0){
+                    //right
+                    i = 1; 
+                }else if(x<=0){
+                    //left
+                	i = 2; 
+                }
+            }
+        }else{
+            //gesture down or up
+            if(y > y_limit || y < -y_limit){
+                if(y>0){
+                    //down
+                	i = 3;
+                }else if(y<=0){
+                    //up
+                	i = 4;
+                }
+            }
+        }
+
+        ////////////////////////////////
+		
+		
+		
+		float e1y =e1.getY();
+		float e2y = e2.getY();
+		float yy = Math.abs(velocityY);
+		
+		if (e1.getY() - e2.getY() > verticalMinDistance
+				&& Math.abs(velocityY) > minVelocity) { 
+			return false;
+		} else if (e2.getY() - e1.getY() > verticalMinDistance
+				&& Math.abs(velocityY) > minVelocity) { 
+			return false;
+		}
+		return false;
+	}
+
+	@Override
+	public void onLongPress(MotionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX,
+			float distanceY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void onShowPress(MotionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean onSingleTapUp(MotionEvent e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	@Override
+	public boolean dispatchTouchEvent(MotionEvent ev) {
+		mGesture.onTouchEvent(ev);
+		return super.dispatchTouchEvent(ev);
+	}
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
 		
 	}
 }
