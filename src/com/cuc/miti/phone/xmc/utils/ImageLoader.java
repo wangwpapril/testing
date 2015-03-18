@@ -77,6 +77,7 @@ public class ImageLoader {
 		// I identify images by hashcode. Not a perfect solution, good for the
 		// demo.
 		String filename = String.valueOf(url.hashCode());
+		
 		String Url=null;
 		try {
 			Url = URLEncoder.encode(url,"UTF-8");

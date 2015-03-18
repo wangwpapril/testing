@@ -3,7 +3,7 @@
      <color name="transparent">#00000000</color>
      <color name="window_bg">#f0f0f0</color>
 	<color name="light_gray">#999999</color>
-   <color name="title_background">#F00078</color>
+   <color name="title_background">#999999</color>
       <color name="list_item_background">#F3F3F3</color>
           <color name="common_list_divider">#dddddd</color>
       

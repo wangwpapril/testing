@@ -32,8 +32,8 @@ public class MainHandler extends Handler {
 
 		case MSG_ISBACKRUN:
 
-			if(!IngleApplication.isStop)
-				notification.showNotification(XmcNotification.NOTIFICATION_BACK);
+//			if(!IngleApplication.isStop)
+//				notification.showNotification(XmcNotification.NOTIFICATION_BACK);
 			break;
 		case MSG_ISNOTBACKRUN:
 			notification.cancelNotification(XmcNotification.NOTIFICATION_BACK);

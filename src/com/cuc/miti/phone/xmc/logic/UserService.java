@@ -18,6 +18,7 @@ import org.json.JSONObject;
 import android.R.string;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
@@ -30,6 +31,9 @@ import android.sax.Element;
 import android.sax.StartElementListener;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cuc.miti.phone.xmc.IngleApplication;
@@ -215,8 +219,17 @@ public class UserService {
 			user.setUsername(username);
 			// user.setPassword(Encrypt.toMD5(password));
 			user.setPassword(password);
-			// to.do ��Ҫ����HTTP��½�Ĺ��ܣ���ȡ��¼������OK��ADD����Update User,
-			// ����HTTP��ȡuserAttribute �����ݱ���������xml�ļ���
+
+
+			UserInfoDemo demo = new UserInfoDemo();
+			UserDemo User = new UserDemo();
+			User.setEmail(username);
+			User.setPsw(password);
+			demo.setUser(User);
+			Gson gson = new Gson();
+			final String parasString = gson.toJson(demo);
+			
+			
 			new Thread(new Runnable() {
 				String[] ss;
 
@@ -249,10 +262,12 @@ public class UserService {
 							            JSONObject userObj = jsonObj.getJSONObject("user");
 							            User1 user1 = new User1(userObj);
 							            String userid = user1.id;
-							            user1.id = "1160591404";
+//							            user1.id = "1160591404";
 							            UserTable1.getInstance().saveUser(user1);
 							            User1 ww = null;
 							            ww = UserTable1.getInstance().getUser1(userid);
+							            
+//							            showPreviewDialog(user1);
 
 										JSONResult = httpClient.doGet(postParams, 
 								"https://api.intrepid247.com/v1/destinations?short_list=true&token=ce6f284088d8c6bf88802f51f6d49776", 6000);
@@ -269,6 +284,7 @@ public class UserService {
 										Intent i = new Intent();
 										i.setClass(context, TripsListActivity.class);
 										i.putExtra("destinations", (Serializable )desList);
+										i.putExtra("user", user1);
 										context.startActivity(i);
 						
 									   ((Activity) context).finish();
@@ -314,6 +330,39 @@ public class UserService {
 				}
 			}).start();
 		}
+	}
+	
+	private void showPreviewDialog(User1 user1)
+	{
+		AlertDialog.Builder builder = new Builder(context);
+		builder.setTitle("Preview User..");
+		View view = LayoutInflater.from(context).inflate(R.layout.previewresume, null);
+		TextView prevText = (TextView)view.findViewById(R.id.previewResumeText);
+		
+		String tmptext = "";
+		
+			tmptext += "User id: " + user1.id + 
+					"\n" + "User Name: "+ user1.userName +
+					"\n" + "Email: " + user1.email;
+			tmptext += "\n\n\n";
+		
+
+		
+		prevText.setText(tmptext);
+		
+		builder.setView(view);
+		
+		builder.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.dismiss();
+				
+			}
+		});
+		
+		Dialog dialog = builder.create();
+		dialog.show();
 	}
 
 	/**

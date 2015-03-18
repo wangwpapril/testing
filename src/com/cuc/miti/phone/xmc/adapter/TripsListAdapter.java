@@ -76,7 +76,7 @@ public class TripsListAdapter extends MyBaseAdapter {
 		holder.tvDesc.setText(model.type);
 		final ImageView imageView = holder.ivIcon;
 		imageView.setTag(model.imageFlag.version3.sourceUrl);
-//		ImageLoader.DisplayImage("http://www.hopmet.com/ecshop/data/afficheimg/20150227qlfqth.jpg", context, imageView);
+//		ImageLoader.DisplayImage(null, context, imageView);
 		ImageLoader.DisplayImage(model.imageFlag.version3.sourceUrl, context, imageView);
 		convertView.setTag(holder);
 		return convertView;
