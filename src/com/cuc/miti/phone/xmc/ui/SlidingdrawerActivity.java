@@ -17,10 +17,10 @@ public class SlidingdrawerActivity extends BaseActivity {
       private GridView gridview;
       private WrappingSlidingDrawer slidingdrawer;
       private ImageView imageview;
-      private int[] icons={R.drawable.back,R.drawable.back,
-                            R.drawable.back,R.drawable.back,
-                            R.drawable.back,R.drawable.back,
-                            R.drawable.back,R.drawable.back,R.drawable.back};
+      private int[] icons={R.drawable.editingmanuscripts_button,R.drawable.editingmanuscripts_button,
+                            R.drawable.editingmanuscripts_button,R.drawable.editingmanuscripts_button,
+                            R.drawable.editingmanuscripts_button,R.drawable.editingmanuscripts_button,
+                            R.drawable.editingmanuscripts_button,R.drawable.editingmanuscripts_button,R.drawable.editingmanuscripts_button};
       private String[] items={"华仔","发哥","雅芝","柏芝","周星星","jindegege","老毛","老毕","涵涵"};
           
         /** Called when the activity is first created. */

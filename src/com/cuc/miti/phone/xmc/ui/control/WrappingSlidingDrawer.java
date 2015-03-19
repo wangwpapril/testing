@@ -9,8 +9,8 @@ public class WrappingSlidingDrawer extends SlidingDrawer {
 
     public WrappingSlidingDrawer(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-
-        int orientation = attrs.getAttributeIntValue("android", "orientation", ORIENTATION_VERTICAL);
+        final String xmlns="http://schemas.android.com/apk/res/android";
+        int orientation = attrs.getAttributeIntValue(xmlns, "orientation", ORIENTATION_VERTICAL);
         mTopOffset = attrs.getAttributeIntValue("android", "topOffset", 0);
         mVertical = (orientation == SlidingDrawer.ORIENTATION_VERTICAL);
     }
