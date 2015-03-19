@@ -78,7 +78,7 @@
             android:src="@drawable/recorder" />
     </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -94,13 +94,11 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:background="@drawable/recordbutton" />
-    </RelativeLayout>
   
-  
-  <com.cuc.miti.phone.xmc.ui.control.WrapSlidingDrawer
+  <com.cuc.miti.phone.xmc.ui.control.WrappingSlidingDrawer
     android:id="@+id/sd"
     android:layout_width="match_parent"
-    android:layout_height="160dip"
+    android:layout_height="wrap_content"
     android:handle="@+id/imageview"
     android:content="@+id/gridview"
    >
@@ -114,12 +112,15 @@
  
       <GridView
       android:id="@id/gridview"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       android:numColumns="3"
       android:gravity="center"
       android:background="@drawable/menu2x"
     /> 
         
-  </com.cuc.miti.phone.xmc.ui.control.WrapSlidingDrawer>
+  </com.cuc.miti.phone.xmc.ui.control.WrappingSlidingDrawer>
+      </LinearLayout>
+  
+  
 </RelativeLayout>
