@@ -118,7 +118,7 @@
       android:layout_height="wrap_content"
       android:numColumns="3"
       android:gravity="center"
-      android:background="@drawable/menu2x"
+      android:background="@drawable/menu"
     /> 
         
   </com.cuc.miti.phone.xmc.ui.control.WrappingSlidingDrawer>
