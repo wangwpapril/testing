@@ -1,6 +1,7 @@
 package com.cuc.miti.phone.xmc.ui.control;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.SlidingDrawer;
@@ -11,16 +12,30 @@ public class WrappingSlidingDrawer extends SlidingDrawer {
         super(context, attrs, defStyle);
         final String xmlns="http://schemas.android.com/apk/res/android";
         int orientation = attrs.getAttributeIntValue(xmlns, "orientation", ORIENTATION_VERTICAL);
-        mTopOffset = attrs.getAttributeIntValue("android", "topOffset", 0);
+        mTopOffset = attrs.getAttributeIntValue(xmlns, "topOffset", 0);
         mVertical = (orientation == SlidingDrawer.ORIENTATION_VERTICAL);
     }
 
     public WrappingSlidingDrawer(Context context, AttributeSet attrs) {
         super(context, attrs);
+        
+        
+        int attrOrientation = android.R.attr.orientation;
+        int attrTopOffset = android.R.attr.topOffset;
 
-        int orientation = attrs.getAttributeIntValue("android", "orientation", ORIENTATION_VERTICAL);
-        mTopOffset = attrs.getAttributeIntValue("android", "topOffset", 0);
+        int[] attrIds = new int [] {attrOrientation, attrTopOffset}; 
+
+        TypedArray a = context.obtainStyledAttributes(attrs, attrIds);
+        int orientation = a.getInt(0, SlidingDrawer.ORIENTATION_VERTICAL);
+        mTopOffset = (int) a.getDimension(1, 0);
+        a.recycle(); 
+
         mVertical = (orientation == SlidingDrawer.ORIENTATION_VERTICAL);
+        
+ /*       final String xmlns="http://schemas.android.com/apk/res/android";
+        int orientation = attrs.getAttributeIntValue(xmlns, "orientation", ORIENTATION_VERTICAL);
+        mTopOffset = attrs.getAttributeIntValue(xmlns, "topOffset", 0);
+        mVertical = (orientation == SlidingDrawer.ORIENTATION_VERTICAL);*/
     }
 
     @Override
@@ -54,6 +69,20 @@ public class WrappingSlidingDrawer extends SlidingDrawer {
             heightSpecSize = content.getMeasuredHeight();
             if (handle.getMeasuredHeight() > heightSpecSize) heightSpecSize = handle.getMeasuredHeight();
         }
+        
+   /*     if (mVertical) {
+            int height = heightSpecSize - handle.getMeasuredHeight() - mTopOffset;
+            content.measure(MeasureSpec.makeMeasureSpec(widthSpecSize, MeasureSpec.UNSPECIFIED), MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY));
+            heightSpecSize = handle.getMeasuredHeight() + mTopOffset + content.getMeasuredHeight();
+            widthSpecSize = content.getMeasuredWidth();
+            if (handle.getMeasuredWidth() > widthSpecSize) widthSpecSize = handle.getMeasuredWidth();
+        } else {
+            int width = widthSpecSize - handle.getMeasuredWidth() - mTopOffset;
+            content.measure(MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY), MeasureSpec.makeMeasureSpec(heightSpecSize, MeasureSpec.UNSPECIFIED));
+            widthSpecSize = handle.getMeasuredWidth() + mTopOffset + content.getMeasuredWidth();
+            heightSpecSize = content.getMeasuredHeight();
+            if (handle.getMeasuredHeight() > heightSpecSize) heightSpecSize = handle.getMeasuredHeight();
+        }  */     
 
         setMeasuredDimension(widthSpecSize, heightSpecSize);
     }
